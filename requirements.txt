@@ -1,0 +1,4 @@
+pypdf
+numpy
+sentence-transformers
+openai        # one client for every OpenAI-compatible free endpoint (Groq, Cerebras, Gemini, ...)

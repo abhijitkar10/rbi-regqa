@@ -1,0 +1,46 @@
+[
+ {
+  "chunks": "para_title",
+  "retriever": "bm25",
+  "n": 52,
+  "R@1": 0.788,
+  "R@5": 0.904,
+  "R@10": 0.904,
+  "MRR@10": 0.829,
+  "Book@1": 0.827,
+  "WrongLender@1": 0.058
+ },
+ {
+  "chunks": "para_title",
+  "retriever": "dense:bge-small-en-v1.5",
+  "n": 52,
+  "R@1": 0.731,
+  "R@5": 0.846,
+  "R@10": 0.885,
+  "MRR@10": 0.779,
+  "Book@1": 0.827,
+  "WrongLender@1": 0.019
+ },
+ {
+  "chunks": "para_title",
+  "retriever": "hybrid:bge-small-en-v1.5",
+  "n": 52,
+  "R@1": 0.788,
+  "R@5": 0.942,
+  "R@10": 0.962,
+  "MRR@10": 0.843,
+  "Book@1": 0.865,
+  "WrongLender@1": 0.038
+ },
+ {
+  "chunks": "para_title",
+  "retriever": "rerank:bge-reranker-base",
+  "n": 52,
+  "R@1": 0.846,
+  "R@5": 0.942,
+  "R@10": 0.981,
+  "MRR@10": 0.881,
+  "Book@1": 0.885,
+  "WrongLender@1": 0.096
+ }
+]
