@@ -1,0 +1,4 @@
+{"doc": 13109, "para": "80", "generator": "gemini:gemini-2.5-flash", "secs": 138.3, "questions": [], "unanswerable": null, "quote_ok": [], "raw": "ERROR RateLimitError: Error code: 429"}
+{"doc": 13090, "para": "47", "generator": "gemini:gemini-2.5-flash", "secs": 137.9, "questions": [], "unanswerable": null, "quote_ok": [], "raw": "ERROR RateLimitError: Error code: 429"}
+{"doc": 13090, "para": "53", "generator": "gemini:gemini-2.5-flash", "secs": 138.2, "questions": [], "unanswerable": null, "quote_ok": [], "raw": "ERROR RateLimitError: Error code: 429"}
+{"doc": 13090, "para": "54", "generator": "gemini:gemini-2.5-flash", "secs": 138.2, "questions": [], "unanswerable": null, "quote_ok": [], "raw": "ERROR RateLimitError: Error code: 429"}

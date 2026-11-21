@@ -13,7 +13,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from retrieve import BM25, Dense, rrf, rerank, load_chunks
 
-DENSE = ["BAAI/bge-small-en-v1.5", "BAAI/bge-base-en-v1.5"]
+DENSE = ["BAAI/bge-small-en-v1.5", "BAAI/bge-base-en-v1.5", "BAAI/bge-m3", "Qwen/Qwen3-Embedding-0.6B"]
 docs = {d["doc"]: d for d in map(json.loads, open("data/processed/docs.jsonl"))}
 
 
@@ -31,7 +31,7 @@ def metrics(qs, chunks, ranks):
     return {k: round(v / n, 3) for k, v in m.items()}
 
 
-def main(qfile, sets=("fixed", "para", "para_title"), rerankers=("BAAI/bge-reranker-base",)):
+def main(qfile, sets=("fixed", "para", "para_title"), rerankers=("BAAI/bge-reranker-base", "BAAI/bge-reranker-v2-m3")):
     qs = [q for q in map(json.loads, open(qfile)) if q["answerable"]]
     texts_q = [q["question"] for q in qs]
     out, rows = Path("results"), []
@@ -47,17 +47,18 @@ def main(qfile, sets=("fixed", "para", "para_title"), rerankers=("BAAI/bge-reran
         dense_names = [k for k in runs if k.startswith("dense")]
         for d in dense_names:
             runs[f"hybrid:{d.split(':')[1]}"] = [rrf(a, b) for a, b in zip(runs["bm25"], runs[d])]
-        best_h = f"hybrid:{dense_names[-1].split(':')[1]}" if dense_names else None
+        hyb = [k for k in runs if k.startswith("hybrid")]
+        best_h = max(hyb, key=lambda k: metrics(qs, chunks, runs[k])["MRR@10"]) if hyb else None
         for r, ce in ces.items():
             if best_h:
                 t = time.time()
-                runs[f"rerank:{r.split('/')[-1]}"] = [rerank(ce, texts, q, c) for q, c in zip(texts_q, runs[best_h])]
+                runs[f"rerank:{r.split('/')[-1]}<{best_h}"] = [rerank(ce, texts, q, c) for q, c in zip(texts_q, runs[best_h])]
                 print(f"  {cs} rerank {r} {time.time() - t:.0f}s", flush=True)
         for name, ranks in runs.items():
             row = {"chunks": cs, "retriever": name, "n": len(qs), **metrics(qs, chunks, ranks)}
             rows.append(row); print(json.dumps(row), flush=True)
             json.dump({"qids": [q["qid"] for q in qs], "ranks": [[int(i) for i in r[:30]] for r in ranks]},
-                      open(out / "rankings" / f"{Path(qfile).stem}__{cs}__{name.replace(':', '_')}.json", "w"))
+                      open(out / "rankings" / f"{Path(qfile).stem}__{cs}__{name.replace(':', '_').replace('<', '_on_')}.json", "w"))
     json.dump(rows, open(out / f"retrieval_{Path(qfile).stem}.json", "w"), indent=1)
 
 

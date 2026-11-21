@@ -30,12 +30,22 @@ If the paragraph is purely administrative (title, commencement, repeals, numberi
 
 
 def norm(s):
-    s = s.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"').replace("–", "-").replace("—", "-")
-    return re.sub(r"\s+", " ", re.sub(r"[^\w%'\"\-.,;:()/ ]", " ", s)).strip().lower()
+    s = s.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
+    s = re.sub(r"[-‐‑‒–—―]", " ", s)                                    # every dash/hyphen -> space
+    s = re.sub(r"\((?:[ivxlc]+|[a-z]|\d+[a-z]?)\)", " ", s, flags=re.I)  # list markers (iv) (a) (5)
+    return re.sub(r"\s+", " ", re.sub(r"[^\w%'\".,;:()/ ]", " ", s)).strip().lower()
 
 
 def quote_ok(quote, text):
-    return bool(quote) and norm(quote) in norm(text)
+    """Every piece of the quote (split at ellipses, pieces of 3+ words) appears in the text, in order."""
+    t, pos = norm(text), 0
+    segs = [x for x in (norm(q).strip(" .,;") for q in re.split(r"\.\.\.|…", quote or "")) if len(x.split()) >= 3]
+    for seg in segs:
+        i = t.find(seg, pos)
+        if i < 0:
+            return False
+        pos = i + len(seg)
+    return bool(segs)
 
 
 def parse_json(raw):
@@ -46,11 +56,14 @@ def parse_json(raw):
 def main(model, sel_path, out_path):
     docs = {d["doc"]: d for d in map(json.loads, open("data/processed/docs.jsonl"))}
     paras = {(p["doc"], p["para"]): p for p in map(json.loads, open("data/processed/paras.jsonl"))}
-    done = {(r["doc"], r["para"]) for r in map(json.loads, open(out_path))} if Path(out_path).exists() else set()
+    base = Path(out_path).name.split(".")[0]  # gen_x.jsonl, gen_x.rev.jsonl, gen_x.w2.jsonl share work
+
+    def done():  # re-read every pass so parallel workers on the same generator skip each other's paragraphs
+        return {(r["doc"], r["para"]) for f in Path(out_path).parent.glob(base + ".*jsonl") for r in map(json.loads, open(f))}
     with open(out_path, "a") as out:
         for s in map(json.loads, open(sel_path)):
             key = (s["doc"], s["para"])
-            if key in done:
+            if key in done():
                 continue
             p, d = paras[key], docs[s["doc"]]
             prompt = PROMPT.format(title=d["title"], para=p["para"], heading=p["heading"] or "-",
@@ -72,4 +85,8 @@ def main(model, sel_path, out_path):
 if __name__ == "__main__":
     assert quote_ok("the bank shall NOT reject", "The bank shall not  reject an application")
     assert not quote_ok("the bank may reject", "The bank shall not reject an application")
+    assert quote_ok("a non account based customer, i.e., a walk in", "(5) a non-account-based customer, i.e., a walk‑in customer")
+    assert quote_ok("from the senior management; the bank subjects all such accounts", "from the senior management; (iv) the bank subjects all such accounts")
+    assert quote_ok("obtain the following from an individual ... the proof of possession", "obtain the following from an individual while opening: (1) the proof of possession")
+    assert not quote_ok("the proof of possession ... obtain the following from", "obtain the following from an individual: the proof of possession")
     main(*sys.argv[1:4])

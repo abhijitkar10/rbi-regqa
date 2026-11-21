@@ -4,11 +4,14 @@ pool.jsonl      every question whose evidence quote matched the source paragraph
 unans_cand.jsonl unanswerable candidates (verified later by verify_unanswerable.py)
 v0.jsonl        one answerable question per paragraph, generators alternating by paragraph
 """
-import glob, json, re
+import glob, json, re, sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent))
+from gen_questions import quote_ok
 from collections import defaultdict
 
 META = re.compile(r"\b(this|the above|the said|these) (paragraph|clause|direction|directions|rulebook|section|provision)s?\b", re.I)
-GEN = {"gemini:gemini-3.5-flash": "gemini", "nvidia:minimaxai/minimax-m3.1-flash": "minimax"}
+GEN = {"nvidia:nvidia/nemotron-3-ultra-550b-a55b": "nemotron", "nvidia:minimaxai/minimax-m3.1-flash": "minimax"}
 
 recs = {}
 for f in glob.glob("data/questions/gen_*.jsonl"):
@@ -19,13 +22,15 @@ sel = [json.loads(l) for l in open("data/questions/selection.jsonl")]
 setof = {(s["doc"], s["para"]): s["set"] for s in sel}
 order = {(s["doc"], s["para"]): i for i, s in enumerate(sel)}
 
+ptext = {(p["doc"], p["para"]): p["text"] for p in map(json.loads, open("data/processed/paras.jsonl"))}
 pool, unans, stats = [], [], defaultdict(lambda: defaultdict(int))
 for (g, doc, para), r in recs.items():
     gen = GEN[g]
     stats[gen]["paragraphs"] += 1
     for i, q in enumerate(r["questions"]):
         stats[gen]["drafted"] += 1
-        ok, meta = r["quote_ok"][i], bool(META.search(q.get("question", "")))
+        ok = quote_ok(q.get("evidence", ""), ptext[(doc, para)])  # recomputed, so every draft uses the same check
+        meta = bool(META.search(q.get("question", "")))
         stats[gen]["quote_ok"] += ok; stats[gen]["meta_ref"] += meta
         if ok and not meta:
             pool.append({"qid": f"{doc}-{para}-{gen}-{i}", "doc": doc, "para": para, "set": setof[(doc, para)],
@@ -40,7 +45,8 @@ for q in pool:
     by_para[(q["doc"], q["para"])].setdefault(q["generator"], q)
 v0 = []
 for key, gens in sorted(by_para.items(), key=lambda kv: order[kv[0]]):
-    want = ["gemini", "minimax"] if order[key] % 2 == 0 else ["minimax", "gemini"]
+    rot = list(GEN.values()); i = order[key] % len(rot)
+    want = rot[i:] + rot[:i]  # rotate first choice across generators
     v0.append(next(gens[g] for g in want if g in gens))
 
 for name, rows in [("pool", pool), ("unans_cand", unans), ("v0", v0)]:

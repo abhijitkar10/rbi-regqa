@@ -1,0 +1,74 @@
+[
+ {
+  "doc": 13109,
+  "entity": "Small Finance Banks",
+  "paragraphs": 83,
+  "identical_ge_0.9": 0.843,
+  "edited_0.5_0.9": 0.12,
+  "different_lt_0.5": 0.036
+ },
+ {
+  "doc": 13090,
+  "entity": "Payments Banks",
+  "paragraphs": 82,
+  "identical_ge_0.9": 0.866,
+  "edited_0.5_0.9": 0.098,
+  "different_lt_0.5": 0.037
+ },
+ {
+  "doc": 13064,
+  "entity": "Local Area Banks",
+  "paragraphs": 82,
+  "identical_ge_0.9": 0.854,
+  "edited_0.5_0.9": 0.122,
+  "different_lt_0.5": 0.024
+ },
+ {
+  "doc": 13040,
+  "entity": "Regional Rural Banks",
+  "paragraphs": 82,
+  "identical_ge_0.9": 0.829,
+  "edited_0.5_0.9": 0.146,
+  "different_lt_0.5": 0.024
+ },
+ {
+  "doc": 13014,
+  "entity": "Urban Co-operative Banks",
+  "paragraphs": 82,
+  "identical_ge_0.9": 0.841,
+  "edited_0.5_0.9": 0.122,
+  "different_lt_0.5": 0.037
+ },
+ {
+  "doc": 12988,
+  "entity": "Rural Co-operative Banks",
+  "paragraphs": 82,
+  "identical_ge_0.9": 0.756,
+  "edited_0.5_0.9": 0.171,
+  "different_lt_0.5": 0.073
+ },
+ {
+  "doc": 12969,
+  "entity": "All India Financial Institutions",
+  "paragraphs": 75,
+  "identical_ge_0.9": 0.213,
+  "edited_0.5_0.9": 0.733,
+  "different_lt_0.5": 0.053
+ },
+ {
+  "doc": 12943,
+  "entity": "Non-Banking Financial Companies",
+  "paragraphs": 76,
+  "identical_ge_0.9": 0.237,
+  "edited_0.5_0.9": 0.684,
+  "different_lt_0.5": 0.079
+ },
+ {
+  "doc": 12927,
+  "entity": "Asset Reconstruction Companies",
+  "paragraphs": 68,
+  "identical_ge_0.9": 0.147,
+  "edited_0.5_0.9": 0.765,
+  "different_lt_0.5": 0.088
+ }
+]

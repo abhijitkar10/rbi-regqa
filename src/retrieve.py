@@ -12,7 +12,8 @@ import numpy as np
 _TOKEN = re.compile(r"[a-z0-9]+")
 RRF_K, POOL = 60, 30
 QUERY_PREFIX = {"bge-small-en-v1.5": "Represent this sentence for searching relevant passages: ",
-                "bge-base-en-v1.5": "Represent this sentence for searching relevant passages: "}
+                "bge-base-en-v1.5": "Represent this sentence for searching relevant passages: ",
+                "Qwen3-Embedding-0.6B": "Instruct: Given a question about Indian banking regulations, retrieve the rule paragraph that answers it\nQuery: "}
 
 
 def tokenize(t): return _TOKEN.findall(t.lower())
