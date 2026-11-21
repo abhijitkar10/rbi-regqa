@@ -53,6 +53,8 @@ for name, rows in [("pool", pool), ("unans_cand", unans), ("v0", v0)]:
     with open(f"data/benchmark/{name}.jsonl", "w") as f:
         for r in rows:
             f.write(json.dumps(r) + "\n")
+Path("results").mkdir(exist_ok=True)
+json.dump({g: dict(s) for g, s in stats.items()}, open("results/gen_stats.json", "w"), indent=1)
 print({g: dict(s) for g, s in stats.items()})
 print(f"pool {len(pool)}  unanswerable candidates {len(unans)}  v0 {len(v0)}",
       {g: sum(q['generator'] == g for q in v0) for g in GEN.values()})

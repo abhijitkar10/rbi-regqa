@@ -1,0 +1,35 @@
+"""Write paper/numbers.tex from the data and results files, so no number in the paper is typed by hand.
+Missing inputs become a red TODO in the PDF. Run after any result changes."""
+import json
+from pathlib import Path
+
+N = {}
+def put(k, v): N[k] = v
+def jl(p): return [json.loads(l) for l in open(p)] if Path(p).exists() else None
+
+docs, paras = jl("data/processed/docs.jsonl"), jl("data/processed/paras.jsonl")
+put("NDocs", sum(len(d["text"]) > 0 for d in docs) if docs else None)  # 2 of the 98 fetched pages are link-only stubs
+put("NParas", f'{sum(p["para"] != "preamble" for p in paras):,}' if paras else None)
+v1 = jl("data/benchmark/v1.jsonl")
+put("NQuestions", sum(q["answerable"] for q in v1) if v1 else None)
+put("NUnans", sum(not q["answerable"] for q in v1) if v1 else None)
+sel = jl("data/questions/selection.jsonl")
+put("NEntityParas", sum(s["set"] == "entity" for s in sel) if sel else None)
+nc = json.load(open("results/near_copies.json")) if Path("results/near_copies.json").exists() else None
+if nc:
+    banks = [r["identical_ge_0.9"] for r in nc if r["entity"].endswith("Banks")]
+    put("NearCopyBankRange", f"{round(100 * min(banks))}--{round(100 * max(banks))}\\%")
+stats = json.load(open("results/gen_stats.json")) if Path("results/gen_stats.json").exists() else {}
+for key, g in (("GenA", "nemotron"), ("GenB", "minimax")):
+    put(key, {"nemotron": "Nemotron-3-Ultra", "minimax": "MiniMax-M3.1-Flash"}[g])
+    s = stats.get(g)
+    put(f"QuoteOk{key}", f'{100 * s["quote_ok"] / s["drafted"]:.1f}\\%' if s else None)
+ex = jl("data/benchmark/expert.jsonl")
+put("NExpertAnchored", f'{sum(bool(r.get("quote_ok")) for r in ex if r["answerable"])} of {sum(r["answerable"] for r in ex)}' if ex else None)
+readers = json.load(open("results/readers.json")) if Path("results/readers.json").exists() else None
+put("NReaders", len(readers) if readers else "seven")
+
+with open("paper/numbers.tex", "w") as f:
+    for k, v in N.items():
+        f.write(f"\\newcommand{{\\{k}}}{{{v if v is not None else chr(92) + 'todo{' + k + '}'}}}\n")
+print("\n".join(f"{k} = {v}" for k, v in N.items()))

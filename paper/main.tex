@@ -1,0 +1,86 @@
+\documentclass[11pt]{article}
+\usepackage[preprint]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
+\input{numbers}  % every number in the text comes from results/ via analysis/make_numbers.py
+
+\title{Which Rulebook? Question Answering over Near-Duplicate\\Indian Banking Regulations}
+
+\author{Abhijit Kar \\
+  Department of Computer Science and Engineering \\
+  National Institute of Technology Karnataka, Surathkal \\
+  \texttt{\todo{email}}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In November 2025 the Reserve Bank of India (RBI) replaced its banking circulars with about 240 consolidated \emph{Directions}, one set per type of lender. Many of these are near-copies: the Know-Your-Customer (KYC) rules for small finance banks, payments banks and four other bank types repeat \NearCopyBankRange{} of the commercial-bank paragraphs almost word for word. A compliance assistant must therefore find not just the right rule, but the right lender's version of it, and cite the paragraph. We release \textbf{RBI-RegQA}, \NQuestions{} questions over \NDocs{} RBI Directions (\NParas{} numbered paragraphs), each tied to the paragraph that answers it, plus \NUnans{} questions the rules do not answer. Questions were drafted by two LLM families from single paragraphs, kept only when an evidence quote matched the source text, and audited by hand. \todo{headline retrieval and answer results.} Data and code: \url{https://github.com/abhijitkar10/rbi-regqa}.
+\end{abstract}
+
+\section{Introduction}
+
+Banks in India answer to rules written by the RBI. Until 2025 these were spread across thousands of circulars and about a hundred Master Directions. In November 2025 the RBI consolidated them into roughly 240 Directions organised by type of regulated entity: commercial banks, small finance banks, payments banks, local area banks, regional rural banks, urban and rural co-operative banks, non-banking financial companies (NBFCs) and others. The consolidation made the rules easier to find for a human who knows which rulebook applies. It made them harder for a retrieval system, because the same rule now appears many times with small, consequential differences.
+
+Retrieval-augmented generation (RAG) is the usual way to build a question-answering assistant over such text. Prior regulatory QA work built a large synthetic benchmark over Abu Dhabi financial regulations \citep{gokhan2024rirag}; legal benchmarks cover case law and statutes \citep{pipitone2024legalbenchrag,joshi2024iltur}. None tests the situation the RBI consolidation creates: a corpus where the answer exists, nearly verbatim, in several rulebooks, and only one of them is correct for the question asked.
+
+We make three contributions:
+\begin{enumerate}
+\item \textbf{RBI-RegQA}, an open benchmark of \NQuestions{} answerable and \NUnans{} unanswerable questions over \NDocs{} RBI Directions, each answerable question tied to a numbered paragraph and an evidence quote that a script checks against the source.
+\item A measurement of \textbf{near-copy confusion}: how often retrievers return the right rule from the wrong lender's rulebook, under three chunking strategies, four embedding models, hybrid fusion and two re-rankers.
+\item An evaluation of \NReaders{} open models answering with paragraph citations, including whether they refuse unanswerable questions, and a check of whether a model family scores higher on questions its own family drafted.
+\end{enumerate}
+
+\section{Related Work}
+
+\paragraph{Regulatory and legal QA.} RIRAG \citep{gokhan2024rirag} introduced ObliQA, 27,869 synthetic questions over 40 regulatory documents from Abu Dhabi Global Market, validated with natural-language inference. LegalBench-RAG \citep{pipitone2024legalbenchrag} evaluates retrieval of exact legal snippets. IL-TUR \citep{joshi2024iltur} benchmarks Indian legal text understanding over court judgments. Commercial legal research tools still hallucinate \citep{magesh2024hallucination}. The only Indian banking-regulation resource we found is a 60-question extractive set with the passage given \citep{jain2026bfsi}; it involves no retrieval.
+
+\paragraph{Unanswerable questions and citations.} SQuAD~2.0 showed that systems must learn to abstain \citep{rajpurkar2018squad2}. ALCE evaluates whether generated citations support the text \citep{gao2023alce}. We check citations at paragraph level and score refusals separately.
+
+\paragraph{LLM-generated benchmarks.} LLM judges are convenient but biased \citep{zheng2023judge}, and models favour their own generations \citep{panickssery2024selfpref}. We therefore draft questions with two model families, test whether readers from the same family score higher on them, report an expert-written subset separately, and audit a random sample by hand.
+
+\section{The RBI-RegQA Benchmark}
+
+\paragraph{Corpus.} We fetched every Commercial Bank and NBFC Direction listed on the RBI website, plus the KYC Directions of every other lender type, \NDocs{} documents in all (\todo{date range}). The RBI's PDF host returns a script check to automated clients, so we used the HTML version of each Direction, which keeps the paragraph numbering. A parser splits each Direction into its numbered paragraphs (\NParas{} in total).
+
+\paragraph{Near-copies.} \todo{Table: share of each lender's KYC paragraphs that are near-identical (word-trigram Jaccard $\geq0.9$) to the commercial-bank KYC Directions: \NearCopyBankRange{} for bank types, lower for NBFCs, AIFIs and ARCs whose text is edited rather than copied.}
+
+\paragraph{Question drafting.} We sampled up to 16 paragraphs from each of 19 source Directions and \NEntityParas{} paragraphs where another lender's KYC text differs from the commercial-bank text. Two generators from different families, \GenA{} and \GenB{}, each drafted up to two questions per paragraph with a short answer, an evidence quote and a type, plus one question on the same topic that the paragraph does not answer. Prompts are in Appendix~\ref{app:prompts}.
+
+\paragraph{Verification.} A question is kept only if every part of its evidence quote appears, in order, in the source paragraph (after normalising whitespace, hyphens and list markers; quotes may elide with an ellipsis). \QuoteOkGenA{} of \GenA{}'s and \QuoteOkGenB{} of \GenB{}'s quotes passed. The benchmark keeps one question per paragraph, alternating generators. \todo{Human audit: N of 100 random questions judged fair and correct.}
+
+\paragraph{Unanswerable questions.} A drafted unanswerable question is kept only if a verifier model, shown the top-5 passages our strongest retriever finds in the whole corpus, says none of them answers it. \todo{audit of 30.}
+
+\paragraph{Expert subset.} The author's 50 hand-written questions from an earlier KYC system \citep{kycrag} were re-anchored to the 2025 Commercial Banks KYC Directions; \NExpertAnchored{} could be tied to a verified paragraph.
+
+\paragraph{Customer wording.} Generated questions tend to reuse the rulebook's vocabulary. We therefore also rewrite every question the way an ordinary customer would ask it, keeping the facts, and report results on both.
+
+\section{Experiments}
+
+\paragraph{Retrieval.} Three chunkings: fixed 800-character windows with 200 overlap; one chunk per numbered paragraph (long paragraphs split at 1,500 characters); and the same paragraph chunks prefixed with the rulebook name. Retrievers: BM25 \citep{robertson2009bm25}; dense retrieval with BGE-small and BGE-base \citep{xiao2023cpack}, BGE-M3 \citep{chen2024m3} and Qwen3-Embedding-0.6B \citep{zhang2025qwen3emb}; reciprocal rank fusion of BM25 and dense \citep{cormack2009rrf}; and two cross-encoder re-rankers over the fused top 30. A retrieved chunk is a hit if it comes from the gold Direction and covers the gold paragraph. We also report \emph{WrongLender@1}: the top chunk is the same topic but another lender's rulebook.
+
+\paragraph{Answering.} \NReaders{} open models answer from the top-5 passages of the best retriever, citing passages as [S1]--[S5] or replying NOT FOUND. An LLM judge grades answers against the reference; a second judge from another family grades a sample to measure agreement. Citations are checked deterministically against the gold paragraph.
+
+\section{Results}
+\todo{retrieval table; officer vs customer; wrong-lender; reader table; refusal; generator self-preference; judge agreement.}
+
+\section*{Limitations}
+Questions are drafted from single paragraphs, so the benchmark under-represents questions that need several rules at once. Two RBI Directions parse poorly and are used only as distractors. The RBI updates Directions often; the benchmark is a snapshot (\todo{date}). Judges and verifiers are LLMs; we report their agreement with each other and with a human sample rather than assume it.
+
+\section*{AI Use Statement}
+The author used Claude (Anthropic) as a coding and writing assistant throughout this project, and the free tiers of several LLM APIs to draft, rewrite, answer and grade questions as described above. All design decisions, the human audit and the final text are the author's responsibility.
+
+\bibliography{references}
+
+\appendix
+\section{Prompts}\label{app:prompts}
+\todo{generator, rewrite, answer, judge and verifier prompts.}
+
+\end{document}
