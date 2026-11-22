@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-11-22
+
+- Drafting finished: both generators covered all 322 paragraphs (errors retried once). Quote check pass: Nemotron 619/627, MiniMax 599/605; 20 Nemotron questions dropped for "this paragraph"-style references.
+- **Benchmark v1:** 318 answerable questions (167 Nemotron, 151 MiniMax; 26 Directions) + 73 unanswerable. Unanswerable candidates were checked by two verifiers (Step-5 and gpt-oss-120b) over the top-5 retrieved passages; they agreed on 81/90 and 73 were kept (both said not answered).
+- Plain-language paraphrases (Nemotron-3.5-Super): 273/318 kept the lender type and form v1_customer; they are plainer but still close to the rulebook's wording.
+- **Retrieval, officer wording (318 questions):** best = paragraph chunks prefixed with the rulebook name + hybrid (BM25 + Qwen3-Embedding-0.6B) + BGE-reranker-v2-m3: R@1 0.77, R@5 0.95, right rulebook at rank 1 91 %, wrong lender's near-copy at rank 1 2.2 %. Without the name prefix the best is R@5 0.84 (fixed windows) with 14.2 % wrong-lender; plain paragraphs do slightly worse than overlapping windows (R@5 0.79). The name prefix is the single biggest win.
+- Readers answer from a fixed earlier retriever (paragraph + name, hybrid BGE-base + BGE-reranker-base: R@5 0.85, wrong-lender 3.5 %). Ablation: the two Nemotron readers also answer from the best retriever's passages.
+- Robustness: answer/judge/verify scripts skip failed calls so reruns retry them; scripts/finisher.sh restarts answering and judging every 30 min until done (free-tier daily caps). Groq gpt-oss-20b hit its daily cap after 141 answers.
+- Refusals scored strictly (exact NOT FOUND) and leniently (any clear "not in the passages"); empty answers counted.
+
 ## 2026-11-21
 
 - Repo created. Paper plan in PLAN.md (decided in two planning rounds with Abhijit).

@@ -1,0 +1,24 @@
+{
+ "best": {
+  "chunks": "para_title",
+  "retriever": "rerank:bge-reranker-v2-m3<hybrid:Qwen3-Embedding-0.6B",
+  "n": 318,
+  "R@1": 0.77,
+  "R@5": 0.947,
+  "R@10": 0.969,
+  "MRR@10": 0.848,
+  "Book@1": 0.909,
+  "WrongLender@1": 0.022
+ },
+ "fixed_best": {
+  "chunks": "fixed",
+  "retriever": "rerank:bge-reranker-v2-m3<hybrid:bge-small-en-v1.5",
+  "n": 318,
+  "R@1": 0.632,
+  "R@5": 0.84,
+  "R@10": 0.884,
+  "MRR@10": 0.725,
+  "Book@1": 0.72,
+  "WrongLender@1": 0.142
+ }
+}

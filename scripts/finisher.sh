@@ -10,7 +10,8 @@ while true; do
   todo=0
   for m in $READERS; do
     tag=$(echo "$m" | tr ':/' '__')
-    for stem in v0 unans_v1; do
+    for stem in v0 unans_v1 v0best; do
+      [ "$stem" = v0best ] && [[ "$m" != *nemotron* ]] && continue  # retrieval ablation: two readers only
       want=$(lines data/benchmark/$stem.jsonl); have=$(lines results/answers/${stem}__$tag.jsonl)
       if [ "$have" -lt "$want" ]; then
         todo=1

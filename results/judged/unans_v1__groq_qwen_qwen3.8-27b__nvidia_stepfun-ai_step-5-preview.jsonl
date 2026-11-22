@@ -1,0 +1,1 @@
+{"qid": "12927-46-minimax-u", "model": "groq:qwen/qwen3.8-27b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": false, "refused_soft": true, "empty": false, "grade": "WRONG", "grade_soft": "CORRECT"}
