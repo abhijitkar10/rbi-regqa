@@ -33,3 +33,22 @@ with open("paper/numbers.tex", "w") as f:
     for k, v in N.items():
         f.write(f"\\newcommand{{\\{k}}}{{{v if v is not None else chr(92) + 'todo{' + k + '}'}}}\n")
 print("\n".join(f"{k} = {v}" for k, v in N.items()))
+
+# --- retrieval headline numbers (appended; rewrites numbers.tex with these too) ---
+rb = json.load(open("results/retrieval_best.json")) if Path("results/retrieval_best.json").exists() else None
+if rb:
+    b, f = rb["best"], rb["fixed_best"]
+    for k, v in {"BestRfive": f'{b["R@5"]:.2f}', "BestRone": f'{b["R@1"]:.2f}', "BestBook": f'{100 * b["Book@1"]:.0f}\\%',
+                 "BestWL": f'{100 * b["WrongLender@1"]:.1f}\\%', "FixedRfive": f'{f["R@5"]:.2f}', "FixedBook": f'{100 * f["Book@1"]:.0f}\\%',
+                 "FixedWL": f'{100 * f["WrongLender@1"]:.1f}\\%'}.items():
+        put(k, v)
+ctx_q = json.load(open("results/contexts_v0.json")) if Path("results/contexts_v0.json").exists() else None
+off = json.load(open("results/retrieval_officer.json")) if Path("results/retrieval_officer.json").exists() else []
+para_wl = [r["WrongLender@1"] for r in off if r["chunks"] == "para"]
+title_wl = [r["WrongLender@1"] for r in off if r["chunks"] == "para_title" and not r["retriever"].startswith("bm25")]
+if para_wl and title_wl:
+    put("ParaWLRange", f"{100 * min(para_wl):.0f}--{100 * max(para_wl):.0f}\\%")
+    put("TitleWLRange", f"{100 * min(title_wl):.1f}--{100 * max(title_wl):.1f}\\%")
+with open("paper/numbers.tex", "w") as fh:
+    for k, v in N.items():
+        fh.write(f"\\newcommand{{\\{k}}}{{{v if v is not None else chr(92) + 'todo{' + k + '}'}}}\n")

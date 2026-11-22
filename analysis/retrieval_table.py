@@ -30,11 +30,11 @@ for cs in ("fixed", "para", "para_title"):
         lines.append(f"{pretty(r['retriever'])} & {r['R@1']:.2f} & {r['R@5']:.2f} & {r['MRR@10']:.2f} & {r['Book@1']:.2f} & {100 * r['WrongLender@1']:.1f} & {c['R@5']:.2f} \\\\" if c else
                      f"{pretty(r['retriever'])} & {r['R@1']:.2f} & {r['R@5']:.2f} & {r['MRR@10']:.2f} & {r['Book@1']:.2f} & {100 * r['WrongLender@1']:.1f} & -- \\\\")
     lines.append("\\midrule")
-tex = ("\\begin{table}[t]\\centering\\small\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lcccccc}\\toprule\n"
+tex = ("\\begin{table*}[t]\\centering\\small\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lcccccc}\\toprule\n"
        "Retriever & R@1 & R@5 & MRR & Book@1 & WL@1\\,\\% & R@5$_{\\text{cust}}$\\\\\\midrule\n" + "\n".join(lines[:-1]) +
        "\n\\bottomrule\\end{tabular}\n\\caption{Retrieval on " + str(off[0]["n"]) + " answerable questions. A hit is a chunk from the gold Direction covering the gold paragraph. "
        "Book@1: top chunk from the gold Direction. WL@1: top chunk is the same topic in another lender's Direction. "
-       "R@5$_{\\text{cust}}$: same retriever on the plain-language paraphrases. Dense and hybrid rows show the best embedding model by MRR.}\\label{tab:retrieval}\n\\end{table}\n")
+       "R@5$_{\\text{cust}}$: same retriever on the plain-language paraphrases. Dense and hybrid rows show the best embedding model by MRR.}\\label{tab:retrieval}\n\\end{table*}\n")
 open("paper/tab_retrieval.tex", "w").write(tex)
 best = max(off, key=lambda r: r["MRR@10"]); fixed_best = max((r for r in off if r["chunks"] == "fixed"), key=lambda r: r["MRR@10"])
 json.dump({"best": best, "fixed_best": fixed_best}, open("results/retrieval_best.json", "w"), indent=1)

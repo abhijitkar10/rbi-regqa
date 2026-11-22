@@ -6,6 +6,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{microtype}
 \usepackage{booktabs}
+\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{xcolor}
 \newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
@@ -69,7 +70,14 @@ We make three contributions:
 \paragraph{Answering.} \NReaders{} open models answer from the top-5 passages of the best retriever, citing passages as [S1]--[S5] or replying NOT FOUND. An LLM judge grades answers against the reference; a second judge from another family grades a sample to measure agreement. Citations are checked deterministically against the gold paragraph.
 
 \section{Results}
-\todo{retrieval table; officer vs customer; wrong-lender; reader table; refusal; generator self-preference; judge agreement.}
+
+\input{tab_retrieval}
+
+\paragraph{The rulebook name matters more than the retriever.} Table~\ref{tab:retrieval} shows retrieval on the \NQuestions{} answerable questions. With plain text chunks, every retriever returns the right rule from the wrong lender's rulebook for a large share of questions: \FixedWL{} of top-1 results for the best configuration on 800-character windows, and \ParaWLRange{} on paragraph chunks. Prefixing each paragraph chunk with its rulebook's name (e.g.\ ``Small Finance Banks -- Know Your Customer, para 18'') cuts this to \TitleWLRange{} for dense, hybrid and re-ranked retrieval, and raises the share of top-1 results from the correct rulebook from \FixedBook{} to \BestBook{}. The best configuration (name-prefixed paragraphs, hybrid BM25 + Qwen3-Embedding, BGE-reranker-v2-m3) reaches R@1 \BestRone{} and R@5 \BestRfive{}, against R@5 \FixedRfive{} for the best configuration without names. BM25 benefits least: a lender name is one or two tokens against dozens shared by the near-copies.
+
+\paragraph{Paragraphs alone do not help.} Without the name prefix, paragraph chunks retrieve slightly worse than overlapping fixed windows. Overlapping windows carry neighbouring headings and context; a bare paragraph is often indistinguishable from its near-copies.
+
+\todo{customer wording; reader table; refusal; retrieval-quality ablation; generator self-preference; judge agreement.}
 
 \section*{Limitations}
 Questions are drafted from single paragraphs, so the benchmark under-represents questions that need several rules at once. Two RBI Directions parse poorly and are used only as distractors. The RBI updates Directions often; the benchmark is a snapshot (\todo{date}). Judges and verifiers are LLMs; we report their agreement with each other and with a human sample rather than assume it.

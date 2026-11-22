@@ -5,3 +5,4 @@
 {"qid": "13141-10-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [5255, 4042, 1492, 23, 3896], "secs": 0.9}
 {"qid": "13155-84-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "A commercial bank must acknowledge a card complaint received by telephone within 30\u202fdays of receiving the complaint. [S3]", "cited": [3], "refused": false, "ctx": [7149, 4809, 8240, 7211, 5021], "secs": 1.3}
 {"qid": "13154-25-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [7045, 7081, 7080, 7052, 7087], "secs": 76.5}
+{"qid": "12936-60-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [1457, 1547, 1361, 3177, 3048], "secs": 15.9}
