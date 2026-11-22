@@ -26,15 +26,21 @@ if __name__ == "__main__":
     for c in cands: by[c["generator"]].append(c)
     rng = random.Random(0)
     pick = [c for g in sorted(by) for c in rng.sample(by[g], min(n, len(by[g])))]
+    order = pick[::-1] if "rev" in sys.argv[4:] else pick  # a second worker can walk the same sample backwards
     ctx = contexts(src, pick)
     chunks = [json.loads(l) for l in open("data/processed/chunks_para_title.jsonl")]
-    out_path = Path("data/benchmark/unans_verified.jsonl")
+    tag = model.split("/")[-1].split(":")[-1]
+    out_path = Path(f"data/benchmark/unans_verified__{tag}.jsonl")  # one file per verifier; finalize keeps the agreed ones
     done = {json.loads(l)["qid"] for l in open(out_path)} if out_path.exists() else set()
     with open(out_path, "a") as out:
-        for c in pick:
+        for c in order:
+            done = {json.loads(l)["qid"] for l in open(out_path)} if out_path.exists() else set()
             if c["qid"] in done: continue
             block = "\n\n".join(f"[S{j + 1}] {chunks[i]['text']}" for j, i in enumerate(ctx[c["qid"]]))
-            v = chat(model, "You check whether passages answer a question. Reply with one line.", PROMPT.format(ctx=block, q=c["question"]), max_tokens=2000).strip().upper()
+            try:
+                v = chat(model, "You check whether passages answer a question. Reply with one line.", PROMPT.format(ctx=block, q=c["question"]), max_tokens=2000).strip().upper()
+            except Exception as e:  # not written, so a rerun retries it
+                print(model, c["qid"], "ERROR", type(e).__name__, flush=True); continue
             c["verdict"] = "NOT_ANSWERED" if "NOT ANSWERED" in v else "ANSWERED"
             c["verifier"] = model
             out.write(json.dumps(c) + "\n"); out.flush()

@@ -8,7 +8,8 @@ from llm import chat
 from retrieve import BM25
 from gen_questions import quote_ok, parse_json
 
-DOC, MODEL = 13141, "groq:openai/gpt-oss-120b"
+DOC = 13141
+MODEL = sys.argv[1] if len(sys.argv) > 1 else "nvidia:stepfun-ai/step-5-preview"
 SRC = Path.home() / "Documents/life/kyc-rag/eval/questions.csv"
 RE_SUB = [(r"\bRegulated Entit(y|ies)\b", "commercial bank"), (r"\bREs\b", "commercial banks"), (r"\b(an|An) RE\b", r"\1 commercial bank"), (r"\bRE\b", "commercial bank")]
 PROMPT = """Question: {q}
@@ -38,14 +39,19 @@ for r in csv.DictReader(open(SRC)):
     if rec["answerable"]:
         top = [pieces[i] for i in bm.search(q + " " + r["answer_in_own_words"], k=8)]
         cands = "\n\n".join(f"[para {c['paras'][0]}] {c['text']}" for c in top)
-        j = parse_json(chat(MODEL, "Reply with one JSON object only.", PROMPT.format(q=q, a=r["answer_in_own_words"], cands=cands), max_tokens=4000)) or {}
+        try:
+            j = parse_json(chat(MODEL, "Reply with one JSON object only.", PROMPT.format(q=q, a=r["answer_in_own_words"], cands=cands), max_tokens=4000)) or {}
+        except Exception as e:  # keep the earlier attempt; a rerun tries again
+            print(rec["qid"], "ERROR", type(e).__name__, flush=True)
+            out.append(prev.get(rec["qid"], rec)); continue
         p = next((p for p in paras if p["para"] == str(j.get("para"))), None)
-        rec.update(para=j.get("para"), evidence=j.get("evidence"), changed=j.get("changed"),
+        rec.update(para=j.get("para"), evidence=j.get("evidence"), changed=j.get("changed"), anchored_by=MODEL,
                    quote_ok=bool(p) and quote_ok(j.get("evidence", ""), p["text"]))
     out.append(rec)
     print(rec["qid"], rec.get("para"), rec.get("quote_ok"), (rec.get("changed") or "")[:80], flush=True)
-with open("data/benchmark/expert.jsonl", "w") as f:
-    for r in out:
-        f.write(json.dumps(r) + "\n")
+    done_ids = {o["qid"] for o in out}  # save after every question: finished ones + untouched earlier ones
+    with open("data/benchmark/expert.jsonl", "w") as f:
+        for o in out + [v for k, v in prev.items() if k not in done_ids]:
+            f.write(json.dumps(o) + "\n")
 ok = [r for r in out if r["answerable"]]
 print(f"anchored {sum(r['quote_ok'] for r in ok)}/{len(ok)} answerable; {len(out) - len(ok)} unanswerable kept for re-check")

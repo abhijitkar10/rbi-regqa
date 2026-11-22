@@ -6,6 +6,8 @@ Unanswerable: correct iff the model said NOT FOUND (deterministic, no judge call
 Out: results/judged/<answers-stem>__<judge>.jsonl
 """
 import json, re, sys
+
+SOFT_REFUSAL = re.compile(r"\bnot found\b|(do|does) not (contain|specify|mention|provide|state|include|address)|no (information|mention|details?)|not (specified|mentioned|stated|provided|available) in the (provided )?passages|cannot be determined|unable to (find|determine)", re.I)
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from llm import chat
@@ -34,18 +36,24 @@ def main(qfile, judge, files, limit=None):
             for r in rows[:limit]:
                 q = qs[r["qid"]]
                 cited = [chunks[r["ctx"][s - 1]] for s in r["cited"]]
-                rec = {"qid": r["qid"], "model": r["model"], "judge": judge, "answerable": q["answerable"], "refused": r["refused"]}
+                soft = r["refused"] or bool(SOFT_REFUSAL.search(r["answer"][:400])) or not r["answer"].strip()
+                rec = {"qid": r["qid"], "model": r["model"], "judge": judge, "answerable": q["answerable"], "refused": r["refused"],
+                       "refused_soft": soft, "empty": not r["answer"].strip()}
                 if q["answerable"]:
                     if r["refused"]:
                         rec["grade"] = "WRONG"
                     else:
-                        g = chat(judge, SYSTEM, PROMPT.format(q=q["question"], ref=q["answer"], ev=q["evidence"], a=r["answer"]),
-                                 max_tokens=2000).strip().upper()
+                        try:
+                            g = chat(judge, SYSTEM, PROMPT.format(q=q["question"], ref=q["answer"], ev=q["evidence"], a=r["answer"]),
+                                     max_tokens=2000).strip().upper()
+                        except Exception as e:  # not written, so a rerun retries it
+                            print(judge, r["qid"], "ERROR", type(e).__name__, flush=True); continue
                         rec["grade"] = next((w for w in ("PARTIAL", "CORRECT", "WRONG") if w in g), "WRONG")
                     rec["cite_gold"] = any(c["doc"] == q["doc"] and q["para"] in c["paras"] for c in cited)
                     rec["cited_any"] = bool(cited)
-                else:
+                else:  # strict: exact NOT FOUND; lenient: any clear "not in the passages"
                     rec["grade"] = "CORRECT" if r["refused"] else "WRONG"
+                    rec["grade_soft"] = "CORRECT" if soft else "WRONG"
                 out.write(json.dumps(rec) + "\n"); out.flush()
 
 

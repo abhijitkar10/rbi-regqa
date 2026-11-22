@@ -43,16 +43,22 @@ def main(qfile, models):
     for model in models:
         out_path = Path(f"results/answers/{Path(qfile).stem}__{model.replace(':', '_').replace('/', '_')}.jsonl")
         done = {json.loads(l)["qid"] for l in open(out_path)} if out_path.exists() else set()
+        fails = 0
         with open(out_path, "a") as out:
             for q in qs:
                 if q["qid"] in done: continue
+                if fails >= 5:  # five failures in a row = daily cap or outage; rerun later resumes here
+                    print(model, "stopping after 5 consecutive failures", flush=True); break
                 ids = ctx[q["qid"]]
                 block = "\n\n".join(f"[S{j + 1}] {chunks[i]['text']}" for j, i in enumerate(ids))
                 t = time.time()
                 try:
                     a = chat(model, SYSTEM, PROMPT.format(ctx=block, q=q["question"]), max_tokens=3000).strip()
                 except Exception as e:
-                    a = f"ERROR {type(e).__name__}: {str(e)[:150]}"
+                    fails += 1
+                    print(model, q["qid"], "ERROR", type(e).__name__, str(e)[:120], flush=True)
+                    continue  # not written, so a rerun retries it
+                fails = 0
                 cited = sorted({int(n) for n in re.findall(r"\[S(\d)\]", a) if 1 <= int(n) <= K})
                 out.write(json.dumps({"qid": q["qid"], "model": model, "answer": a, "cited": cited,
                                       "refused": a.upper().startswith("NOT FOUND"), "ctx": ids,

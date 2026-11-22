@@ -1,0 +1,1 @@
+{"qid": "13141-59-nemotron-0", "model": "groq:qwen/qwen3.8-27b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": true, "refused": false, "refused_soft": true, "empty": false, "grade": "WRONG", "cite_gold": false, "cited_any": false}

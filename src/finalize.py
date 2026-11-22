@@ -12,7 +12,16 @@ def jl(p): return [json.loads(l) for l in open(p)] if Path(p).exists() else []
 
 
 v0 = jl("data/benchmark/v0.jsonl")
-unans = [u for u in jl("data/benchmark/unans_verified.jsonl") if u["verdict"] == "NOT_ANSWERED"]
+import glob
+votes = {}
+for f in sorted(glob.glob("data/benchmark/unans_verified__*.jsonl")):
+    for u in jl(f):
+        if all(v["verifier"] != u["verifier"] for v in votes.get(u["qid"], [])):  # one vote per verifier
+            votes.setdefault(u["qid"], []).append(u)
+n_ver = len(glob.glob("data/benchmark/unans_verified__*.jsonl"))
+# keep an unanswerable question only if every verifier saw it and every one said NOT_ANSWERED
+unans = [{k: v for k, v in vs[0].items() if k not in ("verdict", "verifier")} for vs in votes.values()
+         if len(vs) == n_ver and all(v["verdict"] == "NOT_ANSWERED" for v in vs)]
 v1 = v0 + unans
 lay = {r["qid"]: r["question"] for r in jl("data/benchmark/lay_cache.jsonl") if r.get("lender_kept", True) and r.get("rewriter", "").startswith("nvidia:")}
 cust = [{**q, "question_officer": q["question"], "question": lay[q["qid"]]} for q in v1 if q["qid"] in lay]

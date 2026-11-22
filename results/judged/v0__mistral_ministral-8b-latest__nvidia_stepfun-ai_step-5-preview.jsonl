@@ -1,0 +1,1 @@
+{"qid": "13141-59-nemotron-0", "model": "mistral:ministral-8b-latest", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": true, "refused": false, "refused_soft": false, "empty": false, "grade": "PARTIAL", "cite_gold": false, "cited_any": true}

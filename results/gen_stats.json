@@ -1,14 +1,14 @@
 {
  "minimax": {
-  "paragraphs": 168,
-  "drafted": 326,
-  "quote_ok": 323,
+  "paragraphs": 322,
+  "drafted": 605,
+  "quote_ok": 599,
   "meta_ref": 0
  },
  "nemotron": {
-  "paragraphs": 117,
-  "drafted": 229,
-  "quote_ok": 228,
-  "meta_ref": 8
+  "paragraphs": 322,
+  "drafted": 627,
+  "quote_ok": 619,
+  "meta_ref": 20
  }
 }
