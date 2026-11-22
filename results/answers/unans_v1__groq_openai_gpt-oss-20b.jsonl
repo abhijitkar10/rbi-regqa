@@ -26,3 +26,26 @@
 {"qid": "13163-10-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [8113, 8110, 8119, 8112, 8122], "secs": 153.3}
 {"qid": "13590-26-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [9599, 8949, 366, 544, 1188], "secs": 0.7}
 {"qid": "12957-19-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [334, 8343, 2410, 2715, 2939], "secs": 1.1}
+{"qid": "12936-52-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [3201, 563, 564, 1242, 1365], "secs": 0.8}
+{"qid": "13161-22-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [7933, 7931, 5478, 927, 207], "secs": 1.0}
+{"qid": "13157-25-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [6093, 7788, 4921, 4925, 7808], "secs": 76.6}
+{"qid": "13155-76-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [7054, 7143, 7053, 4803, 7217], "secs": 76.4}
+{"qid": "12943-34-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [5298, 4085, 4228, 3504, 1533], "secs": 136.3}
+{"qid": "12936-28-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [541, 542, 540, 517, 515], "secs": 76.1}
+{"qid": "12957-91-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [7732, 2816, 2810, 7739, 2812], "secs": 1.2}
+{"qid": "12943-54-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [1565, 1292, 1564, 1685, 1813], "secs": 136.7}
+{"qid": "13156-41-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [5146, 5138, 5141, 1426, 7288], "secs": 0.9}
+{"qid": "13163-8-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [8119, 9665, 9770, 9941, 9855], "secs": 0.7}
+{"qid": "12957-65-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [2022, 2719, 2792, 161, 2752], "secs": 136.3}
+{"qid": "12936-27-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [540, 541, 549, 537, 547], "secs": 0.9}
+{"qid": "12943-18-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [3339, 32, 1501, 5264, 3469], "secs": 0.4}
+{"qid": "12936-49-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "An NBFC account aggregator must publish the required disclosures by **January\u202f1,\u202f2026** (or earlier if the NBFC chooses an earlier effective date per its internal policy)\u3010S2\u3011.", "cited": [], "refused": false, "ctx": [1649, 1650, 1769, 350, 2806], "secs": 77.2}
+{"qid": "12936-64-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [2805, 574, 562, 2933, 1627], "secs": 0.8}
+{"qid": "13161-5-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "The Directions must be read along with other relevant governing statutes\u3010S3\u3011.", "cited": [], "refused": false, "ctx": [7906, 8020, 7910, 6276, 8278], "secs": 0.9}
+{"qid": "12943-8-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NBFCs must implement the group\u2011wide policies by **January\u202f1,\u202f2026** (or any earlier date they choose as per their internal policy). This is the effective date of the Directions under Part\u202fB. [S2]", "cited": [2], "refused": false, "ctx": [1490, 2278, 1383, 10093, 6596], "secs": 0.8}
+{"qid": "13154-13-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [7064, 7065, 2553, 8732, 7338], "secs": 0.7}
+{"qid": "13140-203-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "The bank must undertake special drives **periodically** to locate the customers, nominees or legal heirs of inoperative accounts or unclaimed deposits. [S2]", "cited": [2], "refused": false, "ctx": [4945, 4949, 4944, 4940, 5146], "secs": 76.4}
+{"qid": "13149-42-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [6437, 8504, 6436, 6448, 6446], "secs": 1.0}
+{"qid": "13149-42-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [8504, 7791, 7757, 6402, 7605], "secs": 76.9}
+{"qid": "12957-108-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "Funds are released only after the builder/developer/owner/company has fulfilled the mortgage\u2011disclosure requirements, but the regulation does not specify a particular number of days for the release. [S4]", "cited": [4], "refused": false, "ctx": [1390, 1413, 2805, 2835, 1394], "secs": 1.1}
+{"qid": "12957-51-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [258, 2771, 300, 2731, 2781], "secs": 16.2}
