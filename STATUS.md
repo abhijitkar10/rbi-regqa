@@ -1,17 +1,13 @@
 # Status
 
-_Updated 2026-11-21 06:07 IST (Mac clock). **Paused**: laptop shut down for travel. Run `./resume.sh` to restart._
+_Updated 2026-11-22 (Mac clock). Running: `scripts/finisher.sh` restarts answering and grading every 30 min until every reader is graded._
 
-**Done:** 96 Directions parsed (8,065 paragraphs); three chunk sets; BGE-small/base and Qwen3-Embedding vectors; retrieval, answering, judging and verification scripts; near-copy analysis; paper draft (compiles); verified bibliography.
+**Done:** corpus (96 Directions, 8,065 paragraphs); benchmark v1 (318 answerable + 73 unanswerable), customer wording (273), expert subset (35 of 44 anchored); retrieval on officer and customer wording (results/retrieval_*.json, results/customer_gap.json); paper sections up to retrieval results, near-copy table, prompts appendix.
 
-**Paused mid-way (all resumable):**
-- Question drafting: Nemotron-3-Ultra 290/322 paragraphs, MiniMax-M3.1-Flash 253/322 (`./resume.sh`).
-- BGE-M3 embeddings (restarted by `./resume.sh`).
-- Customer-wording rewrites: 32 done with Nemotron-3.5-Super (lender type checked); rerun `src/rewrite_lay.py data/benchmark/v0.jsonl data/benchmark/unans_cand.jsonl data/benchmark/lay_cache.jsonl` after v0 is final.
-- Early retrieval eval was stopped before writing results; rerun on the final set instead.
+**Running:** 7 readers answering v0 + unans_v1, plus the v0best ablation for the two Nemotron readers; Step-5 grading. Grading is the bottleneck. Groq readers (gpt-oss-20b, Qwen3.8-27B) wait for their daily caps; Ministral-14B runs after 8B. Expert-subset retrieval eval queued.
 
-**Next, in order:** `src/build_benchmark.py` -> rewrites -> `src/verify_unanswerable.py data/benchmark/unans_cand.jsonl <verifier> 60` -> `src/finalize.py` -> `src/eval_retrieval.py` on v1, v1_customer, expert_v1 -> `src/answer.py` with 7 readers -> `src/judge.py` with two judges -> `analysis/summarize_answers.py` -> `analysis/make_numbers.py` -> paper results.
+**Next, in order:** when grading finishes -> `analysis/summarize_answers.py v0,unans_v1 nvidia:stepfun-ai/step-5-preview` -> second judge on a sample for agreement -> reader table, refusals, ablation, self-preference in the paper -> abstract -> `analysis/make_numbers.py`.
 
-**Quotas to know:** Gemini free tier about 20 requests/model/day; Groq gpt-oss-120b 200K tokens/day; Mistral Medium rate-limited; SambaNova out of credit. NVIDIA (Nemotron, MiniMax) is the workhorse.
+**Restart after a shutdown:** `./resume.sh` (drafting and embeddings are finished; for answering and grading just run `scripts/finisher.sh`).
 
-**Needs Abhijit (about 3 hours):** audit 100 random questions; anchor 17 expert questions by hand; check 30 unanswerable questions.
+**Needs Abhijit (about 3 hours):** audit 100 random questions; anchor the remaining 9 expert questions by hand; check 30 unanswerable questions.

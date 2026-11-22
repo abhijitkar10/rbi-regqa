@@ -2,6 +2,9 @@
 
 ## 2026-11-22
 
+- **Customer wording, paired on the same 273 questions** (analysis/customer_gap.py): the best retriever falls from R@5 0.96 to 0.80, BM25 on the same chunks from 0.78 to 0.42. The cross-encoder adds 0.07 R@5 over its hybrid input on rulebook wording but 0.18 on customer wording. The misses are not near-copy confusions (wrong-lender 1.5 %); the top result comes from a rulebook on another topic (right rulebook at rank 1: 80 % vs 91 %).
+- Paper: near-copy table, corpus dates (59 of 96 Directions amended, 5 Dec 2025 to 19 Oct 2026; snapshot 21 Nov 2026) and the prompts appendix, all generated from files (analysis/paper_extras.py, make_numbers.py).
+- Expert subset: 35 of 44 answerable questions now tied to a verified paragraph.
 - Drafting finished: both generators covered all 322 paragraphs (errors retried once). Quote check pass: Nemotron 619/627, MiniMax 599/605; 20 Nemotron questions dropped for "this paragraph"-style references.
 - **Benchmark v1:** 318 answerable questions (167 Nemotron, 151 MiniMax; 26 Directions) + 73 unanswerable. Unanswerable candidates were checked by two verifiers (Step-5 and gpt-oss-120b) over the top-5 retrieved passages; they agreed on 81/90 and 73 were kept (both said not answered).
 - Plain-language paraphrases (Nemotron-3.5-Super): 273/318 kept the lender type and form v1_customer; they are plainer but still close to the rulebook's wording.

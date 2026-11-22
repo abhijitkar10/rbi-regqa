@@ -1,0 +1,75 @@
+Text in angle brackets is filled per item. The rewriter's retry appends: ``Keep the kind of lender named in the question (e.g.\ `small finance bank', `NBFC') in your rewrite.''
+
+\noindent\textbf{Question drafting.}
+\begin{lstlisting}
+SYSTEM: You write questions for a research benchmark on Indian banking regulation. Reply with one JSON object and nothing else.
+
+Rulebook: <title>
+Paragraph <para> (section: <heading>)
+<<<
+<text>
+>>>
+
+Write up to 2 questions that a compliance officer at one of the lenders this rulebook covers (<entity>) might ask, each answerable from this paragraph alone.
+- The question must make sense to someone who has not seen the paragraph: name the subject explicitly. Never say "this paragraph", "these Directions", "the above".
+- Say which kind of lender you mean (e.g. "a small finance bank", "an NBFC") when the rule depends on it.
+- Paraphrase as a real person would ask; do not copy the paragraph's wording.
+- answer: one or two sentences.
+- evidence: an exact, character-for-character quote from the paragraph (10 to 60 words) that proves the answer.
+- type: one of definition, threshold (numbers, limits, time periods), obligation, permission, procedure, applicability.
+
+Also write 1 unanswerable question: on this paragraph's topic, sounding like the rulebook should answer it, but asking for something this paragraph does not state (a number, deadline, case or condition that is absent).
+
+Return: {"questions": [{"question": "...", "answer": "...", "evidence": "...", "type": "..."}], "unanswerable": {"question": "...", "why": "..."}}
+If the paragraph is purely administrative (title, commencement, repeals, numbering), return {"questions": [], "unanswerable": null}.
+\end{lstlisting}
+
+\noindent\textbf{Customer rewrite.}
+\begin{lstlisting}
+SYSTEM: You rewrite questions. Reply with the rewritten question only.
+
+Rewrite this question the way an ordinary bank customer or small-business owner in India would type it into a chatbot.
+Use everyday words. Drop regulatory jargon, defined terms and acronyms (say what they mean instead), but keep every fact needed so the correct answer stays exactly the same, including which kind of lender it is about if the question says so.
+
+Question: <q>
+\end{lstlisting}
+
+\noindent\textbf{Answering.}
+\begin{lstlisting}
+SYSTEM: You answer questions about Reserve Bank of India banking regulations using only the passages given.
+
+Passages:
+<ctx>
+
+Question: <q>
+
+Answer in one to three sentences using only the passages. Cite the passages you use like [S2]. If the passages do not contain the answer, reply exactly: NOT FOUND
+\end{lstlisting}
+
+\noindent\textbf{Grading.}
+\begin{lstlisting}
+SYSTEM: You grade answers to questions about banking regulations. Reply with one word: CORRECT, PARTIAL or WRONG.
+
+Question: <q>
+Reference answer: <ref>
+Supporting rule text: "<ev>"
+
+Answer to grade: <a>
+
+CORRECT = states the reference answer's key facts with nothing that contradicts the rule.
+PARTIAL = some key facts right, some missing, or vague.
+WRONG = contradicts the reference, says the information is not available, or answers something else.
+\end{lstlisting}
+
+\noindent\textbf{Unanswerable check.}
+\begin{lstlisting}
+SYSTEM: You check whether passages answer a question. Reply with one line.
+
+Passages:
+<ctx>
+
+Question: <q>
+
+Does any passage state the answer to this exact question (the specific number, deadline, condition or fact asked)?
+Reply with one line: ANSWERED [S#] or NOT ANSWERED.
+\end{lstlisting}

@@ -9,6 +9,8 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily\scriptsize,breaklines=true,columns=fullflexible,frame=single}
 \newcommand{\todo}[1]{\textcolor{red}{[TODO: #1]}}
 \input{numbers}  % every number in the text comes from results/ via analysis/make_numbers.py
 
@@ -49,9 +51,11 @@ We make three contributions:
 
 \section{The RBI-RegQA Benchmark}
 
-\paragraph{Corpus.} We fetched every Commercial Bank and NBFC Direction listed on the RBI website, plus the KYC Directions of every other lender type, \NDocs{} documents in all (\todo{date range}). The RBI's PDF host returns a script check to automated clients, so we used the HTML version of each Direction, which keeps the paragraph numbering. A parser splits each Direction into its numbered paragraphs (\NParas{} in total).
+\paragraph{Corpus.} We fetched every Commercial Bank and NBFC Direction listed on the RBI website, plus the KYC Directions of every other lender type, \NDocs{} documents in all, fetched on \SnapshotDate{}. The Directions were issued in November 2025; \NUpdated{} of them have since been amended, the latest updates ranging from \UpdateRange{}. The RBI's PDF host returns a script check to automated clients, so we used the HTML version of each Direction, which keeps the paragraph numbering. A parser splits each Direction into its numbered paragraphs (\NParas{} in total).
 
-\paragraph{Near-copies.} \todo{Table: share of each lender's KYC paragraphs that are near-identical (word-trigram Jaccard $\geq0.9$) to the commercial-bank KYC Directions: \NearCopyBankRange{} for bank types, lower for NBFCs, AIFIs and ARCs whose text is edited rather than copied.}
+\input{tab_nearcopy}
+
+\paragraph{Near-copies.} For every paragraph of each other lender's KYC Directions we find the most similar paragraph of the Commercial Banks KYC Directions by word-trigram Jaccard similarity (Table~\ref{tab:nearcopy}). For the six other bank types, \NearCopyBankRange{} of paragraphs are near-identical ($\geq0.9$). The NBFC, AIFI and ARC Directions are mostly edited copies: the same rule with the lender's own terms, thresholds or exemptions substituted. These edited paragraphs are where the right rulebook changes the answer, so we sample them separately when drafting questions.
 
 \paragraph{Question drafting.} We sampled up to 16 paragraphs from each of 19 source Directions and \NEntityParas{} paragraphs where another lender's KYC text differs from the commercial-bank text. Two generators from different families, \GenA{} and \GenB{}, each drafted up to two questions per paragraph with a short answer, an evidence quote and a type, plus one question on the same topic that the paragraph does not answer. Prompts are in Appendix~\ref{app:prompts}.
 
@@ -77,10 +81,12 @@ We make three contributions:
 
 \paragraph{Paragraphs alone do not help.} Without the name prefix, paragraph chunks retrieve slightly worse than overlapping fixed windows. Overlapping windows carry neighbouring headings and context; a bare paragraph is often indistinguishable from its near-copies.
 
-\todo{customer wording; reader table; refusal; retrieval-quality ablation; generator self-preference; judge agreement.}
+\paragraph{Customer wording is much harder, and the re-ranker earns its cost there.} On the \NCust{} questions whose plain-language paraphrase kept the lender type, the best configuration falls from R@5 \CustOffRfive{} on the original wording to \CustRfive{}, and BM25 on the same chunks from \CustBMOff{} to \CustBM{}: customers do not use the rulebook's vocabulary. The cross-encoder adds \OffRerankGain{} R@5 over its hybrid input on rulebook wording but \CustRerankGain{} on customer wording. The lost questions are not near-copy confusions (WrongLender@1 stays at \CustWL{}); the top result is from the correct rulebook for only \CustBook{} of questions, against \CustOffBook{}, because the paraphrase drifts to a different topic.
+
+\todo{reader table; refusal; retrieval-quality ablation; generator self-preference; judge agreement.}
 
 \section*{Limitations}
-Questions are drafted from single paragraphs, so the benchmark under-represents questions that need several rules at once. Two RBI Directions parse poorly and are used only as distractors. The RBI updates Directions often; the benchmark is a snapshot (\todo{date}). Judges and verifiers are LLMs; we report their agreement with each other and with a human sample rather than assume it.
+Questions are drafted from single paragraphs, so the benchmark under-represents questions that need several rules at once. Two RBI Directions parse poorly and are used only as distractors. The RBI updates Directions often; the benchmark is a snapshot of \SnapshotDate{}. Judges and verifiers are LLMs; we report their agreement with each other and with a human sample rather than assume it.
 
 \section*{AI Use Statement}
 The author used Claude (Anthropic) as a coding and writing assistant throughout this project, and the free tiers of several LLM APIs to draft, rewrite, answer and grade questions as described above. All design decisions, the human audit and the final text are the author's responsibility.
@@ -89,6 +95,6 @@ The author used Claude (Anthropic) as a coding and writing assistant throughout 
 
 \appendix
 \section{Prompts}\label{app:prompts}
-\todo{generator, rewrite, answer, judge and verifier prompts.}
+\input{app_prompts}
 
 \end{document}

@@ -52,3 +52,35 @@ if para_wl and title_wl:
 with open("paper/numbers.tex", "w") as fh:
     for k, v in N.items():
         fh.write(f"\\newcommand{{\\{k}}}{{{v if v is not None else chr(92) + 'todo{' + k + '}'}}}\n")
+
+# --- customer wording, paired on the same questions (results/customer_gap.json) ---
+cg = json.load(open("results/customer_gap.json")) if Path("results/customer_gap.json").exists() else None
+if cg and rb:
+    key = lambda cs, ret: f"{cs}|{ret.replace(':', '_').replace('<', '_on_')}"
+    best = cg[key(rb["best"]["chunks"], rb["best"]["retriever"])]
+    hyb = cg[key(rb["best"]["chunks"], rb["best"]["retriever"].split("<")[1])]
+    bm = cg[key(rb["best"]["chunks"], "bm25")]
+    put("NCust", best["n"])
+    put("CustOffRfive", f'{best["officer"]["R@5"]:.2f}'); put("CustRfive", f'{best["customer"]["R@5"]:.2f}')
+    put("CustOffBook", f'{100 * best["officer"]["Book@1"]:.0f}\\%'); put("CustBook", f'{100 * best["customer"]["Book@1"]:.0f}\\%')
+    put("CustWL", f'{100 * best["customer"]["WL@1"]:.1f}\\%')
+    put("CustBMOff", f'{bm["officer"]["R@5"]:.2f}'); put("CustBM", f'{bm["customer"]["R@5"]:.2f}')
+    put("OffRerankGain", f'{best["officer"]["R@5"] - hyb["officer"]["R@5"]:.2f}')
+    put("CustRerankGain", f'{best["customer"]["R@5"] - hyb["customer"]["R@5"]:.2f}')
+    with open("paper/numbers.tex", "w") as fh:
+        for k, v in N.items():
+            fh.write(f"\\newcommand{{\\{k}}}{{{v if v is not None else chr(92) + 'todo{' + k + '}'}}}\n")
+
+# --- corpus dates: "Updated as on <date>" in Direction titles; snapshot = when the HTML was fetched ---
+import re, os, glob
+from datetime import datetime
+_d = [d for d in jl("data/processed/docs.jsonl") if d["text"].strip()]
+_up = [datetime.strptime(m.group(1), "%B %d, %Y") for d in _d if (m := re.search(r"Updated as on (\w+ \d+, \d{4})", d["title"]))]
+_fetched = max(os.path.getmtime(p) for p in glob.glob("data/html/*.md"))
+fmt = lambda t: f"{t.day} {t:%B %Y}"
+put("NUpdated", len(_up))
+put("UpdateRange", f"{fmt(min(_up))} to {fmt(max(_up))}" if _up else None)
+put("SnapshotDate", fmt(datetime.fromtimestamp(_fetched)))
+with open("paper/numbers.tex", "w") as fh:
+    for k, v in N.items():
+        fh.write(f"\\newcommand{{\\{k}}}{{{v if v is not None else chr(92) + 'todo{' + k + '}'}}}\n")
