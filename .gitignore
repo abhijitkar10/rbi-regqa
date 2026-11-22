@@ -10,3 +10,4 @@ results/rankings/
 outreach/
 data/html/
 audit/*.csv
+build/

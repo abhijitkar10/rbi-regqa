@@ -11,3 +11,7 @@
 {"qid": "13140-372-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [5128, 5464, 1407, 7278, 1646], "secs": 1.0}
 {"qid": "13163-14-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [8244, 8121, 7138, 5022, 8118], "secs": 941.4}
 {"qid": "13155-31-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [7138, 7155, 2642, 7127, 2626], "secs": 0.8}
+{"qid": "13141-31-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [5295, 4082, 3936, 4225, 5282], "secs": 1001.9}
+{"qid": "13161-21-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "A public sector bank must appoint a majority of non\u2011executive directors (NEDs) to its Risk Management Committee. [S2]", "cited": [2], "refused": false, "ctx": [9580, 7930, 659, 8930, 561], "secs": 928.1}
+{"qid": "12957-24-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [2743, 2742, 2747, 2748, 2751], "secs": 0.5}
+{"qid": "12933-32-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "An NBFC\u2011MFI must maintain a capital adequacy ratio of at least **15\u202f%** of its aggregate risk\u2011weighted assets (S5).  As an \u201cOther NBFC\u201d, it is capped at a **maximum dividend payout ratio of 50\u202f%** (S2).", "cited": [], "refused": false, "ctx": [1611, 1609, 1607, 1608, 266], "secs": 961.5}

@@ -21,7 +21,7 @@ while true; do
       ans=results/answers/${stem}__$tag.jsonl; jd=results/judged/${stem}__${tag}__$(echo $J | tr ':/' '__').jsonl
       if [ -f "$ans" ] && [ "$(lines $jd)" -lt "$(jq -s 'map(select(.answer|startswith("ERROR")|not))|length' $ans)" ]; then
         todo=1
-        pgrep -f "src/[j]udge.py data/benchmark/$stem.jsonl.*$tag" >/dev/null || \
+        pgrep -f "src/[j]udge.py data/benchmark/$stem.jsonl $J results/answers/${stem}__$tag.jsonl" >/dev/null || \
           { nohup .venv/bin/python src/judge.py data/benchmark/$stem.jsonl $J $ans >> logs/finisher_judge_$tag.log 2>&1 & echo "$(date +%H:%M) judge $stem $m"; }
       fi
     done

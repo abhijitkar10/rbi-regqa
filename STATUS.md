@@ -10,7 +10,9 @@ _Updated 2026-11-22 (Mac clock). Running: `scripts/finisher.sh` restarts answeri
 
 **Restart after a shutdown:** `./resume.sh` (drafting and embeddings are finished; for answering and grading just run `scripts/finisher.sh`).
 
-**Needs Abhijit (about 3 hours):** fill the three CSVs in `audit/` (instructions in audit/README.md): 100 random questions, 30 unanswerable, 9 unanchored expert questions.
+**Needs Abhijit:** the contact email to print under his name in the paper (e.g. his NITK address; not filled because it would be public).
+
+**Also needs Abhijit (about 3 hours):** fill the three CSVs in `audit/` (instructions in audit/README.md): 100 random questions, 30 unanswerable, 9 unanchored expert questions.
 
 ## Timeline to the preprint
 
@@ -32,5 +34,5 @@ _Updated 2026-11-22 (Mac clock). Running: `scripts/finisher.sh` restarts answeri
 - [ ] After grading: reader table, refusals (strict/lenient), v0 vs v0best ablation, self-preference, abstract headline.
 - [x] Licensing (2026-11-22, Abhijit chose the fetch script): RBI text untracked (data/html/, audit CSVs); paragraph fingerprints in data/catalog/paragraph_hashes.tsv with `--check`; code MIT, annotations CC BY 4.0. Older commits still hold the text; removing it from history needs a force-push, which only Abhijit can approve.
 - [x] `reproduce.sh` (paper stage from results; `full` also fetches, parses, embeds and ranks; LLM stages are not rerun).
-- [ ] arXiv readiness: compile with pdflatex (TeX Live), check arXiv's policy on AI-written text, size limits.
+- [x] arXiv readiness: `scripts/arxiv_package.sh` builds build/rbi-regqa-arxiv.tar.gz (44 KB, includes main.bbl) and proves it compiles from a clean folder (tectonic; TeX Live is not installed and needs Abhijit's password). `scripts/check_refs.py` verifies all 15 references (arXiv API, Crossref, URLs) and blocks on chatbot leftovers or TODO markers: arXiv's May 2026 rule bans authors for a year for unchecked AI output such as invented references. AI use is disclosed in the paper, as arXiv requires.
 - [ ] Outreach (private vault): refresh professor list, one tailored hook line per professor.
