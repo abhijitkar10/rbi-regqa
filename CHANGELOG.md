@@ -2,6 +2,8 @@
 
 ## 2026-11-22
 
+- Second judges: Gemma-4-31B and GLM-5.3 time out on NVIDIA; gpt-oss-120b (Groq) and Mistral Large 4 (NVIDIA) both work, so both grade a seeded sample of 30 answers per reader for agreement with Step-5 (each shares a family with one reader; agreement is reported with and without it). First 34 overlaps: gpt-oss-120b matches Step-5 on 88 %.
+- CITATION.cff added. RBI's website says "All Rights Reserved" and restricts caching and framing; whether to keep the Directions' full text in the public repo is an open decision.
 - Figure 1 (analysis/fig_wronglender.py): wrong-lender rate at rank 1 by chunking and retriever, on page 1. matplotlib added to requirements.
 - Breakdown of the best retriever (analysis/breakdown.py): applicability questions are hardest (R@1 0.56, R@5 0.83, n=41) vs obligations (0.78 / 0.95); MiniMax-drafted questions are harder to retrieve than Nemotron's (R@5 0.91 vs 0.98).
 - src/judge.py --limit now draws a seeded random sample of answers that need the LLM judge (for the second-judge agreement check).
