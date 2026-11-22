@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-11-23
+- Claims-vs-numbers pass: every number in the finished sections traced to numbers.tex, a generated table, or the code. Corrected "about 240 Directions" and "about a hundred Master Directions" to the RBI press release figures (244 Directions, 9,445 circulars repealed, 11 entity types) and added the citation.
+- Grading at 02:27: Step-5 graded v0 bolt 318, lightning 317, minimax 296, ministral-8b 274, qwen 267, ministral-14b 193, gpt-oss-20b 190; v0best 212/246; unans_v1 qwen 44, gpt-oss 37, rest 73/73.
 - Retrieval error analysis (`analysis/miss_analysis.py`, Table 4, new Results paragraph): every question the best configuration misses at R@5 is tagged as near-copy (same text, other lender: 6 of 72), right rulebook but another paragraph (13/17 rulebook wording, 39/55 customer; mostly a neighbour within 3 paragraphs), other lender with different text, or another topic (11 customer). 9 misses have boilerplate gold paragraphs (copies in 10+ rulebooks). Limitations: one gold paragraph per question, so retrieval scores are lower bounds. Wired into reproduce.sh and numbers.tex.
 - Grading progress (Step-5): bolt v0 done (318/318); lightning 302, minimax 257, qwen 256, ministral-8b 221, v0best lightning 181 / bolt 160, gpt-oss-20b 179, ministral-14b 142.
 
