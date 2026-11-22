@@ -56,7 +56,7 @@ We make three contributions:
 
 \section{The RBI-RegQA Benchmark}
 
-\paragraph{Corpus.} We fetched every Commercial Bank and NBFC Direction listed on the RBI website, plus the KYC Directions of every other lender type, \NDocs{} documents in all, fetched on \SnapshotDate{}. The Directions were issued in November 2025; \NUpdated{} of them have since been amended, the latest updates ranging from \UpdateRange{}. The RBI's PDF host returns a script check to automated clients, so we used the HTML version of each Direction, which keeps the paragraph numbering. A parser splits each Direction into its numbered paragraphs (\NParas{} in total).
+\paragraph{Corpus.} We fetched every Commercial Bank and NBFC Direction listed on the RBI website, plus the KYC Directions of every other lender type, \NDocs{} documents in all, fetched on \SnapshotDate{}. The Directions were issued in November 2025; \NUpdated{} of them have since been amended, the latest updates ranging from \UpdateRange{}. The RBI's PDF host returns a script check to automated clients, so we used the HTML version of each Direction, which keeps the paragraph numbering. A parser splits each Direction into its numbered paragraphs (\NParas{} in total). The RBI website reserves its rights, so we release the questions, answers, paragraph identifiers, short evidence quotes and code, not the Direction texts: a script fetches them, and per-paragraph fingerprints of our snapshot show which paragraphs, and which questions, a later amendment affects.
 
 \input{tab_nearcopy}
 

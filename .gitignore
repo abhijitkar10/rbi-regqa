@@ -8,3 +8,5 @@ data/processed/emb/
 data/processed/
 results/rankings/
 outreach/
+data/html/
+audit/*.csv

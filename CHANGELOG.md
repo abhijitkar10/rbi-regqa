@@ -2,6 +2,7 @@
 
 ## 2026-11-22
 
+- **RBI text no longer in the repo** (Abhijit's call, since the RBI website reserves its rights): data/html/ and the audit CSVs are untracked and gitignored; local copies kept. `./scripts_fetch_html.sh` + `src/parse.py` rebuild the corpus, and `scripts/snapshot_hashes.py --check` compares it with fingerprints of every paragraph in our 21 Nov snapshot (data/catalog/paragraph_hashes.tsv), listing any amended paragraph and the questions that use it. A fresh fetch of two Directions (84 and 57 paragraphs) matched exactly. Questions keep their short evidence quotes. Added LICENSE (MIT, code); annotations CC BY 4.0. The text remains in earlier commits.
 - Second judges: Gemma-4-31B and GLM-5.3 time out on NVIDIA; gpt-oss-120b (Groq) and Mistral Large 4 (NVIDIA) both work, so both grade a seeded sample of 30 answers per reader for agreement with Step-5 (each shares a family with one reader; agreement is reported with and without it). First 34 overlaps: gpt-oss-120b matches Step-5 on 88 %.
 - CITATION.cff added. RBI's website says "All Rights Reserved" and restricts caching and framing; whether to keep the Directions' full text in the public repo is an open decision.
 - Figure 1 (analysis/fig_wronglender.py): wrong-lender rate at rank 1 by chunking and retriever, on page 1. matplotlib added to requirements.
