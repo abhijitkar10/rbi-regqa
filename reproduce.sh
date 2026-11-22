@@ -19,7 +19,7 @@ if [ "${1:-}" = full ]; then
 fi
 
 [ -d results/rankings ] && [ -f data/processed/paras.jsonl ] || { echo "missing data/processed or results/rankings: run ./reproduce.sh full"; exit 1; }
-for s in near_copies retrieval_table customer_gap expert_any lender_aware bootstrap breakdown fig_wronglender paper_extras; do
+for s in near_copies retrieval_table customer_gap expert_any lender_aware bootstrap breakdown miss_analysis fig_wronglender paper_extras; do
   echo "== analysis/$s.py"; $PY analysis/$s.py > /dev/null
 done
 $PY analysis/summarize_answers.py v0,unans_v1 nvidia:stepfun-ai/step-5-preview > /dev/null

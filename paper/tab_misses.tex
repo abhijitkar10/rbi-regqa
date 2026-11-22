@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrr}
+\toprule
+Miss type & Rulebook & Customer \\
+\midrule
+Same text, other lender & 2 & 4 \\
+Right rulebook, other para. & 13 & 39 \\
+\quad neighbour ($\pm$3) in top 5 & 12 & 23 \\
+Other lender, other text & 1 & 1 \\
+Other topic & 1 & 11 \\
+\midrule
+Misses (gold not in top 5) & 17/318 & 55/273 \\
+Boilerplate gold & 3 & 6 \\
+Gold still in top 30 & 9 & 22 \\
+\bottomrule
+\end{tabular}
+\caption{Why the best retriever (name-prefixed paragraphs, hybrid, BGE-reranker-v2-m3) misses. Each miss takes the first
+matching type. ``Same text'': word-trigram Jaccard $\geq0.9$ with the gold paragraph. ``Neighbour'': a gold-rulebook
+paragraph numbered within 3 of the gold one. ``Boilerplate'': the gold paragraph has near-copies in 10 or more rulebooks.}
+\label{tab:misses}
+\end{table}

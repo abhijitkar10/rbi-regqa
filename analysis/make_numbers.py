@@ -136,3 +136,16 @@ if bd:
     with open("paper/numbers.tex", "w") as fh:
         for kk, v in N.items():
             fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")
+
+# --- what the best retriever's misses are (results/miss_analysis.json) ---
+ma = json.load(open("results/miss_analysis.json"))["results"] if Path("results/miss_analysis.json").exists() else None
+if ma:
+    o, c = ma["officer"], ma["v1_customer"]
+    put("MissOff", o["misses"]); put("MissCust", c["misses"]); put("MissAll", o["misses"] + c["misses"])
+    put("MissNearCopy", o["tags"]["near_copy"] + c["tags"]["near_copy"])
+    put("MissOffRight", o["tags"]["right_book"]); put("MissCustRight", c["tags"]["right_book"])
+    put("MissOffNeighbour", o["right_book_neighbour"]); put("MissCustOffTopic", c["tags"]["off_topic"])
+    put("MissBoiler", o["boilerplate_gold"] + c["boilerplate_gold"])
+    with open("paper/numbers.tex", "w") as fh:
+        for kk, v in N.items():
+            fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")

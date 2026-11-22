@@ -1,0 +1,1145 @@
+{
+ "results": {
+  "officer": {
+   "n": 318,
+   "misses": 17,
+   "tags": {
+    "near_copy": 2,
+    "right_book": 13,
+    "wrong_book": 1,
+    "off_topic": 1
+   },
+   "gold_in_top30": 9,
+   "right_book_neighbour": 12,
+   "boilerplate_gold": 3,
+   "by_type": {
+    "applicability": 7,
+    "obligation": 8,
+    "threshold": 2
+   },
+   "rows": [
+    {
+     "qid": "13141-82-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "applicability",
+     "gold_chars": 205,
+     "copies": 4,
+     "neighbour": false
+    },
+    {
+     "qid": "13141-39-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 223,
+     "copies": 6,
+     "neighbour": true
+    },
+    {
+     "qid": "13156-263-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 206,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "13161-54-minimax-0",
+     "tag": "off_topic",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 3073,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13161-75-nemotron-0",
+     "tag": "near_copy",
+     "gold_rank": 6,
+     "type": "applicability",
+     "gold_chars": 206,
+     "copies": 78,
+     "neighbour": true
+    },
+    {
+     "qid": "12943-11-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 448,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12942-41-minimax-0",
+     "tag": "right_book",
+     "gold_rank": 7,
+     "type": "threshold",
+     "gold_chars": 431,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12933-8-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "threshold",
+     "gold_chars": 1253,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12933-3-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": 25,
+     "type": "applicability",
+     "gold_chars": 345,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12933-32-minimax-0",
+     "tag": "right_book",
+     "gold_rank": 6,
+     "type": "obligation",
+     "gold_chars": 263,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12933-44-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 223,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12933-4-minimax-0",
+     "tag": "right_book",
+     "gold_rank": 8,
+     "type": "applicability",
+     "gold_chars": 3265,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12934-69-minimax-0",
+     "tag": "right_book",
+     "gold_rank": 7,
+     "type": "obligation",
+     "gold_chars": 298,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12936-3-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "applicability",
+     "gold_chars": 221,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12936-63-minimax-0",
+     "tag": "near_copy",
+     "gold_rank": 8,
+     "type": "applicability",
+     "gold_chars": 206,
+     "copies": 77,
+     "neighbour": false
+    },
+    {
+     "qid": "12955-41-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": 9,
+     "type": "applicability",
+     "gold_chars": 206,
+     "copies": 77,
+     "neighbour": true
+    },
+    {
+     "qid": "12969-34-minimax-0",
+     "tag": "wrong_book",
+     "gold_rank": 11,
+     "type": "obligation",
+     "gold_chars": 717,
+     "copies": 0,
+     "neighbour": false
+    }
+   ]
+  },
+  "v1_customer": {
+   "n": 273,
+   "misses": 55,
+   "tags": {
+    "near_copy": 4,
+    "right_book": 39,
+    "wrong_book": 1,
+    "off_topic": 11
+   },
+   "gold_in_top30": 22,
+   "right_book_neighbour": 23,
+   "boilerplate_gold": 6,
+   "by_type": {
+    "obligation": 31,
+    "permission": 5,
+    "applicability": 10,
+    "procedure": 5,
+    "definition": 3,
+    "threshold": 1
+   },
+   "rows": [
+    {
+     "qid": "13141-59-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 305,
+     "copies": 6,
+     "neighbour": true
+    },
+    {
+     "qid": "13141-26-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "permission",
+     "gold_chars": 713,
+     "copies": 2,
+     "neighbour": true
+    },
+    {
+     "qid": "13141-39-minimax-0",
+     "tag": "right_book",
+     "gold_rank": 9,
+     "type": "obligation",
+     "gold_chars": 223,
+     "copies": 6,
+     "neighbour": false
+    },
+    {
+     "qid": "13139-71-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 304,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13139-17-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 607,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13139-66-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 1168,
+     "copies": 1,
+     "neighbour": false
+    },
+    {
+     "qid": "13139-77-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 346,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13139-15-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 401,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "13139-60-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 255,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "13155-3-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": 8,
+     "type": "applicability",
+     "gold_chars": 452,
+     "copies": 12,
+     "neighbour": true
+    },
+    {
+     "qid": "13155-39-minimax-0",
+     "tag": "right_book",
+     "gold_rank": 9,
+     "type": "obligation",
+     "gold_chars": 398,
+     "copies": 1,
+     "neighbour": true
+    },
+    {
+     "qid": "13155-41-minimax-0",
+     "tag": "off_topic",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 457,
+     "copies": 1,
+     "neighbour": false
+    },
+    {
+     "qid": "13157-42-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": 7,
+     "type": "permission",
+     "gold_chars": 376,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13156-302-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": 6,
+     "type": "permission",
+     "gold_chars": 452,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13156-263-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 206,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "13156-120-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 535,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13156-364-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "procedure",
+     "gold_chars": 301,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "13156-23-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "definition",
+     "gold_chars": 265,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13163-11-minimax-0",
+     "tag": "right_book",
+     "gold_rank": 6,
+     "type": "permission",
+     "gold_chars": 364,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "13163-7-minimax-0",
+     "tag": "off_topic",
+     "gold_rank": null,
+     "type": "procedure",
+     "gold_chars": 2800,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13163-14-minimax-0",
+     "tag": "right_book",
+     "gold_rank": 16,
+     "type": "obligation",
+     "gold_chars": 466,
+     "copies": 3,
+     "neighbour": false
+    },
+    {
+     "qid": "13163-8-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 1218,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "13163-5-nemotron-0",
+     "tag": "off_topic",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 262,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13163-3-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": 8,
+     "type": "applicability",
+     "gold_chars": 466,
+     "copies": 9,
+     "neighbour": false
+    },
+    {
+     "qid": "13144-12-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": 10,
+     "type": "obligation",
+     "gold_chars": 838,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "13144-10-minimax-0",
+     "tag": "off_topic",
+     "gold_rank": 7,
+     "type": "permission",
+     "gold_chars": 1368,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13154-36-nemotron-0",
+     "tag": "off_topic",
+     "gold_rank": 8,
+     "type": "obligation",
+     "gold_chars": 212,
+     "copies": 1,
+     "neighbour": false
+    },
+    {
+     "qid": "13154-9-minimax-0",
+     "tag": "off_topic",
+     "gold_rank": null,
+     "type": "procedure",
+     "gold_chars": 568,
+     "copies": 1,
+     "neighbour": false
+    },
+    {
+     "qid": "13154-24-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "applicability",
+     "gold_chars": 437,
+     "copies": 1,
+     "neighbour": true
+    },
+    {
+     "qid": "13161-51-minimax-0",
+     "tag": "off_topic",
+     "gold_rank": 6,
+     "type": "obligation",
+     "gold_chars": 277,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13161-11-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 751,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "13161-8-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 239,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "13161-5-minimax-0",
+     "tag": "off_topic",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 343,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13161-74-nemotron-0",
+     "tag": "near_copy",
+     "gold_rank": null,
+     "type": "applicability",
+     "gold_chars": 1066,
+     "copies": 67,
+     "neighbour": false
+    },
+    {
+     "qid": "13161-75-nemotron-0",
+     "tag": "near_copy",
+     "gold_rank": null,
+     "type": "applicability",
+     "gold_chars": 206,
+     "copies": 78,
+     "neighbour": false
+    },
+    {
+     "qid": "13149-21-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 407,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13149-47-minimax-0",
+     "tag": "near_copy",
+     "gold_rank": null,
+     "type": "applicability",
+     "gold_chars": 1066,
+     "copies": 67,
+     "neighbour": false
+    },
+    {
+     "qid": "13149-18-minimax-0",
+     "tag": "off_topic",
+     "gold_rank": null,
+     "type": "procedure",
+     "gold_chars": 297,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13149-48-nemotron-0",
+     "tag": "near_copy",
+     "gold_rank": 12,
+     "type": "applicability",
+     "gold_chars": 206,
+     "copies": 77,
+     "neighbour": false
+    },
+    {
+     "qid": "12957-65-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "definition",
+     "gold_chars": 748,
+     "copies": 1,
+     "neighbour": false
+    },
+    {
+     "qid": "12942-41-minimax-0",
+     "tag": "right_book",
+     "gold_rank": 8,
+     "type": "threshold",
+     "gold_chars": 431,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12942-27-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": 7,
+     "type": "obligation",
+     "gold_chars": 407,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "12933-27-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": 12,
+     "type": "obligation",
+     "gold_chars": 351,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12933-18-minimax-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 236,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12933-51-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "applicability",
+     "gold_chars": 1076,
+     "copies": 7,
+     "neighbour": true
+    },
+    {
+     "qid": "12934-49-minimax-0",
+     "tag": "off_topic",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 322,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "12934-69-minimax-0",
+     "tag": "right_book",
+     "gold_rank": 6,
+     "type": "obligation",
+     "gold_chars": 298,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12936-49-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 745,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "12936-3-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": 8,
+     "type": "applicability",
+     "gold_chars": 221,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12936-63-minimax-0",
+     "tag": "right_book",
+     "gold_rank": 15,
+     "type": "applicability",
+     "gold_chars": 206,
+     "copies": 77,
+     "neighbour": false
+    },
+    {
+     "qid": "12955-26-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": 7,
+     "type": "definition",
+     "gold_chars": 625,
+     "copies": 1,
+     "neighbour": true
+    },
+    {
+     "qid": "12955-9-minimax-0",
+     "tag": "off_topic",
+     "gold_rank": 6,
+     "type": "procedure",
+     "gold_chars": 568,
+     "copies": 1,
+     "neighbour": false
+    },
+    {
+     "qid": "12927-10-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 445,
+     "copies": 0,
+     "neighbour": true
+    },
+    {
+     "qid": "12969-34-minimax-0",
+     "tag": "wrong_book",
+     "gold_rank": 6,
+     "type": "obligation",
+     "gold_chars": 717,
+     "copies": 0,
+     "neighbour": false
+    },
+    {
+     "qid": "13040-10-nemotron-0",
+     "tag": "right_book",
+     "gold_rank": null,
+     "type": "obligation",
+     "gold_chars": 448,
+     "copies": 2,
+     "neighbour": true
+    }
+   ]
+  }
+ },
+ "examples": {
+  "officer|right_book": [
+   {
+    "qid": "13141-82-minimax-0",
+    "question": "For a commercial bank, do the RBI's KYC requirements replace its obligations under other laws and regulations, or do they operate in addition to them?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Know Your Customer) Directions, 2025 (Updated as para 82",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Miscellaneous) Directions, 2025 (Updated as on O para ['46']"
+   },
+   {
+    "qid": "13141-39-minimax-0",
+    "question": "Under the RBI's KYC Directions for commercial banks, what must a bank do to keep monitoring its customers after onboarding?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Know Your Customer) Directions, 2025 (Updated as para 39",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Know Your Customer) Directions, 2025 (Updated as para ['42']"
+   },
+   {
+    "qid": "13156-263-minimax-0",
+    "question": "What must a commercial bank do to oversee the use of rupee pre-shipment credit provided to exporters?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para 263",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para ['264']"
+   },
+   {
+    "qid": "12943-11-minimax-0",
+    "question": "As an NBFC, what must we put in place to manage money laundering and terrorist financing risks?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Know Your Customer) Directions, 2 para 11",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Know Your Customer) Directions, 2 para ['8']"
+   },
+   {
+    "qid": "12942-41-minimax-0",
+    "question": "For an NBFC, from what date do the RBI requirements for releasing original property documents after repayment or settlement of a personal loan apply?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Responsible Business Conduct) Dir para 41",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Responsible Business Conduct) Dir para ['35']"
+   },
+   {
+    "qid": "12933-8-minimax-0",
+    "question": "As an NBFC, what conditions do I need to satisfy to be classified as an NBFC-MFI under the RBI's microfinance institution directions?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directi para 8",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directi para ['11']"
+   },
+   {
+    "qid": "12933-3-nemotron-0",
+    "question": "Which entities are covered by the Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directions, 2025?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directi para 3",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directi para ['26']"
+   },
+   {
+    "qid": "12933-32-minimax-0",
+    "question": "As an NBFC-MFI, what regulatory requirements must we follow when declaring dividends?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directi para 32",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Prudential Norms on Declaration o para ['8']"
+   },
+   {
+    "qid": "12933-44-minimax-0",
+    "question": "As an NBFC-MFI, what must I follow when opening a branch or representative office, setting up a subsidiary or joint venture, or undertaking an investment abroad?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directi para 44",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Undertaking of Financial Services para ['17']"
+   },
+   {
+    "qid": "12933-4-minimax-0",
+    "question": "Under the RBI's NBFC-MFI Directions, 2025, do the other RBI directions apply to every NBFC-MFI in the same way?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directi para 4",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Income Recognition, Asset Classif para ['5']"
+   },
+   {
+    "qid": "12934-69-minimax-0",
+    "question": "What must an NBFC-P2P do to meet the RBI requirements concerning acquisition of shareholding or control?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Peer to Peer Lending Platform) Di para 69",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Acquisition of Shareholding or Co para ['7']"
+   },
+   {
+    "qid": "12936-3-nemotron-0",
+    "question": "To which entities do the Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2025 apply?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2 para 3",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2 para ['4']"
+   },
+   {
+    "qid": "12955-41-nemotron-0",
+    "question": "Do the Reserve Bank of India's Non-Banking Financial Companies \u2013 Credit Information Reporting Directions, 2025 override other applicable laws for an NBFC?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Credit Information Reporting) Dir para 41",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Peer to Peer Lending Platform) Di para ['4']"
+   }
+  ],
+  "officer|off_topic": [
+   {
+    "qid": "13161-54-minimax-0",
+    "question": "As compliance officer at a commercial bank, I have received an email from a non-executive director asking me to directly arrange sanction of a loan. How should I deal with this?",
+    "gold": "Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on Octo para 54",
+    "top1": "Reserve Bank of India (Commercial Banks - Responsible Business Conduct) Directions, 2025 ( para ['335']"
+   }
+  ],
+  "officer|near_copy": [
+   {
+    "qid": "13161-75-nemotron-0",
+    "question": "Do the Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 override or replace other applicable laws and regulations for a commercial bank?",
+    "gold": "Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on Octo para 75",
+    "top1": "Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on Octo para ['73']"
+   },
+   {
+    "qid": "12936-63-minimax-0",
+    "question": "As an NBFC, must I follow the Reserve Bank of India's Non-Banking Financial Companies (Account Aggregator) Directions, 2025 in addition to other laws, rules, regulations, and directions that apply to me?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2 para 63",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2 para ['49']"
+   }
+  ],
+  "officer|wrong_book": [
+   {
+    "qid": "12969-34-minimax-0",
+    "question": "At a small finance bank, which registration and tax-identification documents must we obtain before opening an account for a trust?",
+    "gold": "Reserve Bank of India (All India Financial Institutions \u2013 Know Your Customer) Directions,  para 34",
+    "top1": "Reserve Bank of India (Small Finance Banks \u2013 Know Your Customer) Directions, 2025 (Updated para ['36']"
+   }
+  ],
+  "v1_customer|right_book": [
+   {
+    "qid": "13141-59-nemotron-0",
+    "question": "Other than the lists already mentioned, what other international and domestic lists should a commercial bank check to make sure it is not dealing with banned people, companies, or countries?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Know Your Customer) Directions, 2025 (Updated as para 59",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Know Your Customer) Directions, 2025 (Updated as para ['56']"
+   },
+   {
+    "qid": "13141-26-nemotron-0",
+    "question": "Can a commercial bank use a video call to verify identity when opening accounts for new individual customers and the real people who own or control companies or other organizations?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Know Your Customer) Directions, 2025 (Updated as para 26",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Know Your Customer) Directions, 2025 (Updated as para ['27']"
+   },
+   {
+    "qid": "13141-39-minimax-0",
+    "question": "Under the Reserve Bank of India's customer identification rules for commercial banks, what does a bank have to do to keep checking its customers after they open an account?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Know Your Customer) Directions, 2025 (Updated as para 39",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Know Your Customer) Directions, 2025 (Updated as para ['43']"
+   },
+   {
+    "qid": "13139-71-nemotron-0",
+    "question": "what check does a commercial bank have to do on the outside companies it hires to do work for it?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Managing Risks in Outsourcing) Directions, 2025 para 71",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Managing Risks in Outsourcing) Directions, 2025 para ['35']"
+   },
+   {
+    "qid": "13139-17-nemotron-0",
+    "question": "Who is responsible if the people a bank hires through an outside company to sell loans or collect unpaid dues misbehave?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Managing Risks in Outsourcing) Directions, 2025 para 17",
+    "top1": "Reserve Bank of India (Commercial Banks - Responsible Business Conduct) Directions, 2025 ( para ['452']"
+   },
+   {
+    "qid": "13139-66-minimax-0",
+    "question": "what extra things should a commercial bank check before hiring an outside company to handle its computer and technology work?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Managing Risks in Outsourcing) Directions, 2025 para 66",
+    "top1": "Reserve Bank of India (Commercial Banks - Internal Audit Function) Directions, 2026 (Updat para ['32']"
+   },
+   {
+    "qid": "13139-77-nemotron-0",
+    "question": "what records must a commercial bank maintain for the technology work it gives to outside companies, as per the Reserve Bank of India's rules on outsourcing",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Managing Risks in Outsourcing) Directions, 2025 para 77",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Managing Risks in Outsourcing) Directions, 2025 para ['36']"
+   },
+   {
+    "qid": "13139-15-nemotron-0",
+    "question": "Which important management tasks are commercial banks not allowed to give to outside companies under the Reserve Bank of India's 2025 rules on managing risks when work is given to outside companies?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Managing Risks in Outsourcing) Directions, 2025 para 15",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Managing Risks in Outsourcing) Directions, 2025 para ['17']"
+   },
+   {
+    "qid": "13139-60-minimax-0",
+    "question": "As a commercial bank, what do we need to have set up to manage risks from technology services we hire from outside companies?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Managing Risks in Outsourcing) Directions, 2025 para 60",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Managing Risks in Outsourcing) Directions, 2025 para ['55']"
+   },
+   {
+    "qid": "13155-3-nemotron-0",
+    "question": "Which commercial banks have to follow the Reserve Bank of India\u2019s 2025 rules on issuing and using credit cards and debit cards?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Credit Cards and Debit Cards: Issuance and Condu para 3",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para ['21']"
+   },
+   {
+    "qid": "13155-39-minimax-0",
+    "question": "I have a credit card from a commercial bank. What should the bank and the people who collect overdue payments for the bank avoid doing when trying to recover unpaid credit card dues?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Credit Cards and Debit Cards: Issuance and Condu para 39",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Credit Cards and Debit Cards: Issuance and Condu para ['37']"
+   },
+   {
+    "qid": "13157-42-nemotron-0",
+    "question": "How much freedom does a commercial bank have to set the interest rate on foreign currency accounts held by people living in India?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Upd para 42",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Interest Rates on Advances) Directions, 2025 para ['42']"
+   },
+   {
+    "qid": "13156-302-nemotron-0",
+    "question": "where can a commercial bank get foreign currency from to give a loan in foreign currency before goods are shipped?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para 302",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para ['298']"
+   },
+   {
+    "qid": "13156-263-minimax-0",
+    "question": "What must a commercial bank do to keep track of how exporters use the rupee loan given to them before they ship their goods?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para 263",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para ['264']"
+   },
+   {
+    "qid": "13156-120-nemotron-0",
+    "question": "What does a commercial bank need to check before handing over the money for a property loan?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para 120",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para ['92']"
+   },
+   {
+    "qid": "13156-364-nemotron-0",
+    "question": "For a commercial bank, how should bills that were resold to another lender within India, where the bank is still responsible if the customer doesn\u2019t pay, be treated for export loan reporting?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para 364",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para ['360']"
+   },
+   {
+    "qid": "13156-23-minimax-0",
+    "question": "I am a small-business owner and I deal with a commercial bank. What types of guarantees that cover the bank\u2019s loss if a borrower fails to repay a loan can the bank accept?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para 23",
+    "top1": "Reserve Bank of India (Commercial Banks - Capital Charge for Credit Risk \u2013 Standardised Ap para ['39']"
+   },
+   {
+    "qid": "13163-11-minimax-0",
+    "question": "can a commercial bank skip any rule under the Reserve Bank of India's 2025 digital banking permission rules, and what conditions might the Reserve Bank of India put?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Digital Banking Channels Authorisation) Directio para 11",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Digital Banking Channels Authorisation) Directio para ['9']"
+   },
+   {
+    "qid": "13163-14-minimax-0",
+    "question": "i handle compliance at a commercial bank. can i trust what the reserve bank of india says about its 2025 rules for approving digital banking channels if a rule is unclear?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Digital Banking Channels Authorisation) Directio para 14",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Digital Banking Channels Authorisation) Directio para ['9']"
+   },
+   {
+    "qid": "13163-8-nemotron-0",
+    "question": "What rules must a commercial bank follow when it hires outside companies to provide online or mobile banking services?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Digital Banking Channels Authorisation) Directio para 8",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Managing Risks in Outsourcing) Directions, 2025 para ['18']"
+   },
+   {
+    "qid": "13163-3-nemotron-0",
+    "question": "Which types of banks need to follow the Reserve Bank of India's 2025 rules about commercial banks getting permission for digital banking channels?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Digital Banking Channels Authorisation) Directio para 3",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Digital Banking Channels Authorisation) Directio para ['9']"
+   },
+   {
+    "qid": "13144-12-nemotron-0",
+    "question": "How often does a commercial bank have to report borrowers who can repay their loan but deliberately don\u2019t, to companies that keep credit records, and what information must be included in that report?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Treatment of Wilful Defaulters and Large Default para 12",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Credit Information Reporting) Directions, 2025 ( para ['12']"
+   },
+   {
+    "qid": "13154-24-minimax-0",
+    "question": "Which types of lenders and industry bodies are part of the Reserve Bank of India's working group on credit information reporting?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Credit Information Reporting) Directions, 2025 ( para 24",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Credit Information Reporting) Dir para ['22']"
+   },
+   {
+    "qid": "13161-11-nemotron-0",
+    "question": "What are the duties of the board of a government bank when it discusses the bank's own checks and controls with the people who run the bank?",
+    "gold": "Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on Octo para 11",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Miscellaneous) Directions, 2025 (Updated as on O para ['58']"
+   },
+   {
+    "qid": "13161-8-nemotron-0",
+    "question": "What are the four main jobs that the board of directors of a government-owned bank has to do under the rules set by India's central bank?",
+    "gold": "Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on Octo para 8",
+    "top1": "Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on Octo para ['preamble']"
+   },
+   {
+    "qid": "13149-21-nemotron-0",
+    "question": "can a commercial bank charge different interest for the same remaining loan period to different borrowers or different types of loans?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Interest Rates on Advances) Directions, 2025 para 21",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Interest Rates on Advances) Directions, 2025 para ['26']"
+   },
+   {
+    "qid": "12957-65-minimax-0",
+    "question": "How does an NBFC split a project it has funded into different stages to follow the Reserve Bank of India's rules for safe lending, and what work is included in the design stage?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Credit Facilities) Directions, 20 para 65",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Credit Facilities) Directions, 20 para ['75']"
+   },
+   {
+    "qid": "12942-41-minimax-0",
+    "question": "For an NBFC, from what date do the Reserve Bank of India rules apply for returning original property papers after paying off or settling a personal loan?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Responsible Business Conduct) Dir para 41",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Responsible Business Conduct) Dir para ['35']"
+   },
+   {
+    "qid": "12942-27-nemotron-0",
+    "question": "What documents does an NBFC have to give to a borrower when the loan is approved and the money is paid out?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Responsible Business Conduct) Dir para 27",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Responsible Business Conduct) Dir para ['78']"
+   },
+   {
+    "qid": "12933-27-nemotron-0",
+    "question": "What rules does an NBFC-MFI follow for keeping money aside for microfinance loans that are being paid on time?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directi para 27",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directi para ['25']"
+   },
+   {
+    "qid": "12933-18-minimax-0",
+    "question": "What rules does an NBFC have to follow when working out how much capital it needs to keep for the assets listed in its books and for the assets not listed in its books?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directi para 18",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Prudential Norms on Capital Adequ para ['6']"
+   },
+   {
+    "qid": "12933-51-nemotron-0",
+    "question": "If our NBFC-MFI took action under the old microfinance rules before they were cancelled, is it still legal?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directi para 51",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Microfinance Institution) Directi para ['13']"
+   },
+   {
+    "qid": "12934-69-minimax-0",
+    "question": "What does a peer-to-peer lending NBFC need to do to follow the Reserve Bank of India\u2019s rules when someone buys shares or takes control of the company?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Peer to Peer Lending Platform) Di para 69",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Peer to Peer Lending Platform) Di para ['66']"
+   },
+   {
+    "qid": "12936-49-nemotron-0",
+    "question": "I'm the compliance officer at a non-banking financial company that works as an account aggregator. Which rules do I need to follow for sharing information, and are there any exceptions to the usual financial statement rules for non-banking financial companies?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2 para 49",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2 para ['15']"
+   },
+   {
+    "qid": "12936-3-nemotron-0",
+    "question": "Which companies do the Reserve Bank of India's 2025 directions for non-banking financial companies that act as account aggregators apply to?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2 para 3",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Registration, Exemptions and Fram para ['4']"
+   },
+   {
+    "qid": "12936-63-minimax-0",
+    "question": "I'm an NBFC. Do I have to follow the Reserve Bank of India's 2025 account aggregator rules for NBFCs, along with all the other laws and rules that apply to me?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2 para 63",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Classification, Valuation and Ope para ['6']"
+   },
+   {
+    "qid": "12955-26-nemotron-0",
+    "question": "What is the purpose of the small permanent team under the expert group set up by the Reserve Bank of India for its rules on reporting credit information?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Credit Information Reporting) Dir para 26",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Credit Information Reporting) Dir para ['preamble']"
+   },
+   {
+    "qid": "12927-10-nemotron-0",
+    "question": "What steps should an asset reconstruction company\u2014a business that buys bad loans from banks\u2014take to find, reduce, and manage risks related to hiding illegally earned money and giving money to terrorists?",
+    "gold": "Reserve Bank of India (Asset Reconstruction Companies \u2013 Know Your Customer) Directions, 20 para 10",
+    "top1": "Reserve Bank of India (Asset Reconstruction Companies \u2013 Know Your Customer) Directions, 20 para ['8']"
+   },
+   {
+    "qid": "13040-10-nemotron-0",
+    "question": "What risk rules should a regional rural bank follow under the Reserve Bank of India\u2019s customer identification rules?",
+    "gold": "Reserve Bank of India (Regional Rural Banks \u2013 Know Your Customer) Directions, 2025 (Update para 10",
+    "top1": "Reserve Bank of India (Regional Rural Banks \u2013 Know Your Customer) Directions, 2025 (Update para ['8']"
+   }
+  ],
+  "v1_customer|off_topic": [
+   {
+    "qid": "13155-41-minimax-0",
+    "question": "I run a small business. What details about my customers can a commercial bank share with people who sell its products, people who market its services, and people who collect unpaid dues?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Credit Cards and Debit Cards: Issuance and Condu para 41",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Know Your Customer) Directions, 2025 (Updated as para ['21']"
+   },
+   {
+    "qid": "13163-7-minimax-0",
+    "question": "What does a commercial bank have to do before it can start a service that lets businesses handle everyday money transactions, and where should it apply for permission?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Digital Banking Channels Authorisation) Directio para 7",
+    "top1": "Reserve Bank of India (Commercial Banks - Branch Authorisation) Directions, 2025 (Updated  para ['12']"
+   },
+   {
+    "qid": "13163-5-nemotron-0",
+    "question": "What policies does a commercial bank need to set up for its online and mobile banking under the Reserve Bank of India's rules?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Digital Banking Channels Authorisation) Directio para 5",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Miscellaneous) Supervisory Directions, 2026 (Upd para ['16']"
+   },
+   {
+    "qid": "13144-10-minimax-0",
+    "question": "If a borrower fails to repay a loan from a commercial bank, can the bank ask the person who guaranteed the loan to pay without first trying to recover the money from the borrower?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Treatment of Wilful Defaulters and Large Default para 10",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Credit Facilities) Directions, 2025 (Updated as  para ['10']"
+   },
+   {
+    "qid": "13154-36-nemotron-0",
+    "question": "What does a commercial bank have to do if it is included in the Reserve Bank of India's scheme that appoints an independent complaint handler for customers?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Credit Information Reporting) Directions, 2025 ( para 36",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Miscellaneous) Supervisory Directions, 2026 (Upd para ['58']"
+   },
+   {
+    "qid": "13154-9-minimax-0",
+    "question": "I run a small business and have a loan from a commercial bank. What set format should the bank use to send my business loan details to the agency that keeps loan records?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Credit Information Reporting) Directions, 2025 ( para 9",
+    "top1": "Reserve Bank of India (Commercial Banks - Responsible Business Conduct) Directions, 2025 ( para ['315']"
+   },
+   {
+    "qid": "13161-51-minimax-0",
+    "question": "Hello, I run a small business and have an account in a government bank. What financial health should the bank maintain while running its operations?",
+    "gold": "Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on Octo para 51",
+    "top1": "Reserve Bank of India (Small Finance Banks \u2013 Know Your Customer) Directions, 2025 (Updated para ['44']"
+   },
+   {
+    "qid": "13161-5-minimax-0",
+    "question": "Does a commercial bank need to read the Reserve Bank of India\u2019s 2025 rules for commercial banks along with other laws that apply to banks?",
+    "gold": "Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on Octo para 5",
+    "top1": "Reserve Bank of India (Commercial Banks - Responsible Business Conduct) Directions, 2025 ( para ['264']"
+   },
+   {
+    "qid": "13149-18-minimax-0",
+    "question": "For a commercial bank, how is the loss calculated on the money it must keep with the Reserve Bank as a cash reserve when that money earns no interest?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Interest Rates on Advances) Directions, 2025 para 18",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Cash Reserve Ratio and Statutory Liquidity Ratio para ['46']"
+   },
+   {
+    "qid": "12934-49-minimax-0",
+    "question": "As an NBFC",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Peer to Peer Lending Platform) Di para 49",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Registration, Exemptions and Fram para ['37']"
+   },
+   {
+    "qid": "12955-9-minimax-0",
+    "question": "As an NBFC, which format should we use to send credit details to credit bureaus for microfinance borrowers?",
+    "gold": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Credit Information Reporting) Dir para 9",
+    "top1": "Reserve Bank of India (Non-Banking Financial Companies \u2013 Resolution of Stressed Assets) Di para ['20']"
+   }
+  ],
+  "v1_customer|near_copy": [
+   {
+    "qid": "13161-74-nemotron-0",
+    "question": "If our commercial bank took action under the old rules about how the bank is run, before those rules were cancelled, which rules still apply to that action?",
+    "gold": "Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on Octo para 74",
+    "top1": "Reserve Bank of India (Commercial Banks - Responsible Business Conduct) Directions, 2025 ( para ['465']"
+   },
+   {
+    "qid": "13161-75-nemotron-0",
+    "question": "Do the Reserve Bank of India\u2019s 2025 rules on how commercial banks are run override or replace other laws and rules that apply to a commercial bank?",
+    "gold": "Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on Octo para 75",
+    "top1": "Reserve Bank of India (Standalone Primary Dealers) Directions, 2025 (Updated as on March 1 para ['6']"
+   },
+   {
+    "qid": "13149-47-minimax-0",
+    "question": "Our commercial bank had already started steps to approve a loan and fix the interest rate under the Reserve Bank of India's old interest rate rules, before those old rules were cancelled. Which rules still apply to this loan process that is already underway?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Interest Rates on Advances) Directions, 2025 para 47",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Upd para ['45']"
+   },
+   {
+    "qid": "13149-48-nemotron-0",
+    "question": "Do the Reserve Bank of India's 2025 rules on interest rates for loans override or replace other existing laws and rules that apply to commercial banks?",
+    "gold": "Reserve Bank of India (Commercial Banks \u2013 Interest Rates on Advances) Directions, 2025 para 48",
+    "top1": "Reserve Bank of India (Commercial Banks \u2013 Interest Rate on Deposits) Directions, 2025 (Upd para ['45']"
+   }
+  ],
+  "v1_customer|wrong_book": [
+   {
+    "qid": "12969-34-minimax-0",
+    "question": "I want to open an account for a trust at a small finance bank. What registration papers and tax identification documents are required before opening the account?",
+    "gold": "Reserve Bank of India (All India Financial Institutions \u2013 Know Your Customer) Directions,  para 34",
+    "top1": "Reserve Bank of India (Small Finance Banks \u2013 Know Your Customer) Directions, 2025 (Updated para ['36']"
+   }
+  ]
+ }
+}

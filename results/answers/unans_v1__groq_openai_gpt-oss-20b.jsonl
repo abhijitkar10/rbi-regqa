@@ -15,3 +15,14 @@
 {"qid": "13161-21-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "A public sector bank must appoint a majority of non\u2011executive directors (NEDs) to its Risk Management Committee. [S2]", "cited": [2], "refused": false, "ctx": [9580, 7930, 659, 8930, 561], "secs": 928.1}
 {"qid": "12957-24-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [2743, 2742, 2747, 2748, 2751], "secs": 0.5}
 {"qid": "12933-32-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "An NBFC\u2011MFI must maintain a capital adequacy ratio of at least **15\u202f%** of its aggregate risk\u2011weighted assets (S5).  As an \u201cOther NBFC\u201d, it is capped at a **maximum dividend payout ratio of 50\u202f%** (S2).", "cited": [], "refused": false, "ctx": [1611, 1609, 1607, 1608, 266], "secs": 961.5}
+{"qid": "12933-23-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [3226, 258, 300, 262, 2045], "secs": 1.0}
+{"qid": "13139-15-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [4626, 7319, 4705, 4629, 5466], "secs": 0.6}
+{"qid": "13140-203-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [4949, 5146, 9894, 4948, 4946], "secs": 0.6}
+{"qid": "13014-10-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [3655, 3641, 3656, 3705, 3606], "secs": 76.4}
+{"qid": "13161-8-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [9579, 6258, 4695, 8929, 7915], "secs": 0.7}
+{"qid": "13154-17-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [7073, 7072, 2561, 2560, 7070], "secs": 0.7}
+{"qid": "13149-28-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [6432, 6433, 6874, 6779, 6416], "secs": 0.9}
+{"qid": "12936-17-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [533, 535, 536, 1365, 532], "secs": 16.2}
+{"qid": "13163-10-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [8113, 8110, 8119, 8112, 8122], "secs": 153.3}
+{"qid": "13590-26-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [9599, 8949, 366, 544, 1188], "secs": 0.7}
+{"qid": "12957-19-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [334, 8343, 2410, 2715, 2939], "secs": 1.1}

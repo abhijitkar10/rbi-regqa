@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-23
+- Retrieval error analysis (`analysis/miss_analysis.py`, Table 4, new Results paragraph): every question the best configuration misses at R@5 is tagged as near-copy (same text, other lender: 6 of 72), right rulebook but another paragraph (13/17 rulebook wording, 39/55 customer; mostly a neighbour within 3 paragraphs), other lender with different text, or another topic (11 customer). 9 misses have boilerplate gold paragraphs (copies in 10+ rulebooks). Limitations: one gold paragraph per question, so retrieval scores are lower bounds. Wired into reproduce.sh and numbers.tex.
+- Grading progress (Step-5): bolt v0 done (318/318); lightning 302, minimax 257, qwen 256, ministral-8b 221, v0best lightning 181 / bolt 160, gpt-oss-20b 179, ministral-14b 142.
+
 ## 2026-11-22
 - Grading progress snapshot (Step-5): bolt 307/318, lightning 263, qwen 253, minimax 228, ministral-8b 196, gpt-oss-20b 162, v0best lightning 152 / bolt 137, ministral-14b 104.
 - Backlog: outreach item done (kept outside the repo).
