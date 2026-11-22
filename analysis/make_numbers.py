@@ -99,3 +99,19 @@ if ea:
     with open("paper/numbers.tex", "w") as fh:
         for kk, v in N.items():
             fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")
+
+# --- lender-aware re-ordering (results/lender_aware.json) ---
+la = json.load(open("results/lender_aware.json")) if Path("results/lender_aware.json").exists() else None
+if la:
+    d = la["officer|detection"]
+    put("LANamed", f'{d["named"]} of {d["n"]}'); put("LAPrec", f'{100 * d["precision"]:.1f}\\%')
+    fn = la[next(k for k in la if k.startswith("officer|fixed|rerank_bge-reranker-v2-m3") and k.endswith("|none"))]
+    fp = la[next(k for k in la if k.startswith("officer|fixed|rerank_bge-reranker-v2-m3") and k.endswith("|promote"))]
+    put("LAFixedWL", f'{100 * fn["WrongLender@1"]:.1f}\\%'); put("LAFixedWLp", f'{100 * fp["WrongLender@1"]:.1f}\\%')
+    put("LAFixedRone", f'{fn["R@1"]:.2f}'); put("LAFixedRonep", f'{fp["R@1"]:.2f}'); put("LAFixedRfivep", f'{fp["R@5"]:.2f}')
+    ed = la[next(k for k in la if k.startswith("expert_v1|para_title|rerank_bge-reranker-v2-m3") and k.endswith("|promote+CB"))]
+    put("LAExpertRone", f'{ed["R@1"]:.2f}'); put("LAExpertRthirty", f'{ed["R@30"]:.2f}')
+    put("LAExpertNamed", la["expert_v1|detection"]["named"])
+    with open("paper/numbers.tex", "w") as fh:
+        for kk, v in N.items():
+            fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")

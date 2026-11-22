@@ -1,0 +1,21 @@
+\begin{table}[t]\centering\small\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{lcccccc}\toprule
+& \multicolumn{2}{c}{Rulebook} & \multicolumn{2}{c}{Customer} & \multicolumn{2}{c}{Expert}\\
+& R@1 & WL & R@1 & WL & R@1 & WL\\\midrule
+\multicolumn{7}{l}{\textit{800-char windows}}\\
+\quad as retrieved & 0.63 & 14 & 0.40 & 11 & 0.14 & 83\\
+\quad named lender first & 0.74 & 2 & 0.48 & 1 & 0.26 & 71\\
+\quad + default lender & 0.75 & 1 & 0.48 & 1 & 0.77 & 0\\
+\midrule
+\multicolumn{7}{l}{\textit{Paragraphs}}\\
+\quad as retrieved & 0.60 & 11 & 0.41 & 9 & 0.11 & 86\\
+\quad named lender first & 0.71 & 1 & 0.49 & 2 & 0.23 & 74\\
+\quad + default lender & 0.71 & 1 & 0.49 & 1 & 0.77 & 0\\
+\midrule
+\multicolumn{7}{l}{\textit{Paragraphs + rulebook name}}\\
+\quad as retrieved & 0.77 & 2 & 0.56 & 2 & 0.37 & 54\\
+\quad named lender first & 0.78 & 2 & 0.56 & 1 & 0.37 & 54\\
+\quad + default lender & 0.79 & 1 & 0.57 & 1 & 0.77 & 0\\
+\bottomrule\end{tabular}
+\caption{Lender-aware re-ordering of the top 30 from hybrid retrieval + BGE-reranker-v2-m3. \emph{Named lender first}: chunks from rulebooks of the lender type named in the question move to the front. \emph{+ default lender}: questions that name no lender use the deployment's lender (here commercial banks). WL: WrongLender@1 in \%.}\label{tab:lender}
+\end{table}

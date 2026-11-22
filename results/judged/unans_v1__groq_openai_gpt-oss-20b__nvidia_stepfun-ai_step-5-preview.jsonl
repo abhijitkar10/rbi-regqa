@@ -8,3 +8,4 @@
 {"qid": "12936-60-minimax-u", "model": "groq:openai/gpt-oss-20b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": true, "refused_soft": true, "empty": false, "grade": "CORRECT", "grade_soft": "CORRECT"}
 {"qid": "13140-60-minimax-u", "model": "groq:openai/gpt-oss-20b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": true, "refused_soft": true, "empty": false, "grade": "CORRECT", "grade_soft": "CORRECT"}
 {"qid": "12943-48-minimax-u", "model": "groq:openai/gpt-oss-20b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": true, "refused_soft": true, "empty": false, "grade": "CORRECT", "grade_soft": "CORRECT"}
+{"qid": "13140-372-minimax-u", "model": "groq:openai/gpt-oss-20b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": true, "refused_soft": true, "empty": false, "grade": "CORRECT", "grade_soft": "CORRECT"}
