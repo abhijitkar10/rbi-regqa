@@ -12,6 +12,15 @@ _Updated 2026-11-22 (Mac clock). Running: `scripts/finisher.sh` restarts answeri
 
 **Needs Abhijit (about 3 hours):** fill the three CSVs in `audit/` (instructions in audit/README.md): 100 random questions, 30 unanswerable, 9 unanchored expert questions.
 
+## Timeline to the preprint
+
+| By | Milestone |
+|---|---|
+| 29 Nov | grading done; reader table, refusals, ablation, self-preference, judge agreement, abstract; full draft v1 |
+| 6 Dec | human audit numbers in; licensing decision applied; claims-vs-numbers review pass; prose edit |
+| 15 Dec | arXiv source package builds from a clean folder; metadata written (scheduled check on 16 Dec) |
+| 20 Dec | submitted to arXiv (cs.CL, cross-list cs.IR) |
+
 ## Backlog (worked top-down by the scheduled check-ins; tick when done)
 
 - [x] Lender-aware retrieval (2026-11-22, results/lender_aware.json, Table 3): detect the lender type in the question and filter / boost / prefix; measure on officer, customer and expert questions.
