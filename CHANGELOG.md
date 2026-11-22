@@ -2,6 +2,7 @@
 
 ## 2026-11-22
 
+- Paired bootstrap 95 % CIs (analysis/bootstrap.py, 10,000 resamples): name prefix vs best without, R@5 +0.07 to +0.15 and wrong-lender -8 to -16 points; customer vs rulebook wording, R@5 drop 0.11 to 0.20; re-ranker gain larger on customer wording by 0.11 (0.05 to 0.17). All exclude zero.
 - **Lender-aware re-ordering** (analysis/lender_aware.py): a keyword match finds the lender type in 301 of 318 questions (99.7 % correct). Moving that lender's rulebooks to the front of the top 30 cuts wrong-lender results on plain 800-char windows from 14.2 % to 1.6 % (R@1 0.63 -> 0.74) but R@5 stays at 0.88, below the name prefix (0.95); on prefixed chunks it adds little. Expert questions mostly name no lender; defaulting to the deployment's lender (commercial banks) lifts R@1 0.37 -> 0.77 (ceiling 0.80), which shows the value of deployment context, not a fairer retriever. Paper Table 3.
 - STATUS.md now holds a ranked backlog; a check-in every 2 hours works through it.
 - **Expert subset retrieval (35 hand-written questions, analysis/expert_any.py):** 29 of 35 never say which kind of lender they mean. Strict (gold = Commercial Banks rulebook): name-prefixed paragraphs + BGE-reranker-v2-m3 reach R@1 0.37, R@5 0.71, and the top result is another lender's copy for 54 %. Counting a near-identical copy (Jaccard >= 0.9) in any lender's KYC rulebook as a hit: R@1 0.51, R@5 0.77. The retriever finds the rule but cannot know whose rule the user needs.

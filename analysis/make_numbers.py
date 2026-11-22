@@ -115,3 +115,14 @@ if la:
     with open("paper/numbers.tex", "w") as fh:
         for kk, v in N.items():
             fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")
+
+# --- paired bootstrap CIs (results/bootstrap.json) ---
+bs = json.load(open("results/bootstrap.json")) if Path("results/bootstrap.json").exists() else None
+if bs:
+    rng = lambda v, s=1: f"{s * v[1]:.2f}--{s * v[2]:.2f}" if s > 0 else f"{-v[2]:.2f}--{-v[1]:.2f}"
+    put("CIPrefixRfive", rng(bs["prefix_vs_fixed"]["R@5"])); put("CIPrefixWL", f'{-100 * bs["prefix_vs_fixed"]["WL@1"][2]:.0f}--{-100 * bs["prefix_vs_fixed"]["WL@1"][1]:.0f}')
+    put("CICustRfive", rng(bs["customer_vs_officer"]["R@5"], -1))
+    put("RerankDiff", f'{bs["rerank_gain_diff"]["R@5"][0]:.2f}'); put("CIRerankDiff", rng(bs["rerank_gain_diff"]["R@5"]))
+    with open("paper/numbers.tex", "w") as fh:
+        for kk, v in N.items():
+            fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")

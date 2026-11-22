@@ -15,7 +15,7 @@ _Updated 2026-11-22 (Mac clock). Running: `scripts/finisher.sh` restarts answeri
 ## Backlog (worked top-down by the scheduled check-ins; tick when done)
 
 - [x] Lender-aware retrieval (2026-11-22, results/lender_aware.json, Table 3): detect the lender type in the question and filter / boost / prefix; measure on officer, customer and expert questions.
-- [ ] Paired bootstrap 95 % CIs for the headline retrieval comparisons (name prefix vs none, officer vs customer, re-ranker gain).
+- [x] Paired bootstrap 95 % CIs for the headline retrieval comparisons (name prefix vs none, officer vs customer, re-ranker gain).
 - [ ] Audit sheets in `audit/` for Abhijit: 100 random questions, 30 unanswerable, 9 unanchored expert questions (CSV, fill in a spreadsheet).
 - [ ] Second judge (different family from Step-5) on a stratified sample of answers; Cohen's kappa.
 - [ ] Retrieval breakdown by question type and by generator.
