@@ -2,6 +2,7 @@
 
 ## 2026-11-22
 
+- Audit sheets for the hand checks (scripts/make_audit.py, seed 42): audit/questions_100.csv, audit/unanswerable_30.csv (with the five passages a reader saw), audit/expert_unanchored.csv (with five BM25 candidate paragraphs each).
 - Paired bootstrap 95 % CIs (analysis/bootstrap.py, 10,000 resamples): name prefix vs best without, R@5 +0.07 to +0.15 and wrong-lender -8 to -16 points; customer vs rulebook wording, R@5 drop 0.11 to 0.20; re-ranker gain larger on customer wording by 0.11 (0.05 to 0.17). All exclude zero.
 - **Lender-aware re-ordering** (analysis/lender_aware.py): a keyword match finds the lender type in 301 of 318 questions (99.7 % correct). Moving that lender's rulebooks to the front of the top 30 cuts wrong-lender results on plain 800-char windows from 14.2 % to 1.6 % (R@1 0.63 -> 0.74) but R@5 stays at 0.88, below the name prefix (0.95); on prefixed chunks it adds little. Expert questions mostly name no lender; defaulting to the deployment's lender (commercial banks) lifts R@1 0.37 -> 0.77 (ceiling 0.80), which shows the value of deployment context, not a fairer retriever. Paper Table 3.
 - STATUS.md now holds a ranked backlog; a check-in every 2 hours works through it.

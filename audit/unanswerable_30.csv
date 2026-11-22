@@ -1,0 +1,987 @@
+qid,rulebook,source_para,source_paragraph_text,question,why_unanswerable,passage_1,passage_2,passage_3,passage_4,passage_5,TRULY_UNANSWERABLE_Y_N,FAIR_Y_N,notes
+13149-29-minimax-u,"Reserve Bank of India (Commercial Banks – Interest Rates on Advances) Directions, 2025",29,"29. In addition to the conditions laid down in paragraph 28 of these Directions, a bank shall adhere to the following conditions:
+(1) The credit risk premium charged to an existing borrower shall not be increased except on account of deterioration in the credit risk profile of the customer or change in tenor premium.
+Provided that the stipulation contained in paragraph 29(1) above shall not be applicable to loans under consortium / multiple banking arrangements.
+(2) The change in tenor premium on loans sanctioned under Base rate system shall not be borrower specific or loan class specific. In other words, the change in tenor premium shall be uniform for all types of loans for a given residual tenor.
+Provided that the spread guidelines mentioned above shall not apply to loans granted under BPLR system, which continue till date. Such loans shall be covered under the terms of the loan agreements.
+A.2 Spread under Marginal Cost of Funds based Lending Rate (MCLR) system
+","What is the maximum percentage increase in the credit risk premium that a commercial bank may charge an existing borrower under the Reserve Bank of India (Commercial Banks – Interest Rates on Advances) Directions, 2025?","The paragraph permits an increase linked to deterioration in the customer's credit risk profile or a change in tenor premium, but it states no numerical cap or maximum percentage for such an increase.","Commercial Banks - Capital Charge for Credit Risk – Standardised Approach, para 39
+(1) Advances classified as ‘Capital market exposures’ other than direct equity exposures as specified under paragraph 13 above, shall attract a 125 per cent risk weight or risk weight as applicable to the counterparty, whichever is higher.
+(2) A bank’s investment in security receipts shall be risk weighted at 150 per cent.
+20. Unhedged Foreign Currency Exposure
+(1) Bank exposures to entities with unhedged foreign currency exposures shall attract incremental capital requirements, i.e. over and above the present capital requirements as per the instructions contained in Chapter VII of the Reserve Bank of India (Commercial Banks – Credit Risk Management) Directions, 2025, as under:
+Table 18: Incremental capital for unhedged exposure
+Potential Loss/EBID (%) | Incremental Capital Requirement
+Upto to 75 per cent | 0
+More than 75 per cent | 25 per cent increase in the risk weight
+(2) For unhedged ‘retail and residential real estate exposures’ to individuals where the lending currency differs from the currency of the borrower’s source of income, banks shall apply a 1.5 times multiplier to the applicable risk weight, subject to a maximum risk weight of 150 per cent. Natural and financial hedges are considered sufficient only if they cover at least 90 per cent of the loan instalment.
+Explanation:
+","Commercial Banks - Interest Rates on Advances, para preamble
+Skip to main content
+- Not Pressed
+Change Language हिंदी
+Search the Website
+Search
+# Master Directions
+(318 kb)
+## Reserve Bank of India (Commercial Banks – Interest Rates on Advances) Directions, 2025
+RBI/DOR/2025-26/161
+DOR.CRE.REC.80./13.03.000/2025-26
+November 28, 2025
+Reserve Bank of India (Commercial Banks - Interest Rates on Advances) Directions, 2025
+Table of Contents
+Chapter I - Preliminary
+Chapter II - General guidelines
+Chapter III - Benchmark
+Chapter IV - Other aspects of lending rates
+Chapter V - Foreign Currency Advances
+Chapter VI - Exemptions
+Chapter VII - Repeal and Other Provisions
+Annex
+In exercise of the powers conferred by Sections 21 and 35A of the Banking Regulation Act, 1949, and all other provisions / laws enabling the Reserve Bank of India ('RBI') in this regard, RBI being satisfied that it is necessary and expedient in the public interest so to do, hereby, issues the Directions hereinafter specified.
+Chapter I - Preliminary
+A. Short Title and Commencement
+","Commercial Banks - Interest Rates on Advances, para 1
+1. These Directions shall be called the Reserve Bank of India (Commercial Banks - Interest Rates on Advances) Directions, 2025.
+","Commercial Banks - Interest Rates on Advances, para 31
+31. The spread charged to an existing borrower shall not be increased except on account of deterioration in the credit risk profile of the customer. Any such decision regarding change in spread on account of change in credit risk profile shall be supported by a full-fledged risk profile review of the customer.
+Provided that the stipulation contained in paragraph 31 above shall not be applicable to loans under consortium / multiple banking arrangements.
+","Non-Banking Financial Companies - Prudential Norms on Capital Adequacy, para 18
+(i) Netting shall be done only in respect of assets where provisions for depreciation or for bad and doubtful debts have been made.
+(ii) An asset that has been deducted, from owned fund shall have a risk-weight of ‘zero’ percentage.
+(iii) While calculating the aggregate of funded exposure of a borrower for the purpose of assignment of risk weight, an NBFC shall net off the amount of cash margin / caution money / security deposits (against which right to set-off is available) held as collateral against the advances out of the total outstanding exposure of the borrower.
+(iv) An NBFC may apply zero per cent risk weights in respect of exposures guaranteed under any existing or future schemes launched by Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE), Credit Risk Guarantee Fund Trust for Low Income Housing (CRGFTLIH), and individual schemes under National Credit Guarantee Trustee Company Ltd (NCGTC) provided they satisfy the following conditions:
+(a) Prudential Aspects: The guarantees provided under the respective schemes shall comply with the requirements for credit risk mitigation, as applicable for scheduled commercial banks in terms of paragraphs 167 to 176 of the Reserve Bank of India (Commercial Banks – Prudential Norms on Capital Adequacy) Directions, 2025, which, inter alia, requires such guarantees to be direct, explicit, irrevocable and unconditional.
+",,,
+13149-28-nemotron-u,"Reserve Bank of India (Commercial Banks – Interest Rates on Advances) Directions, 2025",28,"28. A bank shall have a Board approved policy delineating the components of spread charged to a customer. The policy shall include principles:
+1. To determine the quantum of each component of spread.
+2. To determine the range of spread for a given category of borrower / type of loan.
+3. To delegate powers in respect of loan pricing.
+A.1 Spread under Base rate system
+",What is the maximum permissible spread percentage a commercial bank can charge under the Base Rate system?,"The paragraph requires a Board-approved policy with principles for determining spread components and ranges, but does not specify any numerical limit, cap, or maximum percentage for spread under the Base Rate system.","Commercial Banks - Interest Rates on Advances, para 28
+28. A bank shall have a Board approved policy delineating the components of spread charged to a customer. The policy shall include principles:
+1. To determine the quantum of each component of spread.
+2. To determine the range of spread for a given category of borrower / type of loan.
+3. To delegate powers in respect of loan pricing.
+A.1 Spread under Base rate system
+","Commercial Banks - Interest Rates on Advances, para 29
+29. In addition to the conditions laid down in paragraph 28 of these Directions, a bank shall adhere to the following conditions:
+(1) The credit risk premium charged to an existing borrower shall not be increased except on account of deterioration in the credit risk profile of the customer or change in tenor premium.
+Provided that the stipulation contained in paragraph 29(1) above shall not be applicable to loans under consortium / multiple banking arrangements.
+(2) The change in tenor premium on loans sanctioned under Base rate system shall not be borrower specific or loan class specific. In other words, the change in tenor premium shall be uniform for all types of loans for a given residual tenor.
+Provided that the spread guidelines mentioned above shall not apply to loans granted under BPLR system, which continue till date. Such loans shall be covered under the terms of the loan agreements.
+A.2 Spread under Marginal Cost of Funds based Lending Rate (MCLR) system
+","Commercial Banks - Concentration Risk Management, para 99
+99. 28[The above-mentioned ceilings (as prescribed in paragraph 98A) are the maximum permissible and a bank is free to adopt a lower ceiling, keeping in view its overall risk profile and corporate strategy. A bank shall adhere to the ceilings on an ongoing basis.]
+","Commercial Banks - Concentration Risk Management, para 15
+15. The sum of all the exposure values of a bank to a single counterparty shall not be higher than 20 percent of the bank’s available eligible capital base at all times.
+In exceptional cases, the Board of the bank may allow an additional five percent exposure of the bank’s available eligible capital base. The bank shall lay down a Board approved policy in this regard.
+D.2 Group of Connected Counterparties:
+","Commercial Banks - Interest Rates on Advances, para 12
+12. There can be only one Base Rate for each bank.
+",,,
+12943-18-nemotron-u,"Reserve Bank of India (Non-Banking Financial Companies – Know Your Customer) Directions, 2025 (Updated as on December 29, 2025)",18,"18. The Customer Acceptance Policy shall not result in denial of a financial facility to members of the general public, especially those who are financially or socially disadvantaged, including the Persons with Disabilities (PwDs). The NBFC shall not reject an application for onboarding or periodic updation of KYC without application of mind. The officer concerned shall duly record the reason(s) for rejection.
+",What is the maximum time allowed for the officer to record the reasons for rejection after an application is denied?,The paragraph does not specify any time limit or deadline for recording rejection reasons.,"All India Financial Institutions - Know Your Customer, para 18
+18. Customer Acceptance Policy shall not result in denial of a banking / financial facility to members of the general public, especially those who are financially or socially disadvantaged, including the Persons with Disabilities (PwDs). The AIFI shall not reject an application for onboarding or periodic updation of KYC without application of mind. The officer concerned shall duly record the reason(s) for rejection.
+","Asset Reconstruction Companies - Know Your Customer, para 17
+17. The Customer Acceptance Policy shall not result in denial of a banking / financial facility to members of the general public, especially those who are financially or socially disadvantaged, including the Persons with Disabilities (PwDs). The ARC shall not reject an application for onboarding or periodic updation of KYC without application of mind. The officer concerned shall duly record the reason(s) for rejection.
+","Non-Banking Financial Companies - Know Your Customer, para 18
+18. The Customer Acceptance Policy shall not result in denial of a financial facility to members of the general public, especially those who are financially or socially disadvantaged, including the Persons with Disabilities (PwDs). The NBFC shall not reject an application for onboarding or periodic updation of KYC without application of mind. The officer concerned shall duly record the reason(s) for rejection.
+","Commercial Banks - Know Your Customer, para 18
+18. The Customer Acceptance Policy shall not result in denial of a banking / financial facility to members of the general public, especially those who are financially or socially disadvantaged, including the Persons with Disabilities (PwDs). The bank shall not reject an application for onboarding or periodic updation of KYC without application of mind. The officer concerned shall duly record the reason(s) for rejection.
+","Rural Co-operative Banks - Know Your Customer, para 17
+17. The Customer Acceptance Policy shall not result in denial of a banking / financial facility to members of the general public, especially those who are financially or socially disadvantaged, including the Persons with Disabilities (PwDs). The bank shall not reject an application for onboarding or periodic updation of KYC without application of mind. The officer concerned shall duly record the reason(s) for rejection.
+",,,
+13154-34-nemotron-u,"Reserve Bank of India (Commercial Banks – Credit Information Reporting) Directions, 2025 (Updated as on July 01, 2026)",34,"34. In order to strengthen and improve the efficacy of the grievance redress mechanism and customer service provided by the CIs, the following measures shall be put in place by a CI:
+(1) Updation of credit information with CICs
+(i) A CI shall send alerts through SMS / email to customers while submitting information to CICs regarding default / days past due (DPD) in existing credit facilities, wherever the mobile number/email ID details are available.
+(ii) To enable sending of alerts through SMS / email, the Uniform Credit Reporting Format for reporting credit information by a CI to CICs has been modified as detailed in Annex V.
+(iii) A CI shall organize special awareness campaigns to sensitise its customers about benefits of submission of their mobile numbers / email IDs.
+(2) Setting up of nodal points / officials
+(i) A CI shall have a dedicated nodal point / official of contact for CICs for redress of customer grievances. Details of the nodal point / official along with email ID and telephone / mobile number shall be furnished by the CI to CICs.
+(ii) A CI shall inform CICs of any changes in the nodal points / official within five calendar days of such a change.
+(3) Reasons for rejection of requests for data correction
+(i) A CI shall inform the customers the reasons for the rejection of their request for data correction, if any, to enable such customers to better understand the issues in the CIR.
+(ii) A CI shall use the list of reasons for rejection of requests circulated by CICs, while communicating the rejections of the request for data correction made by customers / CICs during the grievance redress process.
+(4) Root Cause Analysis of complaints
+(i) A CI shall undertake Root Cause Analysis (RCA) of the customer grievances at least on a half yearly basis. CIs shall also use, inter alia, information on data rejected by the CICs and DQI provided by CICs as sources of information for carrying out RCA.
+(ii) The RCA shall be reviewed by the top management at least on an annual basis.
+B. Framework for compensation to customers
+",What is the monetary penalty imposed on a commercial bank for failing to send SMS or email alerts to customers when reporting defaults to credit information companies?,The paragraph does not specify any penalties or monetary fines for non-compliance with the alert requirement.,"Commercial Banks - Credit Information Reporting, para 34
+34. In order to strengthen and improve the efficacy of the grievance redress mechanism and customer service provided by the CIs, the following measures shall be put in place by a CI:
+(1) Updation of credit information with CICs
+(i) A CI shall send alerts through SMS / email to customers while submitting information to CICs regarding default / days past due (DPD) in existing credit facilities, wherever the mobile number/email ID details are available.
+(ii) To enable sending of alerts through SMS / email, the Uniform Credit Reporting Format for reporting credit information by a CI to CICs has been modified as detailed in Annex V.
+(iii) A CI shall organize special awareness campaigns to sensitise its customers about benefits of submission of their mobile numbers / email IDs.
+(2) Setting up of nodal points / officials
+(i) A CI shall have a dedicated nodal point / official of contact for CICs for redress of customer grievances. Details of the nodal point / official along with email ID and telephone / mobile number shall be furnished by the CI to CICs.
+(ii) A CI shall inform CICs of any changes in the nodal points / official within five calendar days of such a change.
+(3) Reasons for rejection of requests for data correction
+(i) A CI shall inform the customers the reasons for the rejection of their request for data correction, if any, to enable such customers to better understand the issues in the CIR.
+","Commercial Banks - Treatment of Wilful Defaulters and Large Defaulters, para 17
+17. Reporting of Guarantors
+A bank shall report to credit information companies the details of guarantors who have failed to honour the commitments thereunder when invoked, as large defaulters / wilful defaulters, as the case may be. The details shall be reported as per Annex I and II.
+","Non-Banking Financial Companies - Credit Information Reporting, para 34
+34. In order to strengthen and improve the efficacy of the grievance redress mechanism and customer service provided by the CIs, the following measures shall be put in place by a CI:
+(1) Updation of credit information with CICs
+(i) A CI shall send alerts through SMS / email to customers while submitting information to CICs regarding default / days past due (DPD) in existing credit facilities, wherever the mobile number/email ID details are available.
+(ii) To enable sending of alerts through SMS / email, the Uniform Credit Reporting Format for reporting credit information by a CI to CICs has been modified as detailed in Annex V.
+(iii) A CI shall organize special awareness campaigns to sensitise its customers about benefits of submission of their mobile numbers / email IDs.
+(2) Setting up of nodal points / officials
+(i) A CI shall have a dedicated nodal point / official of contact for CICs for redress of customer grievances. Details of the nodal point / official along with email ID and telephone / mobile number shall be furnished by the CI to CICs.
+(ii) A CI shall inform CICs of any changes in the nodal points / official within five calendar days of such a change.
+(3) Reasons for rejection of requests for data correction
+(i) A CI shall inform the customers the reasons for the rejection of their request for data correction, if any, to enable such customers to better understand the issues in the CIR.
+","Commercial Banks - Responsible Business Conduct, para 66
+66. A bank shall ask its customers to mandatorily register for SMS alerts and wherever available register for e-mail alerts, for electronic banking transactions. The SMS alerts shall mandatorily be sent to the customers, while email alerts may be sent, wherever registered. The customers shall be advised to notify their bank of any unauthorised electronic banking transaction at the earliest after the occurrence of such transaction and informed that the longer the time taken to notify the bank, the higher will be the risk of loss to the bank / customer. To facilitate this, the bank shall provide its customers with 24x7 access through multiple channels (at a minimum, via website, phone banking, SMS, e-mail, IVR, a dedicated toll-free helpline, reporting to home branch, etc.) for reporting unauthorised transactions that have taken place and/ or loss or theft of payment instrument such as card, etc. The bank shall also enable customers to instantly respond by ""Reply"" to the SMS and e-mail alerts and the customers shall not be required to search for a web page or an e-mail address to notify the objection, if any. As an alternative, the bank shall provide an alternate number in the transaction alert SMS itself, to which the customer can immediately send a reply. Further, a direct link for lodging the complaints, with specific option to report unauthorised electronic transactions shall be provided by the bank on home page of it","Non-Banking Financial Companies - Treatment of Wilful Defaulters and Large Defaulters, para 17
+17. Reporting of Guarantors
+A NBFC shall report to credit information companies the details of guarantors who have failed to honour the commitments thereunder when invoked, as large defaulters / wilful defaulters, as the case may be. The details shall be reported as per Annex I and II.
+",,,
+12934-57-nemotron-u,"Reserve Bank of India (Non-Banking Financial Companies – Peer to Peer Lending Platform) Directions, 2025",57,"57. Information System Audit of the internal systems and processes shall be in place and shall be conducted at least once in two years by CISA certified external auditors. Report of the external auditor shall be submitted to the Regional Office of the Department of Supervision of the Reserve Bank, under whose jurisdiction the Registered Office of the NBFC-P2P is located, within one month of submission of the report by the external auditor.
+",What penalties apply if an NBFC-P2P fails to submit the information system audit report within the required timeframe?,"The paragraph does not specify any penalties, enforcement actions, or consequences for non-compliance with the audit or reporting requirements.","Non-Banking Financial Companies - Peer to Peer Lending Platform, para 57
+57. Information System Audit of the internal systems and processes shall be in place and shall be conducted at least once in two years by CISA certified external auditors. Report of the external auditor shall be submitted to the Regional Office of the Department of Supervision of the Reserve Bank, under whose jurisdiction the Registered Office of the NBFC-P2P is located, within one month of submission of the report by the external auditor.
+","Non-Banking Financial Companies - Peer to Peer Lending Platform, para 20
+20. The Reserve Bank may cancel the CoR granted to an NBFC-P2P, if such company –
+(1) ceases to carry on the business of Peer to Peer Lending Platform in India; or
+(2) has failed to comply with any condition subject to which the CoR has been issued to it; or
+(3) is no longer eligible to hold the CoR; or
+(4) at any time fails to fulfill any of the conditions referred to in paragraphs 15 and 18; or
+(5) fails to –
+(i) comply with any Direction issued by the Reserve Bank; or
+(ii) maintain accounts, publish and disclose its financial position in accordance with the requirements of any law or any Direction or order issued by the Reserve Bank; or
+(iii) submit or offer for inspection its books of account or other relevant documents when so demanded by the Reserve Bank.
+B.4 Investment from FATF non-compliant jurisdictions
+","Non-Banking Financial Companies - Concentration Risk Management, para 47
+47. Failure to comply with the exposure limit may lead to imposition of penalties on the NBFC by the supervisor.
+B.5 Regulatory reporting
+","Non-Banking Financial Companies - Peer to Peer Lending Platform, para 51
+51. An NBFC-P2P shall put in place a Board approved policy to address participant grievances / complaints. Complaints shall be handled / disposed of by the NBFC-P2P within such time and in such manner as provided for in its Board approved policy, but in any case, not beyond a period of one month from the date of receipt.
+","Non-Banking Financial Companies - Peer to Peer Lending Platform, para 46
+46. An NBFC-P2P shall be required to obtain explicit declaration from the lenders stating that they have understood all the risks associated with the lending transactions and that the NBFC-P2P platform does not assure return of principal / payment of interest. The declaration shall also state that there exists a likelihood of loss of entire principal in case of default by a borrower. The NBFC-P2P platform shall not provide any assurance or guarantee for the recovery of loans. Further, the NBFC-P2P platform shall not promote peer to peer lending as an investment product with features like tenure linked assured minimum returns, liquidity options, etc.
+",,,
+13154-9-nemotron-u,"Reserve Bank of India (Commercial Banks – Credit Information Reporting) Directions, 2025 (Updated as on July 01, 2026)",9,"9. The reporting of credit information by a CI to the CICs, shall be undertaken in standardised data formats as prescribed in Annex I. These standardised data formats would be a non-proprietary reporting format and shall be known as ‘Uniform Credit Reporting Format’ (UCRF) as denoted below:
+(1) Form 1: Uniform Credit Reporting Format (Consumer) – for consumer segment.
+(2) Form 2: Uniform Credit Reporting Format (Commercial) – for commercial segment.
+(3) Form 3: Uniform Credit Reporting Format (MFI) – for microfinance segment.
+B. Reporting timelines and updation
+",What is the deadline for a commercial bank to submit the UCRF forms to the credit information companies?,The paragraph does not specify any submission deadlines or timelines for reporting credit information using the UCRF forms.,"Commercial Banks - Credit Information Reporting, para 12
+12. A CI shall adhere to, inter alia, the following guidelines when reporting credit information in the UCRF:
+(1) In the commercial reporting segment, corporate identification number (CIN) and credit history of the directors of the company (based on DIN number) shall be reported.
+(2) A CI shall report cases where compromise settlements have taken place and the reason for such compromise settlement, in the prescribed data formats to CICs.
+(3) With respect to part instalment overdue, a CI shall submit data as it is, while qualitative information on what filters to apply based on amount and period would be done by the SU and others who make use of the data.
+(4) A CI shall use 'settled' status for denoting only specific situations where due to financial inability to repay as per original terms and conditions, either a principal or an interest waiver or both is provided to the customer.
+Explanation: A CI needs to be aware of such a situation prior to extending fresh credit to such customers. Cases of wrong debits or contested charges shall not be reported as 'settled' but as 'disputed'.
+","Commercial Banks - Credit Information Reporting, para 9
+9. The reporting of credit information by a CI to the CICs, shall be undertaken in standardised data formats as prescribed in Annex I. These standardised data formats would be a non-proprietary reporting format and shall be known as ‘Uniform Credit Reporting Format’ (UCRF) as denoted below:
+(1) Form 1: Uniform Credit Reporting Format (Consumer) – for consumer segment.
+(2) Form 2: Uniform Credit Reporting Format (Commercial) – for commercial segment.
+(3) Form 3: Uniform Credit Reporting Format (MFI) – for microfinance segment.
+B. Reporting timelines and updation
+","Non-Banking Financial Companies - Credit Information Reporting, para 9
+9. The reporting of credit information by a CI to the CICs, shall be undertaken in standardised data formats as prescribed in Annex I. These standardised data formats would be a non-proprietary reporting format and shall be known as ‘Uniform Credit Reporting Format’ (UCRF) as denoted below:
+(1) Form 1: Uniform Credit Reporting Format (Consumer) – for consumer segment.
+(2) Form 2: Uniform Credit Reporting Format (Commercial) – for commercial segment.
+(3) Form 3: Uniform Credit Reporting Format (MFI) – for microfinance segment.
+B. Reporting timelines and updation
+","Non-Banking Financial Companies - Credit Information Reporting, para 12
+12. A CI shall adhere to, inter alia, the following guidelines when reporting credit information in the UCRF:
+(1) In the commercial reporting segment, corporate identification number (CIN) and credit history of the directors of the company (based on DIN number) shall be reported.
+(2) A CI shall report cases where compromise settlements have taken place and the reason for such compromise settlement, in the prescribed data formats to CICs.
+(3) With respect to part instalment overdue, a CI shall submit data as it is, while qualitative information on what filters to apply based on amount and period would be done by the SU and others who make use of the data.
+(4) A CI shall use 'settled' status for denoting only specific situations where due to financial inability to repay as per original terms and conditions, either a principal or an interest waiver or both is provided to the customer.
+Explanation: A CI needs to be aware of such a situation prior to extending fresh credit to such customers. Cases of wrong debits or contested charges shall not be reported as 'settled' but as 'disputed'.
+","Commercial Banks - Treatment of Wilful Defaulters and Large Defaulters, para 12
+12. Reporting and Dissemination of Credit Information on Wilful Defaulters
+(1) A bank shall submit at monthly intervals, information in Annex II to all credit information companies in respect of the wilful defaulters:
+1. a list of wilful defaulters (LWD) in respect of suit filed accounts
+2. a LWD in respect of non-suit filed accounts
+(2) The bank shall inform all credit information companies the removal of the name of the wilful defaulter from the LWD, promptly and not later than thirty days, from the date when the outstanding amount falls below the threshold of ₹25 lakh or as notified by Reserve Bank of India from time to time, subject to Paragraph 13(2).
+(3) Cases of wilful defaults at overseas branches of banks incorporated in India shall be reported, if such disclosure is not prohibited under the laws of the host country.
+",,,
+13161-22-minimax-u,"Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on October 01, 2026)",22,"22. Nomination and Remuneration Committee
+(1) A PSB shall constitute a Nomination and Remuneration Committee (NRC) consisting of only NEDs.
+(2) The Government of India nominee director and the director nominated under Section 19(f) of the SBI Act / Section 9(3)(c) of the Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 / 1980 shall not be part of the Committee.
+(3) The Chair of the Board shall not chair the NRC.
+(4) The NRC shall meet with a quorum of three members. At least half of the members attending the meeting of the NRC shall be independent directors, of which one shall be a member of the RMCB.
+(5) The meetings of the NRC shall be chaired by an independent director.
+(6) The meeting of NRC may be held as and when required.
+D. Fit and Proper’ Criteria for Elected Directors
+","For a public sector bank, how many times must the Nomination and Remuneration Committee meet each year?","The rule states only that meetings may be held as and when required; it specifies no minimum annual number of meetings, deadline, or maximum interval between meetings.","Commercial Banks - Governance, para 24
+24. The Nomination and Remuneration Committee, constituted in terms of paragraph 22 of these Directions, shall meet after the last date prescribed for acceptance of aforementioned nominations and examine the information provided in the signed declarations to determine whether or not the person's candidature should be accepted, based on the 'Fit and Proper' Criteria mentioned at paragraph 25 of these Directions . The NRC’s discussions shall be properly recorded as formal minutes of the meeting and the voting, if done, shall also be noted. The NRC shall also make references, where considered necessary, to the appropriate authority or persons, to ensure that the candidate conforms to the requirements indicated.
+","Commercial Banks - Governance, para 22
+22. Nomination and Remuneration Committee
+(1) A PSB shall constitute a Nomination and Remuneration Committee (NRC) consisting of only NEDs.
+(2) The Government of India nominee director and the director nominated under Section 19(f) of the SBI Act / Section 9(3)(c) of the Banking Companies (Acquisition and Transfer of Undertakings) Act, 1970 / 1980 shall not be part of the Committee.
+(3) The Chair of the Board shall not chair the NRC.
+(4) The NRC shall meet with a quorum of three members. At least half of the members attending the meeting of the NRC shall be independent directors, of which one shall be a member of the RMCB.
+(5) The meetings of the NRC shall be chaired by an independent director.
+(6) The meeting of NRC may be held as and when required.
+D. Fit and Proper’ Criteria for Elected Directors
+","Commercial Banks - Financial Statements: Presentation and Disclosures, para 13
+Quantitative disclosures<br>(The quantitative disclosures should only cover Whole Time Directors / Chief Executive Officer / Material Risk Takers) | (g) | Number of meetings held by the Nomination and Remuneration Committee during the financial year and remuneration paid to its members. |  | 
+(h) | (i) Number of employees having received a variable remuneration award during the financial year. <br> (ii) Number and total amount of sign-on / joining bonus made during the financial year. <br> (iii) Details of severance pay, in addition to accrued benefits, if any. |  | 
+(i) | (i) Total amount of outstanding deferred remuneration, split into cash, shares and share linked instruments and other forms.<br>(ii) Total amount of deferred remuneration paid out in the financial year. |  | 
+(j) | Breakdown of amount of remuneration awards for the financial year to show fixed and variable, deferred and non-deferred. |  | 
+(k) | (i) Total amount of outstanding deferred remuneration and retained remuneration exposed to ex post explicit and / or implicit adjustments. <br> (ii) Total amount of reductions during the financial year due to ex post explicit adjustments. <br> (iii) Total amount of reductions during the financial year due to ex post implicit adjustments. |  | 
+ | (l) | Number of MRTs identified. |  | 
+","Reserve Bank of India (Housing Finance Companies) Directions, 2025 (Updated as on October 01, 2026), para 14
+14. The HFC shall put in place approved policies and establish periodic review mechanisms to ensure sound processes and systems. An illustrative list of such policies to be approved by the Board or a Committee(s) to which powers have been delegated is provided below. The specific aspects to be addressed in these policies are detailed in the relevant paragraphs of these Directions.
+(1) Lending against gold.
+(2) Capital Adequacy: Internal Capital Adequacy Assessment Process (ICAAP).
+(3) Exposure limits in respect of various subsegments under consumer credit.
+(4) Investment Policy.
+(5) Policy on demand / call loans.
+(6) 4[Lending to related parties.]
+(7) Limits for Sensitive Sector Exposure (SSE).
+(8) Appointment of Chief Risk Officer (CRO).
+(9) Safeguarding independence of the CRO.
+(10) Ascertaining the ‘fit and proper’ criteria of the directors at the time of appointment, and on a continuing basis.
+(11) Compensation policy: The policy shall include, inter alia, constitution of a Nomination and Remuneration Committee, principles for fixed/variable pay structures and malus/clawback provisions.
+(12) Corporate Governance.
+(13) Grievance redressal mechanism.
+(14) Interest rate model taking into account relevant factors such as cost of funds, margin and risk premium and determine the rate of interest to be charged for loans and advances.
+(15) Penal charges or similar charges ","Reserve Bank of India (Non-Operative Financial Holding Companies) Directions, 2025 (Updated as on December 05, 2025), para 17
+(13) NOFHC shall have a Nomination Committee to perform due diligence in respect of its Directors.
+(14) Nomination Committee shall scrutinize Deed of Covenant and declaration and undertaking submitted by each of its Directors and on a continuing basis perform due diligence in respect of each of its Directors and the NOFHC shall report to the Reserve Bank if any of its directors fails to fulfill the ‘fit and proper’ criteria as specified by Reserve Bank from time to time.
+(15) NOFHC shall have a Remuneration Committee of the Board to decide on the compensation payable to the key management executives of NOFHC.
+Chapter-IV Prudential Norms for the NOFHC
+",,,
+13161-8-minimax-u,"Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on October 01, 2026)",8,"8. A PSB’s Board shall fulfil four major roles viz. overseeing the risk profile of the PSB, monitoring the integrity of its business and control mechanisms, ensuring the expert management, and maximising the interests of its stakeholders.
+",How frequently must the Board of a public sector bank review the bank's risk profile in order to meet its oversight responsibility?,"The paragraph lists the Board's roles, including overseeing the risk profile, but it does not state any review frequency, interval, deadline, or other condition for carrying out that oversight.","Commercial Banks - Fraud Risk Management, para 7
+7. The Board shall review the Fraud Risk Management Policy at least once in three years, or more frequently, as may be prescribed by the Board.
+","Commercial Banks - Classification, Valuation and Operation of Investment Portfolio, para 14
+14. The Board shall review the bank’s investment portfolio on a half yearly basis (as of March 31st and September 30th). The review shall be placed before the Board within two months from the end of the respective half year, i.e., by end-May and end-November as specified in paragraph 93(1). In this respect, the Board shall have the option to delegate its powers to review to its Risk Management Committee.4
+Chapter III: General Guidelines
+A. Investment Policy Framework
+","Commercial Banks - Managing Risks in Outsourcing, para 75
+75. A bank shall periodically review the financial and operational condition of the service provider to assess its ability to continue to meet its obligations. A bank shall adopt risk-based approach in defining the periodicity. Such due diligence reviews shall highlight any deterioration or breach in performance standards, confidentiality, security, and operational resilience preparedness.
+","Non-Banking Financial Companies - Fraud Risk Management, para 7
+7. The Board shall review the Fraud Risk Management Policy at least once in three years, or more frequently, as may be prescribed by the Board.
+","Commercial Banks - Governance, para 8
+8. A PSB’s Board shall fulfil four major roles viz. overseeing the risk profile of the PSB, monitoring the integrity of its business and control mechanisms, ensuring the expert management, and maximising the interests of its stakeholders.
+",,,
+12936-60-minimax-u,"Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2025",60,"60. The Reserve Bank can give any clarification in respect of the above directions and such clarification shall be treated as part of these directions. The directions can be amended by the Reserve Bank from time to time.
+Chapter-VI – Repeal and Other Provisions
+A. Repeal and saving
+",How much advance notice must the RBI give an NBFC before amending the Account Aggregator Directions?,The paragraph permits the RBI to amend the Directions from time to time but does not specify any notice period.,"Non-Banking Financial Companies - Responsible Business Conduct, para 102
+102. An NBFC shall give at least three months public notice prior to the date of closure of any of its branches / offices in, at least, one leading national newspaper and a leading local (covering the place of branch / office) vernacular newspaper indicating therein the purpose and arrangements being made to service the depositors, etc.
+B. Rounding off of transactions to the nearest rupee
+","Non-Banking Financial Companies - Know Your Customer, para 42
+(7) Due Notices for Periodic Updation of KYC: The NBFC shall intimate its customers, in advance, to update their KYC. Prior to the due date of periodic updation of KYC, the NBFC shall give at least three advance intimations, including at least one intimation by letter, at appropriate intervals to its customers through available communication options / channels for complying with the requirement of periodic updation of KYC. Subsequent to the due date, the NBFC shall give at least three reminders, including at least one reminder by letter, at appropriate intervals, to such customers who have still not complied with the requirements, despite advance intimations. The letter of intimation / reminder may, inter alia, contain easy-to-understand instructions for updating KYC, escalation mechanism for seeking help, if required, and the consequences, if any, of failure to update their KYC in time. Issue of such advance intimation / reminder shall be duly recorded in the NBFC’s system against each customer for audit trail. The NBFC shall expeditiously implement the same but not later than January 01, 2026.
+","Non-Banking Financial Companies - Responsible Business Conduct, para 15
+15. An NBFC shall give notice to the borrower in the vernacular language or a language as understood by the borrower of any change in the terms and conditions including disbursement schedule, interest rates, service charges, pre-payment charges etc. The NBFC shall also ensure that changes in interest rates and charges are effected only prospectively. A suitable condition in this regard must be incorporated in the loan agreement.
+","Non-Banking Financial Companies - Branch Authorisation, para 12
+12. A deposit taking NBFC shall send intimation along with a copy of the notice in respect of above within seven days of its publication in the newspapers to the Regional Office of RBI/ NHB under whose jurisdiction the registered office of the company is located.
+C. Opening of representative offices abroad
+","Non-Banking Financial Companies - Governance, para 10
+10. An NBFC shall obtain prior written permission of RBI for any change in the management of the NBFC, which would result in change in more than 30 percent of the directors, excluding independent directors.
+Provided that,
+prior approval would not be required in case of directors who get re-elected on retirement by rotation.
+Explanation: Notwithstanding the provision contained in paragraph 10 above, NBFCs shall continue to inform RBI (NHB in case of HFCs) regarding any change in their directors / management.
+",,,
+13109-80-minimax-u,"Reserve Bank of India (Small Finance Banks – Know Your Customer) Directions, 2025 (Updated as on October 1, 2026)",80,"80. Hiring of Employees and Employee training:
+(1) The bank shall put in place an adequate screening mechanism, including Know Your Employee / Staff policy, as an integral part of its personnel recruitment / hiring process.
+(2) The bank shall endeavour to ensure that the staff dealing with / being deployed for KYC / AML / CFT matters have: high integrity and ethical standards, good understanding of extant KYC / AML / CFT standards, effective communication skills and ability to keep up with the changing KYC / AML / CFT landscape, nationally and internationally. The bank shall also strive to develop an environment which fosters open communication and high integrity amongst the staff.
+(3) The bank shall put in place an on-going employee training programme so that the members of staff are adequately trained in KYC / AML / CFT policy. The focus of the training shall be different for frontline staff, compliance staff and staff dealing with new customers. The bank shall specially train the front desk staff to handle issues arising from lack of customer education. The bank shall ensure the proper staffing of the audit function with persons adequately trained and well-versed in KYC / AML / CFT policies of the bank, regulation and related issues.
+Chapter XI – Repeal and Other Provisions
+A. Repeal and saving
+80. With the issue of these Directions, the existing Directions, instructions, and guidelines relating to Know Your Customers as applicable to Small Finance Banks stand repealed, as communicated vide circular DOR.RRC.REC.302/33-01-010/2025-26 dated November 28, 2025. The Directions, instructions, and guidelines repealed prior to the issuance of these Directions shall continue to remain repealed.
+",What minimum number of KYC/AML/CFT training hours per employee per year must a small finance bank provide?,"The paragraph requires an ongoing employee training programme with role-specific training focus, but it does not specify any minimum training hours, annual frequency, or completion deadline.","Small Finance Banks - Know Your Customer, para 80
+80. Hiring of Employees and Employee training:
+(1) The bank shall put in place an adequate screening mechanism, including Know Your Employee / Staff policy, as an integral part of its personnel recruitment / hiring process.
+(2) The bank shall endeavour to ensure that the staff dealing with / being deployed for KYC / AML / CFT matters have: high integrity and ethical standards, good understanding of extant KYC / AML / CFT standards, effective communication skills and ability to keep up with the changing KYC / AML / CFT landscape, nationally and internationally. The bank shall also strive to develop an environment which fosters open communication and high integrity amongst the staff.
+(3) The bank shall put in place an on-going employee training programme so that the members of staff are adequately trained in KYC / AML / CFT policy. The focus of the training shall be different for frontline staff, compliance staff and staff dealing with new customers. The bank shall specially train the front desk staff to handle issues arising from lack of customer education. The bank shall ensure the proper staffing of the audit function with persons adequately trained and well-versed in KYC / AML / CFT policies of the bank, regulation and related issues.
+Chapter XI – Repeal and Other Provisions
+A. Repeal and saving
+","Small Finance Banks - Know Your Customer, para 74
+(4) The bank shall clearly document and understand the respective AML / CFT responsibilities of institutions involved.
+(5) In the case of payable-through-accounts, the correspondent bank shall be satisfied that the respondent bank has conducted CDD on the customers having direct access to the accounts of the correspondent bank and is undertaking ongoing 'due diligence' on them.
+(6) The correspondent bank shall ensure that the respondent bank is able to provide the relevant CDD information immediately on request.
+(7) The bank shall not enter into or continue a correspondent relationship with a shell bank.
+(8) The bank shall ensure that the respondent banks do not permit their accounts to be used by shell banks.
+(9) The bank shall be cautious of correspondent banking relationships with institutions located in jurisdictions which have strategic deficiencies or have not made sufficient progress in implementation of FATF Recommendations.
+(10) The bank shall ensure that respondent banks have KYC / AML policies and procedures in place and apply enhanced 'due diligence' procedures for transactions carried out through the correspondent accounts.
+","Payments Banks - Know Your Customer, para 78
+78. Hiring of Employees and Employee training:
+(1) The bank shall put in place an adequate screening mechanism, including Know Your Employee / Staff policy, as an integral part of its personnel recruitment / hiring process.
+(2) The bank shall endeavour to ensure that the staff dealing with / being deployed for KYC / AML / CFT matters have high integrity and ethical standards, good understanding of extant KYC / AML / CFT standards, effective communication skills and ability to keep up with the changing KYC / AML / CFT landscape, nationally and internationally. The bank shall also strive to develop an environment which fosters open communication and high integrity amongst the staff.
+(3) The bank shall put in place an on-going employee training programme so that the members of staff are adequately trained in KYC / AML / CFT policy. The focus of the training shall be different for frontline staff, compliance staff and staff dealing with new customers. The bank shall specially train the front desk staff to handle issues arising from lack of customer education. The bank shall ensure the proper staffing of the audit function with persons adequately trained and well-versed in KYC / AML / CFT policies of the bank, regulation and related issues.
+Chapter XI – Repeal and Other Provisions
+A. Repeal and Saving
+","Local Area Banks - Know Your Customer, para 78
+78. Hiring of Employees and Employee training:
+(1) The bank shall put in place an adequate screening mechanism, including Know Your Employee / Staff policy, as an integral part of its personnel recruitment / hiring process.
+(2) The bank shall endeavour to ensure that the staff dealing with / being deployed for KYC / AML / CFT matters have: high integrity and ethical standards, good understanding of extant KYC / AML / CFT standards, effective communication skills and ability to keep up with the changing KYC / AML / CFT landscape, nationally and internationally. The bank shall also strive to develop an environment which fosters open communication and high integrity amongst the staff.
+(3) The bank shall put in place an on-going employee training programme so that the members of staff are adequately trained in KYC / AML / CFT policy. The focus of the training shall be different for frontline staff, compliance staff and staff dealing with new customers. The bank shall specially train the front desk staff to handle issues arising from lack of customer education. The bank shall ensure the proper staffing of the audit function with persons adequately trained and well-versed in KYC / AML / CFT policies of the bank, regulation and related issues.
+Chapter XI – Repeal and Other Provisions
+A. Repeal and Saving
+","Rural Co-operative Banks - Know Your Customer, para 78
+78. Hiring of Employees and Employee training:
+(1) The bank shall put in place an adequate screening mechanism, including Know Your Employee / Staff policy, as an integral part of its personnel recruitment / hiring process.
+(2) The bank shall endeavour to ensure that the staff dealing with / being deployed for KYC / AML / CFT matters have: high integrity and ethical standards, good understanding of extant KYC / AML / CFT standards, effective communication skills and ability to keep up with the changing KYC / AML / CFT landscape, nationally and internationally. The bank shall also strive to develop an environment which fosters open communication and high integrity amongst the staff.
+(3) The bank shall put in place an on-going employee training programme so that the members of staff are adequately trained in KYC / AML / CFT policy. The focus of the training shall be different for frontline staff, compliance staff and staff dealing with new customers. The bank shall specially train the front desk staff to handle issues arising from lack of customer education. The bank shall ensure the proper staffing of the audit function with persons adequately trained and well-versed in KYC / AML / CFT policies of the bank, regulation and related issues.
+Chapter XI – Repeal and Other Provisions
+A. Repeal and Saving
+",,,
+13163-10-nemotron-u,"Reserve Bank of India (Commercial Banks – Digital Banking Channels Authorisation) Directions, 2025",10,"10. Customer Conduct and Other Instructions
+10.1 Banks shall obtain explicit consent from the customer for registering/de-registering (in case of existing customers) for digital banking services and the consent shall be duly recorded/documented. It shall also be clearly indicated that SMS/email alerts will be sent to the mobile number/email of the customer registered with the bank for operations, both financial and non-financial, in their account(s).
+10.2 Multiple channels for registration of these services may be provided to minimize the need for branch visits and application processing time.
+10.3 For registration, banks shall provide the terms and conditions in clear and simple language (preferably in English, Hindi, and the local language) which is easily comprehensible to the customer. These shall provide details of charges (if any) to be levied under specific circumstances, timeframe and process to initiate stop-payment instructions, helpdesk details, grievance redressal, and risks, responsibilities, and liabilities of customers.
+10.4 Banks shall comply with the guidelines on customer protection including limiting of liability in unauthorised electronic banking transactions as provided in Reserve Bank of India (Commercial Banks - Responsible Business Conduct) Directions, 2025 (as amended from time to time), sending of alerts (through SMS, email, etc.), and ensure that the terms and conditions provided to customers are compliant with the instructions.
+10.5 Banks shall not make it mandatory for the customer to opt for any digital banking channel to avail any other banking facility like debit cards. Customers can avail, if they so desire, one or more services under digital banking channels, however, there shall be no compulsory bundling of services by the bank. The choice to avail any digital banking facility shall lie solely with the customer. The banks can, however, obtain and record mobile numbers of all customers to send transaction or other alerts.
+10.6 Banks offering mobile banking service (other than through mobile applications) must ensure that customers across mobile network operators can avail of the service, i.e., the service shall be network independent.
+10.7 Banks shall put in place appropriate risk mitigation measures in accordance with their policies like transaction limit (per transaction, daily, weekly, monthly), transaction velocity limit, fraud checks, etc. depending on their risk perception. It is clarified that wherever specific requirements have been prescribed by the Reserve Bank or respective payment system operators through which the transaction is routed or switched (for example, NPCI, Card networks like VISA, Mastercard, etc.), the requirements that are stricter of the two shall be applicable. Banks shall ensure continuous compliance with instructions issued by the Reserve Bank in this regard as amended from time to time.
+10.8 Post customer login, third-party products and services, shall not be displayed on banks’ digital banking channels except as specifically permitted by the Reserve Bank from time to time in in terms of the paragraphs 58 to 62 of Reserve Bank of India (Commercial Banks – Undertaking of Financial Services) Directions, 2025, applicable instructions contained in Reserve Bank of India (Commercial Banks - Branch Authorisation) Directions, 2025, and other related instructions, as amended from time to time.
+Chapter V – Exemptions, Repeal and Other Provisions
+",What is the maximum daily transaction limit a commercial bank must set for its digital banking channels under these directions?,"Paragraph 10.7 states that banks shall put in place appropriate risk mitigation measures like transaction limits depending on their risk perception, but it does not specify any numerical maximum daily transaction limit; it only requires that where the Reserve Bank or payment system operators prescribe specific requirements, the stricter of the two shall apply.","Commercial Banks - Digital Banking Channels Authorisation, para 4
+4. Definitions
+4.1 In these Directions, unless the context otherwise requires, the following definitions shall be applicable:
+(a) Digital Banking Channels – Digital Banking Channels refer to modes provided by the banks over web sites (i.e., internet banking), mobile phones (i.e., mobile banking) or other digital channels through customer’s electronic devices/equipment for the execution of financial and other banking transactions as required for digital banking services involving significant level of process automation and/or interfacing with other institutions/entities.
+(b) Internet Banking Channel – Digital banking channel offered by a bank to its customers for operating their accounts and accessing its services over the internet (including web browser-based applications but excluding mobile applications).
+(c) Mobile Banking Channel – Digital banking channel offered by a bank to its customers for operating their accounts and accessing its services using mobile applications, unstructured supplementary service data (USSD) and short message service (SMS).
+(d) View Only Banking Facility – A feature of digital banking channels which only allows banking services that do not alter the asset or liability of the customer viz. balance enquiry, balance viewing, account statement download, etc.
+","Commercial Banks - Digital Banking Channels Authorisation, para 1
+1. Short Title and Commencement
+These Directions shall be called the Reserve Bank of India (Commercial Banks - Digital Banking Channels Authorisation) Directions, 2025.
+","Commercial Banks - Digital Banking Channels Authorisation, para 8
+8. The following instructions shall be applicable for banks offering digital banking services:
+(1) Guidelines on Outsourcing of Information Technology Services as specified in Reserve Bank of India (Commercial Banks – Managing Risks in Outsourcing) Directions, 2025 dated November 28, 2025, as amended from time to time.
+(2) DoS.CO.CSITEG/SEC.7/31.01.015/2023-24 dated November 07, 2023 – Master Direction on Information Technology Governance, Risk, Controls and Assurance Practices, as amended from time to time.
+(3) DoS.CO.CSITE.SEC.No.1852/31.01.015/2020-21 dated February 18, 2021 – Master Direction on Digital Payment Security Controls, as amended from time to time.
+(4) DBS.CO/CSITE/BC.11/33.01.001/2015-16 dated June 02, 2016 – Cyber Security Framework in Banks, as amended from time to time.
+(5) DOS.CO.FMG.SEC.No.5/23.04.001/2024-25 dated July 15, 2024 - Master Direction on Fraud Risk Management in Commercial Banks (including Regional Rural Banks) and All India Financial Institutions, as amended from time to time.
+Chapter IV – General Guidelines
+All banks offering digital banking services, regardless of type of facility, shall comply with the Directions contained in this chapter on a continuous basis.
+","Commercial Banks - Digital Banking Channels Authorisation, para 3
+3. Applicability
+These Directions shall be applicable to Commercial Banks (hereinafter collectively referred to as 'banks' and individually as a 'bank').
+For the purpose of these Directions, ‘Commercial Banks’ mean banking companies (other than Small Finance Banks, Payment Banks, and Local Area Banks), corresponding new banks, and the State Bank of India, as defined respectively under clauses (c), (da), and (nc) of Section 5 of the Banking Regulation Act, 1949.
+","Commercial Banks - Digital Banking Channels Authorisation, para 10
+10.5 Banks shall not make it mandatory for the customer to opt for any digital banking channel to avail any other banking facility like debit cards. Customers can avail, if they so desire, one or more services under digital banking channels, however, there shall be no compulsory bundling of services by the bank. The choice to avail any digital banking facility shall lie solely with the customer. The banks can, however, obtain and record mobile numbers of all customers to send transaction or other alerts.
+10.6 Banks offering mobile banking service (other than through mobile applications) must ensure that customers across mobile network operators can avail of the service, i.e., the service shall be network independent.
+10.7 Banks shall put in place appropriate risk mitigation measures in accordance with their policies like transaction limit (per transaction, daily, weekly, monthly), transaction velocity limit, fraud checks, etc. depending on their risk perception. It is clarified that wherever specific requirements have been prescribed by the Reserve Bank or respective payment system operators through which the transaction is routed or switched (for example, NPCI, Card networks like VISA, Mastercard, etc.), the requirements that are stricter of the two shall be applicable. Banks shall ensure continuous compliance with instructions issued by the Reserve Bank in this regard as amended from time to time.
+",,,
+12955-12-minimax-u,"Reserve Bank of India (Non-Banking Financial Companies – Credit Information Reporting) Directions, 2025 (Updated as on July 01, 2026)",12,"12. A CI shall adhere to, inter alia, the following guidelines when reporting credit information in the UCRF:
+(1) In the commercial reporting segment, corporate identification number (CIN) and credit history of the directors of the company (based on DIN number) shall be reported.
+(2) A CI shall report cases where compromise settlements have taken place and the reason for such compromise settlement, in the prescribed data formats to CICs.
+(3) With respect to part instalment overdue, a CI shall submit data as it is, while qualitative information on what filters to apply based on amount and period would be done by the SU and others who make use of the data.
+(4) A CI shall use 'settled' status for denoting only specific situations where due to financial inability to repay as per original terms and conditions, either a principal or an interest waiver or both is provided to the customer.
+Explanation: A CI needs to be aware of such a situation prior to extending fresh credit to such customers. Cases of wrong debits or contested charges shall not be reported as 'settled' but as 'disputed'.
+(5) The information on Commercial Papers (CPs) issued by the companies shall be reported on a fortnightly basis to the CICs by a CI which has been designated as the Issuing and Payment Agent (IPA) for the particular CP issue. If there are multiple IPAs for a single CP issue, each IPA to such issue shall report to the CICs the details pertaining to the portion of the issue which is with them. This information shall be reported in the commercial data format in the fields as mentioned in Annex II. The IPA shall also report any default in the redemption of the relevant CP issue to the CICs. In view of reporting requirement of IPA, it is clarified that an investing CI need not report the information on CPs to the CICs.
+(6) The information regarding Unhedged Foreign Currency Exposure (UFCE) of individual borrowers shall be reported on a fortnightly basis to the CICs by the lending CI (in the case of solo lenders) / consortium leader (in the case of consortium arrangements) / largest lender (in the case of multiple lending arrangements).
+(7) The cases admitted with National Company Law Tribunal (NCLT) / National Company Law Appellate Tribunal (NCLAT) under the Insolvency and Bankruptcy Code, 2016 shall be reported under the suit-filed cases in the Uniform Credit Reporting Format, while reporting to the CICs.
+(8) The reporting of Relationship Segment (RS) data by a CI to CICs is mandatory for all accounts opened on or after July 01, 2018.
+Explanations:
+(a) The reporting of shareholders’ information under the ‘relationship’ field of the RS in the Commercial data format should be done only for those shareholders who are ‘Beneficial Owners’ as defined under the Reserve Bank of India (Non-Banking Financial Companies – Know Your Customer) Directions, 2025, as amended from time to time.
+(b) The RS details are important in establishing cross-linkages across the three modules, viz., Consumer, Commercial and MFI, while providing comprehensive credit information of a borrower to CIs by CICs.
+(c) A timeline for reporting of the remainder legacy data would be reviewed by the Technical Working Group (TWG) and the CIs would be advised in due course. CICs shall furnish the list of CIs not adhering to the instructions on reporting of RS data to the Department of Supervision (DoS), Central office, on a monthly basis.
+(9) Guidelines for cross reporting, e.g., where individual is borrower and corporate is coborrower, or vice versa, shall be clearly intimated by CICs. The formats have fields to incorporate the data where consumer data will be reported in the consumer data format and co-borrower will be reported in commercial data format.
+(10) 2A CI shall report Central KYC (CKYC) number of its borrowers to CICs, wherever the same is available with it or as and when CKYC number is made available (in the case of fresh applicants for CKYC number).
+","What overdue amount or number of days past due triggers an NBFC's duty to report a borrower's default to credit information companies, and within how many days must that report be filed?","The paragraph specifies reporting content and frequency for particular items such as commercial paper and unhedged foreign currency exposure, but it states no overdue-trigger threshold (amount or days past due) and no filing deadline for reporting defaults.","Non-Banking Financial Companies - Credit Facilities, para 27
+27. Invocation and tenor of DLG
+(1) An NBFC shall invoke DLG within a maximum overdue period of 120 days, unless the loan dues are made good by the borrower before that.
+(2) The period for which the DLG agreement remains in force shall not be less than the longest tenor of the loan in the underlying loan portfolio.
+","Non-Banking Financial Companies - Financial Statements: Presentation and Disclosures, para 12
+(v) Regardless of the way in which the NBFC assesses significant increase in credit risk, there is a rebuttable presumption under Ind AS 109 that the credit risk on a financial asset has increased significantly since initial recognition when contractual payments are more than 30 days past due. Ind AS 109 also permits that an NBFC can rebut this presumption if it has reasonable and supportable information that demonstrates that the credit risk has not increased significantly since initial recognition even though the contractual payments are more than 30 days past due. An NBFC should educate its customers on the need to make payments in a timely manner. However, in limited circumstances, where an NBFC rebuts the presumption, it shall be done only with clear documentation of the justification for doing so. All such cases shall be placed before the ACB. The NBFC shall not defer the recognition of significant increase in credit risk for any exposure that is overdue beyond 60 days.
+2) Prudential Floor for Expected Credit Loss (ECL)
+","Non-Banking Financial Companies - Treatment of Wilful Defaulters and Large Defaulters, para 12
+12. Reporting and Dissemination of Credit Information on Wilful Defaulters
+(1) A NBFC shall submit at monthly intervals, information in Annex II to all credit information companies in respect of the wilful defaulters:
+(i) a list of wilful defaulters (LWD) in respect of suit filed accounts
+(ii) a LWD in respect of non-suit filed accounts
+(2) The NBFC shall inform all credit information companies the removal of the name of the wilful defaulter from the LWD, promptly and not later than thirty days, from the date when the outstanding amount falls below the threshold of ₹25 lakh or as notified by Reserve Bank of India from time to time, subject to Paragraph 13(2).
+(3) In the event an NBFC in the Middle layer or above is reclassified during a subsequent review as NBFC-Base Layer, such NBFC shall no longer be eligible to classify their borrowers as wilful defaulters. However, such NBFC shall continue to furnish updates pertaining to historical data submitted by them to the CICs.
+","Non-Banking Financial Companies - Credit Cards: Issuance and Conduct, para 23
+(5) Card-issuers shall report a credit card account as 'past due' to credit information companies (CICs) or levy penal charges, viz. late payment charges and other related charges, if any, only when a credit card account remains 'past due' for more than three days. The number of 'days past due' and late payment charges shall, however, be computed from the payment due date mentioned in the credit card statement, as specified under the Reserve Bank of India (Non-Banking Financial Companies – Income Recognition, Asset Classification and Provisioning) Directions, 2025, as amended from time to time. Late payment charges and other related charges shall be levied, only on the outstanding amount after the due date, and not on the total amount due.
+(6) Interest shall be levied only on the outstanding amount, adjusted for payments / refunds / reversed transactions.
+Explanation: In case a cardholder makes partial payment or does not clear the total amount due within the payment due date, interest free credit period will be lost, and interest may be levied from the date of transaction on the outstanding amount (adjusted for payments / refunds / reversed transactions as and when credited) and not on the total amount due. Further, late payment fee and other charges relating to delay in payment shall be levied only on the outstanding amount (adjusted for payments / refunds / reversed transactions as and when credi","Commercial Banks - Income Recognition, Asset Classification and Provisioning, para 61
+61. Credit Card Accounts
+(1) A bank shall report a credit card account as ‘past due’ to credit information companies (CICs) or levy penal charges, viz. late payment charges, etc., if any, only when a credit card account remains overdue for more than three days.
+(2) The number of days overdue and late payment charges shall, however, be computed from the payment due date mentioned in the credit card statement.
+",,,
+12957-108-minimax-u,"Reserve Bank of India (Non-Banking Financial Companies – Credit Facilities) Directions, 2025 (updated as on July 15, 2026)",108,"108. While granting finance to housing / development projects, the NBFC shall also stipulate as a part of the terms and conditions that:
+(1) The builder / developer / owner / company shall disclose in the pamphlets / brochures / display boards on-site, the name(s) of the entity to which the property is mortgaged.
+(2) The builder/ developer/ company shall append the information relating to mortgage while publishing advertisement of a particular scheme in newspapers/ magazines etc.
+(3) The builder / developer / owner / company shall indicate in the pamphlets / brochures, that they would provide No Objection Certificate (NOC) / permission of the mortgagee entity for sale of flats/ property, if required.
+Further, the NBFC shall ensure compliance with the above stipulations and funds shall not be released unless the builder / developer / owner / company fulfil the above requirements.
+Chapter IX - Other Regulations applicable to Non-Banking Financial Companies
+A. Loans and advances to Real Estate Sector
+",How many days after a builder/developer/owner/company fulfills the mortgage-disclosure requirements must an NBFC release funds for a housing or development project?,"The paragraph requires that funds not be released until the requirements are fulfilled, but it specifies no deadline or number of days for the release.","Non-Banking Financial Companies - Responsible Business Conduct, para 35
+35. An NBFC shall release all the original movable / immovable property documents and remove charges registered with any registry within a period of 30 days after full repayment/ settlement of the loan account.
+","Non-Banking Financial Companies - Responsible Business Conduct, para 58
+58. An NBFC shall release or return the pledged eligible collateral held as security to the borrower(s)/ legal heir(s) on the same day but in any case, not exceeding a maximum period of seven working days upon full repayment or settlement of the loan.
+","Non-Banking Financial Companies - Credit Facilities, para 78
+78. An NBFC shall update any change in parameters of a project finance exposure at the earliest, but not later than 15 days from such change. The necessary system in this regard shall be put in place within three months of the effective date.
+E. Disclosures
+","Non-Banking Financial Companies - Credit Facilities, para 108
+108. While granting finance to housing / development projects, the NBFC shall also stipulate as a part of the terms and conditions that:
+(1) The builder / developer / owner / company shall disclose in the pamphlets / brochures / display boards on-site, the name(s) of the entity to which the property is mortgaged.
+(2) The builder/ developer/ company shall append the information relating to mortgage while publishing advertisement of a particular scheme in newspapers/ magazines etc.
+(3) The builder / developer / owner / company shall indicate in the pamphlets / brochures, that they would provide No Objection Certificate (NOC) / permission of the mortgagee entity for sale of flats/ property, if required.
+Further, the NBFC shall ensure compliance with the above stipulations and funds shall not be released unless the builder / developer / owner / company fulfil the above requirements.
+Chapter IX - Other Regulations applicable to Non-Banking Financial Companies
+A. Loans and advances to Real Estate Sector
+","Non-Banking Financial Companies - Responsible Business Conduct, para 39
+39. An NBFC shall communicate to the borrower reasons for delay in releasing of original movable / immovable property documents or failing to file charge satisfaction form with relevant registry beyond 30 days after full repayment/ settlement of loan. In case where the delay is attributable to the NBFC, it shall compensate the borrower at the rate of ₹5,000 for each day of delay.
+",,,
+12936-52-minimax-u,"Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2025",52,"52. NBFC-AA shall comply with the provisions of paragraphs 8 to 10 of Reserve Bank of India (Non-Banking Financial Companies– Acquisition of Shareholding or Control) Directions, 2025.
+G.3 Information with respect to change of address, directors, auditors, etc. to be submitted
+",How many days in advance must an NBFC-AA apply to the RBI for prior approval of an acquisition or transfer of control?,"The cited text requires prior approval and cross-references paragraphs 8 to 10, but it does not state any application lead time or deadline.","Non-Banking Financial Companies - Acquisition of Shareholding or Control, para 6
+6. An NBFC shall require prior written permission of the Reserve Bank for the following:
+(1) Any takeover or acquisition of control of the NBFC, which may or may not result in change of management;
+(2) Any change in the shareholding of the NBFC, including progressive increases over time, which would result in acquisition/ transfer of shareholding of 26 percent or more of the paid-up equity capital of the NBFC.
+Provided that, prior approval would not be required in case of any shareholding going beyond 26 percent due to buyback of shares/reduction in capital where it has approval of a competent Court. However, the same is to be reported to the Reserve Bank / NHB not later than one month from its occurrence.
+(3) any change in the shareholding of an HFC accepting / holding public deposits, including progressive increases over time, which would result in acquisition / transfer of shareholding of 10 per cent or more of the paid-up equity capital of the HFC by / to a foreign investor
+Provided that, prior approval would not be required in case of any shareholding going beyond 10 per cent, as applicable, due to buyback of shares/ reduction in capital where it has approval of a competent Court. However, the same is to be reported to the NHB not later than one month from the date of its occurrence.
+","Non-Banking Financial Companies - Account Aggregator, para 49
+49. NBFC-AA shall comply with the disclosure requirements specified in Reserve Bank of India (Non-Banking Financial Companies – Financial Statements: Presentation and Disclosures) Directions, 2025, except provisions contained in paragraphs 13 to 15 and paragraph 20. These disclosures are in addition to and not in substitution of the disclosure requirements specified under other laws, regulations, or accounting and financial reporting standards. More comprehensive disclosures than the minimum required are encouraged, especially if such disclosures significantly aid in the understanding of the financial position and performance.
+G. Requirement to obtain prior approval of the Reserve Bank for acquisition or transfer of control of NBFC-AA
+","Non-Banking Financial Companies - Account Aggregator, para 50
+50. The prior written permission of the Reserve Bank shall be required for an NBFC-AA for -
+(1) Any takeover or acquisition of control or any change in the shareholding as prescribed in paragraphs 6(1) and 6(2) of Reserve Bank of India (Non-Banking Financial Companies– Acquisition of Shareholding or Control) Directions, 2025.
+(2) Any change in shareholding that will give the acquirer a right to nominate a director.
+(3) Any change in directors and / or Management, as prescribed in paragraph 10 of Reserve Bank of India (Non-Banking Financial Companies - Governance) Directions, 2025.
+G.1 Application for prior approval
+","Non-Banking Financial Companies - Managing Risks in Outsourcing, para 16
+16. An NBFC, which desires to outsource financial services, shall not require prior approval from RBI. However, such arrangements would be subject to on-site / off-site monitoring and inspection / scrutiny by RBI.
+","Non-Banking Financial Companies - Responsible Business Conduct, para 19
+19. In case of receipt of request from the borrower for transfer of borrowal account, the consent or otherwise i.e., objection of the NBFC, if any, shall be conveyed within 21 days from the date of receipt of request. Such transfer shall be as per transparent contractual terms in consonance with law.
+",,,
+13149-5-nemotron-u,"Reserve Bank of India (Commercial Banks – Interest Rates on Advances) Directions, 2025",5,"5. In these Directions, unless the context otherwise requires, the terms herein shall bear the meanings assigned to them below:
+(1) ‘Advance against own deposit’ means advance granted against Rupee/ FCNR(B) term deposit and the deposit stands in the name of:
+1. the borrower, either singly or jointly.
+2. one of the partners of a partnership firm and advance is made to the said firm.
+3. the proprietor of a proprietary concern and advance is made to such concern.
+4. a ward whose guardian is competent to borrow on behalf of the ward and where the advance is made to the guardian of the ward in such capacity.
+(2) ‘Benchmark Prime Lending Rate (BPLR)’ means internal benchmark rate used to determine the interest rates on advances / loans sanctioned upto June 30, 2010.
+(3) ‘Benchmark rate’ means the reference rate used to determine the interest rates on loans.
+(4) ‘External benchmark rate’ means the reference rate which includes:
+1. Reserve Bank of India policy Repo Rate;
+2. Government of India Three-months and Six-months Treasury Bill yields published by Financial Benchmarks India Private Ltd (FBIL);
+3. Any other benchmark market interest rate published by FBIL.
+(5) ‘Fixed rate loan’ means a loan on which the interest rate is fixed for the entire tenor of the loan.
+(6) ‘Floating rate loan’ means a loan on which interest rate does not remain fixed during the tenor of the loan.
+(7) ‘Internal benchmark rate’ means a reference rate determined internally by the bank.
+(8) ‘Microfinance loan’ shall have the same meaning as assigned in Reserve Bank of India (Commercial Banks – Credit Facilities) Directions, 2025.
+(9) ‘Rests’ refers to periodicity of charging interest to borrowers.
+(10) ‘Short term borrowing’ means borrowing of tenor up to but less than one year.
+(11) ‘Term loan’ means a loan which is repayable after a specified term period.
+(12) All other expressions, unless defined herein, shall have the same meaning as have been assigned to them under the Banking Regulation Act,1949 or the Reserve Bank of India Act, 1934 or any statutory modification or re-enactment thereto or as used in commercial parlance, as the case may be.
+Chapter II - General guidelines
+A. Interest Rate Framework
+",What is the maximum permissible spread a commercial bank can charge over the external benchmark rate for floating rate loans?,"The paragraph defines key terms but does not specify any limits, caps, or permissible spreads over benchmark rates.","Commercial Banks - Interest Rates on Advances, para 25
+25. All floating rate personal or retail loans (housing, auto, etc.), and floating rate loans extended by banks to Micro, Small and Medium Enterprises (MSME) shall be benchmarked to an External Benchmark Rate.
+","Commercial Banks - Interest Rates on Advances, para 45
+45. The following types of loans shall be exempted from the provisions contained under paragraphs 10 to 41 of these Directions:
+(1) Loans covered by schemes specially formulated by Government of India wherein a bank has to charge interest rates as per the scheme.
+(2) Working Capital Term Loan (WCTL), Funded Interest Term Loan (FITL), etc. granted as part of the rectification / restructuring package.
+(3) Loans granted under various refinance schemes formulated by Government of India or any Government Undertakings wherein a bank charges interest at the rates prescribed under the schemes to the extent refinance is available, Interest rate charged on the part not covered under refinance shall adhere to the Base rate / MCLR / External Benchmark guidelines.
+(4) The following categories of loans:
+(i) Advances to banks’ depositors against their own deposits.
+(ii) Advances to banks’ own employees including retired employees.
+(iii) Advances granted to the Chief Executive Officer / Whole Time Directors.
+(iv) Loans linked to a market determined external benchmark.
+Provided that floating rate loans based on external benchmark sanctioned before April 01, 2016 shall be equal to or above the Base Rate at the time of sanction or renewal.
+(v) Fixed rate loans of tenor above three years.
+","Commercial Banks - Interest Rates on Advances, para 6
+6. A bank shall charge interest on its loans and advances on the terms and conditions specified in these directions.
+(1) There shall be a comprehensive policy duly approved by the Board of Directors or any committee of the Board to which powers have been delegated, in respect of interest rates on advances, including the pricing of microfinance loans.
+(2) All floating rate loans, except those mentioned in paragraph 45, shall be priced with reference to a benchmark as mentioned in paragraphs 10 to 27.
+(3) A bank shall have the freedom to offer all categories of advances on fixed or floating interest rates.
+(4) When the floating rate advances are linked to a reference benchmark rate, a bank shall determine its actual lending rates by adding the components of spread to the reference benchmark rate.
+(5) The reference benchmark rate used for pricing the loans shall form part of the terms of the loan contract.
+(6) Interest rates on fixed rate loans of tenor below three years shall not be less than the benchmark rate for similar tenor and shall be as per directions contained in paragraph 45(4)(v).
+(7) Interest shall be charged on all advances at monthly rests.
+Provided that interest on agricultural advances and advance to farmers shall be charged by a bank as per below instructions:
+1. Total interest debited in short term loan should not exceed the principal amount for advances to small and marginal farmers.
+","Commercial Banks - Interest Rates on Advances, para 33
+33. A bank is free to decide the spread over the external benchmark. However, credit risk premium may undergo change only when borrower’s credit assessment undergoes a substantial change, as agreed upon in the loan contract. Further, other components of spread including operating cost could be altered once in three years.
+Provided that the other spread components may be reduced by banks for a loan category earlier than three years for customer retention, on justifiable grounds, in a non-discriminatory manner, and in terms of the bank's policy.
+B. Reset of interest rates
+B.1 Reset of interest rates under Marginal Cost of Funds based Lending Rate (MCLR) system
+","Commercial Banks - Interest Rates on Advances, para 5
+5. In these Directions, unless the context otherwise requires, the terms herein shall bear the meanings assigned to them below:
+(1) ‘Advance against own deposit’ means advance granted against Rupee/ FCNR(B) term deposit and the deposit stands in the name of:
+1. the borrower, either singly or jointly.
+2. one of the partners of a partnership firm and advance is made to the said firm.
+3. the proprietor of a proprietary concern and advance is made to such concern.
+4. a ward whose guardian is competent to borrow on behalf of the ward and where the advance is made to the guardian of the ward in such capacity.
+(2) ‘Benchmark Prime Lending Rate (BPLR)’ means internal benchmark rate used to determine the interest rates on advances / loans sanctioned upto June 30, 2010.
+(3) ‘Benchmark rate’ means the reference rate used to determine the interest rates on loans.
+(4) ‘External benchmark rate’ means the reference rate which includes:
+1. Reserve Bank of India policy Repo Rate;
+2. Government of India Three-months and Six-months Treasury Bill yields published by Financial Benchmarks India Private Ltd (FBIL);
+3. Any other benchmark market interest rate published by FBIL.
+(5) ‘Fixed rate loan’ means a loan on which the interest rate is fixed for the entire tenor of the loan.
+(6) ‘Floating rate loan’ means a loan on which interest rate does not remain fixed during the tenor of the loan.
+(7) ‘Internal benchmark rate’ means a reference rate de",,,
+12943-34-nemotron-u,"Reserve Bank of India (Non-Banking Financial Companies – Know Your Customer) Directions, 2025 (Updated as on December 29, 2025)",34,"34. For opening an account of a partnership firm, the NBFC shall obtain the certified copies of each of the following documents or the equivalent e-documents thereof:
+(1) Registration certificate
+(2) Partnership deed
+(3) PAN of the partnership firm
+(4) Documents, as specified in paragraph 23, relating to beneficial owner, managers, officers or employees, as the case may be, holding an attorney to transact on its behalf
+(5) the names of all the partners and
+(6) address of the registered office, and the principal place of its business, if it is different.
+",What is the maximum number of partners a partnership firm can have to be eligible for account opening under these directions?,The paragraph lists required documents and information but does not specify any limit on the number of partners.,"Commercial Banks - Know Your Customer, para 34
+34. For opening an account of a partnership firm, the bank shall obtain the certified copies of each of the following documents or the equivalent e-documents thereof:
+(1) Registration certificate
+(2) Partnership deed
+(3) PAN of the partnership firm
+(4) Documents, as specified in paragraph 23, relating to beneficial owner, managers, officers or employees, as the case may be, holding an attorney to transact on its behalf
+(5) the names of all the partners and
+(6) address of the registered office, and the principal place of its business, if it is different.
+","Payments Banks - Know Your Customer, para 34
+34. For opening an account of a partnership firm, the bank shall obtain the certified copies of each of the following documents or the equivalent e-documents thereof:
+(1) Registration certificate
+(2) Partnership deed
+(3) PAN of the partnership firm
+(4) Documents, as specified in paragraph 23, relating to beneficial owner, managers, officers or employees, as the case may be, holding an attorney to transact on its behalf
+(5) the names of all the partners and
+(6) address of the registered office, and the principal place of its business, if it is different.
+","Small Finance Banks - Know Your Customer, para 35
+35. For opening an account of a partnership firm, the bank shall obtain the certified copies of each of the following documents or the equivalent e-documents thereof:
+(1) Registration certificate
+(2) Partnership deed
+(3) PAN of the partnership firm
+(4) Documents, as specified in paragraph 23, relating to beneficial owner, managers, officers or employees, as the case may be, holding an attorney to transact on its behalf
+(5) the names of all the partners and
+(6) address of the registered office, and the principal place of its business, if it is different.
+","Rural Co-operative Banks - Know Your Customer, para 33
+33. For opening an account of a partnership firm, the bank shall obtain the certified copies of each of the following documents or the equivalent e-documents thereof:
+(1) Registration certificate
+(2) Partnership deed
+(3) PAN of the partnership firm
+(4) Documents, as specified in paragraph 22, relating to beneficial owner, managers, officers or employees, as the case may be, holding an attorney to transact on its behalf
+(5) the names of all the partners and
+(6) address of the registered office, and the principal place of its business, if it is different.
+","Non-Banking Financial Companies - Know Your Customer, para 34
+34. For opening an account of a partnership firm, the NBFC shall obtain the certified copies of each of the following documents or the equivalent e-documents thereof:
+(1) Registration certificate
+(2) Partnership deed
+(3) PAN of the partnership firm
+(4) Documents, as specified in paragraph 23, relating to beneficial owner, managers, officers or employees, as the case may be, holding an attorney to transact on its behalf
+(5) the names of all the partners and
+(6) address of the registered office, and the principal place of its business, if it is different.
+",,,
+12933-32-nemotron-u,"Reserve Bank of India (Non-Banking Financial Companies – Microfinance Institution) Directions, 2025",32,"32. An NBFC-MFI shall adhere to the provisions of Reserve Bank of India (Non-Banking Financial Companies – Prudential Norms on Declaration of Dividends) Directions, 2025.
+Chapter-V – Shareholding and Corporate Governance
+A. Acquisition of Shareholding or Control
+",What is the maximum dividend payout ratio an NBFC-MFI can declare under these directions?,"The paragraph only states that NBFC-MFIs must adhere to a separate set of directions for dividend prudential norms; it does not specify any payout ratio, limit, or condition itself.","Non-Banking Financial Companies - Prudential Norms on Declaration of Dividends, para 9
+9. An NBFC eligible to declare dividend as per paragraph 8, may pay dividend, subject to the following:
+(i) Proposed dividend shall include dividend on both equity shares and compulsorily convertible preference shares eligible for inclusion in Tier 1 Capital / Owned Fund, as applicable.
+(ii) In case the net profit for the relevant period includes any exceptional and / or extra-ordinary profits / income or the financial statements are qualified (including ’emphasis of matter’) by the statutory auditor that indicates an overstatement of net profit, the same shall be reduced from net profit while determining the dividend payout ratio.
+(iii) The ceilings on dividend payout ratios for the NBFC eligible to declare dividend shall be as under:
+Table 2: Ceilings on dividend payout ratio
+Sr. No. | Type of NBFC | Maximum dividend payout ratio (percentage)
+(a) | 1[NBFC holding Certificate of Registration as ‘Type I NBFC’] | No ceiling specified
+(b) | CIC | 60
+(c) | SPD | 60
+(d) | Other NBFC | 50
+Note: There shall no ceiling on dividend payout ratio for NBFC-Base Layer having customer interface but not accepting public funds.
+The Board shall ensure that the total dividend proposed for the financial year does not exceed the ceilings specified in these guidelines. The Reserve Bank or NHB will not entertain any request for ad-hoc dispensation on declaration of dividend.
+","Non-Banking Financial Companies - Prudential Norms on Declaration of Dividends, para 11
+11. An NBFC (other than SPD) which does not meet the applicable prudential requirements prescribed in paragraph 8 [Sr. No. (1) and (2) of Table 1] for each of the last three financial years, may be eligible to declare dividend, subject to a cap of ten per cent on the dividend payout ratio, provided the NBFC complies with the following conditions:
+(i) It meets the applicable capital adequacy requirement (including CRAR, Tier I capital, Tier II capital, leverage ratio, ANW, as applicable) as at the close of the financial year for which it proposes to pay dividend; and
+(i) It has net NPA of less than four per cent as at the close of the financial year.
+","Non-Banking Financial Companies - Prudential Norms on Declaration of Dividends, para 8
+y capital requirements. <br> NBFC-AA shall refer to the Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2025, for minimum applicable regulatory capital requirements.
+(2) | Net NPA | The NNPA ratio shall be less than six per cent in each of the last three years, including as at the close of the financial year for which dividend is proposed to be declared.
+(3) | Other criteria | (i) An NBFC shall comply with the provisions of Section 45IC of the Reserve Bank of India Act, 1934. <br> Note: In case of HFCs, it shall comply with the provisions of Section 29C of the National Housing Bank Act, 1987. <br>(ii) An NBFC shall be compliant with the prevailing regulations / guidelines issued by the Reserve Bank or NHB (for HFCs), as applicable. The Reserve Bank or NHB (for HFCs) should not have placed any explicit restrictions on declaration of dividend.
+C. Quantum of dividend payable
+","Non-Banking Financial Companies - Microfinance Institution, para 32
+32. An NBFC-MFI shall adhere to the provisions of Reserve Bank of India (Non-Banking Financial Companies – Prudential Norms on Declaration of Dividends) Directions, 2025.
+Chapter-V – Shareholding and Corporate Governance
+A. Acquisition of Shareholding or Control
+","Non-Banking Financial Companies - Microfinance Institution, para 31
+31. An NBFC-MFI shall adhere to the provisions of Reserve Bank of India (Non-Banking Financial Companies – Asset Liability Management) Directions, 2025.
+F. Declaration of Dividends
+",,,
+13156-41-nemotron-u,"Reserve Bank of India (Commercial Banks – Credit Facilities) Directions, 2025 (Updated as on October 1, 2026)",41,"41. Gold or silver accepted as collateral shall be valued based on the reference price corresponding to its actual purity (caratage). For this purpose, the lower of
+(1) the average closing price for gold or silver, as the case may be, of that specific purity over the preceding 30 days, or
+(2) the closing price for gold or silver, as the case may be, of that specific purity on the preceding day,
+as published either by the India Bullion and Jewellers Association Ltd. (IBJA) or by a commodity exchange regulated by the Securities and Exchange Board of India (SEBI) shall be used.
+",How frequently must a commercial bank revalue gold or silver collateral after the initial valuation?,The paragraph specifies the valuation methodology and acceptable price sources but does not state any revaluation frequency or timeline for subsequent valuations.,"Commercial Banks - Responsible Business Conduct, para 390
+390. The pledged gold and / or silver collateral lying with a bank beyond two years from the date of full repayment or settlement of loan shall be treated as unclaimed. The bank shall periodically undertake special drives to ascertain the whereabouts of the borrower(s) / legal heir(s) in respect of such unclaimed gold and / or silver collateral.
+","Commercial Banks - Responsible Business Conduct, para 382
+382. A bank shall declare a reserve price for the gold and silver collateral at the time of auction, which shall not be less than 90 per cent of its current value.
+Provided that in case auctions fail twice, a reserve price not less than 85 per cent of its current value shall be adopted.
+","Commercial Banks - Responsible Business Conduct, para 385
+385. After the auction, a bank shall mandatorily provide full details of the value fetched at the auction and the dues adjusted to the borrower(s) / legal heir(s). The surplus, if any, from the auction of the gold or silver collateral, shall be refunded to the borrower(s) / legal heir(s) within a maximum period of seven working days from the date of receipt of the full auction proceeds. The bank may recover shortfall, if any, as per terms of the loan agreement.
+H.6 Compensation
+","Non-Banking Financial Companies - Responsible Business Conduct, para 71
+71. The pledged gold and / or silver collateral lying with an NBFC beyond two years from the date of full repayment or settlement of loan shall be treated as unclaimed. The NBFC shall periodically undertake special drives to ascertain the whereabouts of the borrower(s) / legal heir(s) in respect of such unclaimed gold and/ or silver collateral.
+","Commercial Banks - Credit Facilities, para 41
+41. Gold or silver accepted as collateral shall be valued based on the reference price corresponding to its actual purity (caratage). For this purpose, the lower of
+(1) the average closing price for gold or silver, as the case may be, of that specific purity over the preceding 30 days, or
+(2) the closing price for gold or silver, as the case may be, of that specific purity on the preceding day,
+as published either by the India Bullion and Jewellers Association Ltd. (IBJA) or by a commodity exchange regulated by the Securities and Exchange Board of India (SEBI) shall be used.
+",,,
+13140-203-minimax-u,"Reserve Bank of India (Commercial Banks - Responsible Business Conduct) Directions, 2025 (Updated as on October 1, 2026)",203,"203. The bank shall undertake special drives periodically to find out the whereabouts of the customers, their nominees or legal heirs in respect of inoperative accounts / unclaimed deposits.
+B.5 Activation of inoperative accounts
+","How frequently must a commercial bank conduct special drives to trace customers, nominees, or legal heirs for inoperative accounts and unclaimed deposits—for example, once every six months or once every year?","The paragraph requires special drives periodically but does not specify a fixed frequency, interval, or deadline.","Commercial Banks - Responsible Business Conduct, para 203
+203. The bank shall undertake special drives periodically to find out the whereabouts of the customers, their nominees or legal heirs in respect of inoperative accounts / unclaimed deposits.
+B.5 Activation of inoperative accounts
+","Commercial Banks - Responsible Business Conduct, para 390
+390. The pledged gold and / or silver collateral lying with a bank beyond two years from the date of full repayment or settlement of loan shall be treated as unclaimed. The bank shall periodically undertake special drives to ascertain the whereabouts of the borrower(s) / legal heir(s) in respect of such unclaimed gold and / or silver collateral.
+","Commercial Banks - Cybersecurity, Technology: Risk, Resilience and Assurance Framework, para 151
+151. For critical information systems and / or those in the DMZ having customer interface, VA shall be conducted at least once in every six months and PT at least once in 12 months. For non-critical information systems, a risk-based approach shall be adopted to decide the requirement and periodicity of conduct of VA / PT.
+","Commercial Banks - Responsible Business Conduct, para 202
+202. In case the whereabouts of the holder(s) of the inoperative account / unclaimed deposit are not traceable, the bank shall contact the introducer, if any, who had introduced the account holder to the bank at the time of opening of the account. The bank shall also contact the nominee, if registered, for tracing the customer.
+","Commercial Banks - Responsible Business Conduct, para 200
+200. The bank shall ensure that amounts lying in inoperative accounts / unclaimed deposits and reactivated inoperative accounts / unclaimed deposits are subjected to concurrent audit.
+B.4 Tracing of customers of inoperative accounts / unclaimed deposits
+",,,
+12943-48-minimax-u,"Reserve Bank of India (Non-Banking Financial Companies – Know Your Customer) Directions, 2025 (Updated as on December 29, 2025)",48,"48. The NBFC shall ensure that in case of customers who are non-profit organisations, the NBFC registers details of such customers on the DARPAN Portal of NITI Aayog. If they are not registered, the NBFC shall register the details on the DARPAN Portal. The NBFC shall also maintain such registration records for a period of five years after the business relationship between the customer and the NBFC has ended or the account has been closed, whichever is later.
+Chapter VIII – Reporting Requirements to Financial Intelligence Unit – India
+",By when must an NBFC register a non-profit organisation customer who is not yet registered on the DARPAN Portal?,The paragraph requires registration but does not specify any deadline or time limit for completing it.,"Non-Banking Financial Companies - Know Your Customer, para 48
+48. The NBFC shall ensure that in case of customers who are non-profit organisations, the NBFC registers details of such customers on the DARPAN Portal of NITI Aayog. If they are not registered, the NBFC shall register the details on the DARPAN Portal. The NBFC shall also maintain such registration records for a period of five years after the business relationship between the customer and the NBFC has ended or the account has been closed, whichever is later.
+Chapter VIII – Reporting Requirements to Financial Intelligence Unit – India
+","Payments Banks - Know Your Customer, para 50
+50. The bank shall ensure that in case of customers who are non-profit organisations, the bank registers details of such customers on the DARPAN Portal of NITI Aayog. If they are not registered, the bank shall register the details on the DARPAN Portal. The bank shall also maintain such registration records for a period of five years after the business relationship between the customer and the bank has ended or the account has been closed, whichever is later.
+Chapter VIII – Reporting Requirements to Financial Intelligence Unit–India
+","Commercial Banks - Know Your Customer, para 51
+51. The bank shall ensure that in case of customers who are non-profit organisations, the bank registers details of such customers on the DARPAN Portal of NITI Aayog. If they are not registered, the bank shall register the details on the DARPAN Portal. The bank shall also maintain such registration records for a period of five years after the business relationship between the customer and the bank has ended or the account has been closed, whichever is later.
+Chapter VIII – Reporting Requirements to Financial Intelligence Unit – India
+","Local Area Banks - Know Your Customer, para 50
+50. The bank shall ensure that in case of customers who are non-profit organisations, the bank registers details of such customers on the DARPAN Portal of NITI Aayog. If they are not registered, the bank shall register the details on the DARPAN Portal. The bank shall also maintain such registration records for a period of five years after the business relationship between the customer and the bank has ended or the account has been closed, whichever is later.
+Chapter VIII – Reporting Requirements to Financial Intelligence Unit – India
+","Small Finance Banks - Know Your Customer, para 52
+52. The bank shall ensure that in case of customers who are non-profit organisations, the bank registers details of such customers on the DARPAN Portal of NITI Aayog. If they are not registered, the bank shall register the details on the DARPAN Portal. The bank shall also maintain such registration records for a period of five years after the business relationship between the customer and the bank has ended or the account has been closed, whichever is later.
+Chapter VIII – Reporting Requirements to Financial Intelligence Unit – India
+",,,
+12933-32-minimax-u,"Reserve Bank of India (Non-Banking Financial Companies – Microfinance Institution) Directions, 2025",32,"32. An NBFC-MFI shall adhere to the provisions of Reserve Bank of India (Non-Banking Financial Companies – Prudential Norms on Declaration of Dividends) Directions, 2025.
+Chapter-V – Shareholding and Corporate Governance
+A. Acquisition of Shareholding or Control
+",What minimum net worth or maximum dividend payout ratio must an NBFC-MFI meet before declaring a dividend?,"The paragraph only requires NBFC-MFIs to adhere to the Prudential Norms on Declaration of Dividends Directions, 2025; it states no net worth requirement, payout ratio, limit, or deadline for dividend declaration.","Non-Banking Financial Companies - Prudential Norms on Declaration of Dividends, para 11
+11. An NBFC (other than SPD) which does not meet the applicable prudential requirements prescribed in paragraph 8 [Sr. No. (1) and (2) of Table 1] for each of the last three financial years, may be eligible to declare dividend, subject to a cap of ten per cent on the dividend payout ratio, provided the NBFC complies with the following conditions:
+(i) It meets the applicable capital adequacy requirement (including CRAR, Tier I capital, Tier II capital, leverage ratio, ANW, as applicable) as at the close of the financial year for which it proposes to pay dividend; and
+(i) It has net NPA of less than four per cent as at the close of the financial year.
+","Non-Banking Financial Companies - Prudential Norms on Declaration of Dividends, para 9
+9. An NBFC eligible to declare dividend as per paragraph 8, may pay dividend, subject to the following:
+(i) Proposed dividend shall include dividend on both equity shares and compulsorily convertible preference shares eligible for inclusion in Tier 1 Capital / Owned Fund, as applicable.
+(ii) In case the net profit for the relevant period includes any exceptional and / or extra-ordinary profits / income or the financial statements are qualified (including ’emphasis of matter’) by the statutory auditor that indicates an overstatement of net profit, the same shall be reduced from net profit while determining the dividend payout ratio.
+(iii) The ceilings on dividend payout ratios for the NBFC eligible to declare dividend shall be as under:
+Table 2: Ceilings on dividend payout ratio
+Sr. No. | Type of NBFC | Maximum dividend payout ratio (percentage)
+(a) | 1[NBFC holding Certificate of Registration as ‘Type I NBFC’] | No ceiling specified
+(b) | CIC | 60
+(c) | SPD | 60
+(d) | Other NBFC | 50
+Note: There shall no ceiling on dividend payout ratio for NBFC-Base Layer having customer interface but not accepting public funds.
+The Board shall ensure that the total dividend proposed for the financial year does not exceed the ceilings specified in these guidelines. The Reserve Bank or NHB will not entertain any request for ad-hoc dispensation on declaration of dividend.
+","Non-Banking Financial Companies - Prudential Norms on Declaration of Dividends, para 8
+(1) | Capital Adequacy | 1. An NBFC (other than SPD) should have met the applicable regulatory capital requirement (including CRAR, Tier I capital, Tier II capital, leverage ratio, and ANW, as applicable) for each of the last three financial years including the financial year for which the dividend is proposed. <br> Provided that where an NBFC has been in existence for less than three financial years, the above requirement shall be since registration. <br> 2. An SPD shall have maintained a minimum CRAR of 20 per cent for the financial year (each of the four quarters) for which dividend is proposed. <br> Note: <br> NBFC-D, NBFC-ICC, NBFC-Factor, NBFC-IFC, IDF-NBFC, NBFC-MFI shall refer to the Reserve Bank of India (Non-Banking Financial Companies – Prudential Norms on Capital Adequacy) Directions, 2025, for minimum applicable regulatory capital requirements. <br> HFC shall refer to the Reserve Bank of India (Housing Finance Companies) Directions, 2025, for minimum applicable regulatory capital requirements. <br> MGC shall refer to the Reserve Bank of India (Mortgage Guarantee Companies) Directions, 2025, for minimum applicable regulatory capital requirements. <br> CIC shall refer to the Reserve Bank of India (Core Investment Companies) Directions, 2025, for minimum applicable regulatory capital requirements. <br> NBFC-P2P shall refer to the Reserve Bank of India (Non-Banking Financial Compan","Non-Banking Financial Companies - Prudential Norms on Declaration of Dividends, para 8
+y capital requirements. <br> NBFC-AA shall refer to the Reserve Bank of India (Non-Banking Financial Companies - Account Aggregator) Directions, 2025, for minimum applicable regulatory capital requirements.
+(2) | Net NPA | The NNPA ratio shall be less than six per cent in each of the last three years, including as at the close of the financial year for which dividend is proposed to be declared.
+(3) | Other criteria | (i) An NBFC shall comply with the provisions of Section 45IC of the Reserve Bank of India Act, 1934. <br> Note: In case of HFCs, it shall comply with the provisions of Section 29C of the National Housing Bank Act, 1987. <br>(ii) An NBFC shall be compliant with the prevailing regulations / guidelines issued by the Reserve Bank or NHB (for HFCs), as applicable. The Reserve Bank or NHB (for HFCs) should not have placed any explicit restrictions on declaration of dividend.
+C. Quantum of dividend payable
+","Non-Banking Financial Companies - Microfinance Institution, para 16
+16. An NBFC-MFI shall maintain a capital adequacy ratio consisting of Tier 1 and Tier 2 capital which shall not be less than 15 per cent of its aggregate risk weighted assets of on-balance sheet and of risk adjusted value of off-balance sheet items.
+",,,
+13161-21-minimax-u,"Reserve Bank of India (Commercial Banks - Governance) Directions, 2025 (Updated as on October 01, 2026)",21,"21. Risk Management Committee
+(1) The Board of a PSB shall constitute a Risk Management Committee of the Board (RMCB) with a majority of NEDs.
+(2) The Chair of the Board may be a member of the RMCB only if they have the requisite risk management expertise.
+(3) The RMCB shall meet at least once in each quarter with a quorum of three members. At least half of the members attending the meeting of the RMCB shall be independent directors of which at least one member shall have professional expertise / qualification in risk management. The bank shall also refer to ‘ Guidance Note on Management of Credit Risk’.
+(4) Meetings of RMCB shall be chaired by an independent director who shall not be a Chair of the Board or any other committee of the Board.
+",How many independent directors must a public sector bank appoint to its Risk Management Committee?,"The paragraph requires a majority of non-executive directors on the committee and that at least half of the members attending each meeting be independent directors, but it does not state a fixed number of independent directors to be appointed to the committee.","Commercial Banks - Fraud Risk Management, para 8
+8. Special Committee of the Board for Monitoring and Follow-up of cases of Frauds:
+(1) The bank shall constitute a Committee of the Board to be known as ‘Special Committee of the Board for Monitoring and Follow-up of cases of Frauds’ (SCBMF) with a minimum of three members of the Board, consisting of a whole-time director and a minimum of two independent directors / non-executive directors. The Committee shall be headed by one of the independent directors / non-executive directors.
+(2) SCBMF shall oversee the effectiveness of the Fraud Risk Management in the bank. SCBMF shall review and monitor cases of frauds, including root cause analysis, and suggest mitigating measures for strengthening the internal controls, risk management framework and minimising the incidence of frauds. The Board of the bank shall decide the coverage and periodicity of such reviews. The coverage may include, among others, categories / trends of frauds, industry / sectoral / geographical concentration of frauds, delay in detection / classification of frauds and delay in examination / conclusion of staff accountability.
+(3) The Board of the bank shall decide the threshold amount of fraud cases to be placed before the SCBMF, after duly taking into account the scale and complexity of its operations.
+","Commercial Banks - Governance, para 21
+21. Risk Management Committee
+(1) The Board of a PSB shall constitute a Risk Management Committee of the Board (RMCB) with a majority of NEDs.
+(2) The Chair of the Board may be a member of the RMCB only if they have the requisite risk management expertise.
+(3) The RMCB shall meet at least once in each quarter with a quorum of three members. At least half of the members attending the meeting of the RMCB shall be independent directors of which at least one member shall have professional expertise / qualification in risk management. The bank shall also refer to ‘ Guidance Note on Management of Credit Risk’.
+(4) Meetings of RMCB shall be chaired by an independent director who shall not be a Chair of the Board or any other committee of the Board.
+","Reserve Bank of India (Core Investment Companies) Directions, 2025 (Updated as on March 10, 2026), para 69
+69. The parent CIC in the group or the CIC with the largest asset size, in case there is no identifiable parent CIC in the group, shall constitute a Group Risk Management Committee (GRMC). The GRMC shall report to the Board of the CIC that constitutes it and shall meet at least once in a quarter. The composition of GRMC shall be as under:
+(1) The GRMC shall comprise minimum of five members, including executive members.
+(2) At least two members shall be independent directors, one of whom shall be the Chairperson of the GRMC.
+(3) Members shall have adequate and commensurate experience in risk management practices.
+","Non-Banking Financial Companies - Fraud Risk Management, para 8
+8. Special Committee of the Board for Monitoring and Follow-up of cases of Frauds:
+(1) The Applicable NBFC shall constitute a Committee of the Board to be known as ‘Special Committee of the Board for Monitoring and Follow-up of cases of Frauds’ (SCBMF) with a minimum of three members of the Board, consisting of the Chief Executive Officer (Managing Director where the Chief Executive Officer is not a whole-time director) and two Independent Directors. The Committee shall be headed by one of the Independent Directors. The Applicable NBFC categorised as Middle Layer and Base Layer for regulatory purposes, shall have the option of constituting a Committee of the Executives (CoE) with a minimum of three members, at least one of whom shall be a Whole-time director or equivalent rank Official for the purpose of performing the roles and responsibilities of SCBMF as required under these Directions
+","Non-Banking Financial Companies - Account Aggregator, para 47
+47. To manage the integrated risk and evaluate overall risks faced, an NBFC-AA shall form a Risk Management Committee either at the Board or executive level, consisting of not less than three members of its Board of Directors. The Risk Management Committee shall:
+(1) give due consideration to factors such as reputation, customer confidence, consequential impact and legal implications, with regard to investment in controls and security measures for computer systems, networks, data centres, operations and backup facilities.
+(2) have oversight of technology risks and ensure that the organisation’s IT function is capable of supporting its business strategies and objectives.
+E. Fit and Proper Criteria
+",,,
+13155-76-minimax-u,"Reserve Bank of India (Commercial Banks – Credit Cards and Debit Cards: Issuance and Conduct) Directions, 2025 (Updated as on October 1, 2026)",76,"76. Card-issuers shall not levy any charge that was not explicitly indicated to the cardholders at the time of issue of the card and without getting their explicit consent. However, this shall not be applicable to charges like service taxes which may subsequently be levied by the Government or any other statutory authority. The details of all the charges associated with cards shall be displayed on the card-issuer’s website.
+","For a commercial bank issuing credit cards, what is the maximum annual fee the bank may charge?",The paragraph does not specify any numerical cap on card charges.,"Commercial Banks - Credit Information Reporting, para 8
+8. The annual fees charged by the CICs from a CI shall not exceed ₹5,000 each.
+Chapter-III Credit Information Reporting and Dissemination
+A. Data formats
+","Commercial Banks - Credit Cards and Debit Cards: Issuance and Conduct, para 23
+23. Further, the card-issuers shall adhere to the following directions relating to interest rates and other charges on credit cards:
+(1) Card-issuers shall quote Annualized Percentage Rates (APR) on credit cards for different situations such as retail purchases, balance transfer, cash advances, non-payment of minimum amount due, late payment etc., if different. The method of calculation of APR shall be given with clear examples for better comprehension. The APR charged, and the annual fee shall be shown with equal prominence. The late payment charges, including the method of calculation of such charges and the number of days, shall be prominently indicated. The manner in which the outstanding unpaid amount has been arrived at for calculation of interest shall also be specifically shown with prominence in all the billing statements. These aspects shall also be shown in the Welcome Kit in addition to being shown in the billing statements.
+","Commercial Banks - Credit Information Reporting, para 7
+7. One-time membership fee charged by the CICs from a CI to become their members shall not exceed ₹10,000 each.
+","Commercial Banks - Responsible Business Conduct, para 68
+68. A customer shall be liable for the loss occurring due to unauthorised transactions in the following cases:
+(1) In cases where the loss is due to negligence by a customer, such as where she / he has shared the payment credentials, the customer will bear the entire loss until she / he reports the unauthorised transaction to the bank. Any loss occurring after the reporting of the unauthorised transaction shall be borne by the bank.
+(2) In cases where the responsibility for the unauthorised electronic banking transaction lies neither with the bank nor with the customer, but lies elsewhere in the system and the customer notifies the bank of such a transaction within four to seven working days of receiving a communication of the transaction, the per transaction liability of the customer shall be limited to the transaction value or the amount mentioned in Table 1, whichever is lower.
+Table 1<br> Maximum liability of a customer under paragraph 68 (2)
+Type of Account | Maximum liability<br> (₹)
+• BSBD accounts | 5,000
+• All other SB accounts<br> • Pre-paid Payment Instruments (PPIs) and gift cards<br> • Current / Cash Credit / Overdraft accounts of MSMEs<br> • Current accounts / Cash Credit / Overdraft accounts of individuals with annual average balance (during 365 days preceding the incidence of fraud) / limit up to ₹25 lakh<br> • Credit cards with limit up to ₹5 lakh | 10,000
+","Commercial Banks - Credit Cards and Debit Cards: Issuance and Conduct, para 91
+91. Card-issuers shall provide to the cardholder the term-sheet containing the MITC. The document should contain the following details:
+(1) Fees and Charges
+(i) Joining fees for primary cardholder and for add-on cardholder/s
+(ii) Annual membership fees for primary and add-on cardholder/s
+(iii) Cash advance fee
+(iv) Service charges levied for transactions
+(v) Interest free (grace) period - illustrated with examples
+(vi) Finance charges for both revolving credit and cash advances
+(vii) Overdue interest charges - to be given on monthly & annualised basis
+(viii) Charges in case of default
+(2) Drawal Limits
+(i) Credit limit
+(ii) Available credit limit
+(iii) Cash withdrawal limit
+(3) Billing
+(i) Billing statements - periodicity and mode of sending
+(ii) Minimum amount payable
+(iii) Method of payment
+(iv) Billing disputes resolution
+(v) Complete postal address of card-issuer
+(vi) Toll free number, email-id and dedicated telephone number for SMS for customer care services, contact details of Grievance Redressal Official
+(4) Default and Circumstances
+(i) Procedure including notice period for reporting a cardholder as defaulter
+(ii) Procedure for withdrawal of default report and the period within which the default report would be withdrawn after settlement of dues
+(iii) Recovery procedure in case of default
+(iv) Recovery of dues in case of death / permanent in capacitance of cardholder
+",,,
+12934-49-nemotron-u,"Reserve Bank of India (Non-Banking Financial Companies – Peer to Peer Lending Platform) Directions, 2025",49,"49. The Board of Directors shall also provide for periodic review of the compliance of the Fair Practices Code and the functioning of the grievances redressal mechanism at various levels of management. A consolidated report of such reviews shall be submitted to the Board at regular intervals, as may be prescribed by it.
+",What is the maximum number of days allowed between the periodic reviews?,The paragraph requires periodic reviews but does not specify any maximum interval or deadline.,"Commercial Banks - Credit Risk Management, para 50
+50. The frequency of periodic reviews of country risk ratings shall be at least once a year with a provision to review the rating of specific country, based on any major events in that country, where bank exposure is high, even before the next periodical review of the ratings is due.
+","Commercial Banks - Securitisation Transactions, para 23
+23. In the event actions of associated institutional stakeholders (originator, SPE, servicing agent, credit enhancement provider and others) that are not prohibited in this framework, result in material alteration of the risk profile of the securitisation notes at any point, the originator shall ensure that same is adequately informed and disclosed to investors, credit rating agencies and other service providers within a maximum time frame of 14 calendar days.
+E. Limit on Total Retained Exposures by Originators
+","Non-Banking Financial Companies - Securitisation Transactions, para 22
+22. In the event actions of associated institutional stakeholders (originator, SPE, servicing agent, credit enhancement provider and others) that are not prohibited in this framework, result in material alteration of the risk profile of the securitisation notes at any point, the originator shall ensure that same is adequately informed and disclosed to investors, credit rating agencies and other service providers within a maximum time frame of 14 calendar days.
+E. Limit on Total Retained Exposures by Originators
+","Commercial Banks - Credit Facilities, para 304
+304. The PCFC shall be available for a maximum period of 360 days. Any extension of the credit shall be subject to the same terms and conditions as applicable for extension of rupee packing credit.
+","Commercial Banks - Transfer and Distribution of Credit Risk, para 132
+132. Period of Participation: The minimum period of such a Participation shall be 91 days, while the maximum period shall be 180 days.
+",,,
+13141-31-minimax-u,"Reserve Bank of India (Commercial Banks – Know Your Customer) Directions, 2025 (Updated as on October 1, 2026)",31,"31. In addition to the above, the bank shall also obtain any two of the following documents or the equivalent e-documents thereof as proof of business / activity in the name of the proprietary firm:
+(1) Registration certificate including Udyam Registration Certificate (URC) issued by the Government.
+(2) Certificate / licence issued by the municipal authorities under Shop and Establishment Act
+(3) Sales and income tax returns
+(4) CST / VAT / GST certificate
+(5) Certificate / registration document issued by Sales Tax / Service Tax / Professional Tax authorities
+(6) IEC (Importer Exporter Code) issued to the proprietary concern by the office of DGFT or Licence / certificate of practice issued in the name of the proprietary concern by any professional body incorporated under a statute
+(7) Complete Income Tax Return (not just the acknowledgement) in the name of the sole proprietor where the firm's income is reflected, duly authenticated / acknowledged by the Income Tax authorities
+(8) Utility bills such as electricity, water, landline telephone bills, etc.
+",Within what period must a commercial bank obtain the two proof-of-business documents when onboarding a sole proprietorship customer?,"The paragraph specifies how many documents are required and the types of documents acceptable, but it states no timeframe or deadline for obtaining them.","Commercial Banks - Know Your Customer, para 31
+31. In addition to the above, the bank shall also obtain any two of the following documents or the equivalent e-documents thereof as proof of business / activity in the name of the proprietary firm:
+(1) Registration certificate including Udyam Registration Certificate (URC) issued by the Government.
+(2) Certificate / licence issued by the municipal authorities under Shop and Establishment Act
+(3) Sales and income tax returns
+(4) CST / VAT / GST certificate
+(5) Certificate / registration document issued by Sales Tax / Service Tax / Professional Tax authorities
+(6) IEC (Importer Exporter Code) issued to the proprietary concern by the office of DGFT or Licence / certificate of practice issued in the name of the proprietary concern by any professional body incorporated under a statute
+(7) Complete Income Tax Return (not just the acknowledgement) in the name of the sole proprietor where the firm's income is reflected, duly authenticated / acknowledged by the Income Tax authorities
+(8) Utility bills such as electricity, water, landline telephone bills, etc.
+","Payments Banks - Know Your Customer, para 31
+31. In addition to the above, the bank shall also obtain any two of the following documents or the equivalent e-documents thereof as proof of business / activity in the name of the proprietary firm:
+(1) Registration certificate including Udyam Registration Certificate (URC) issued by the Government.
+(2) Certificate / licence issued by the municipal authorities under Shop and Establishment Act
+(3) Sales and income tax returns
+(4) CST / VAT / GST certificate
+(5) Certificate / registration document issued by Sales Tax / Service Tax / Professional Tax authorities
+(6) IEC (Importer Exporter Code) issued to the proprietary concern by the office of DGFT or Licence / certificate of practice issued in the name of the proprietary concern by any professional body incorporated under a statute
+(7) Complete Income Tax Return (not just the acknowledgement) in the name of the sole proprietor where the firm's income is reflected, duly authenticated / acknowledged by the Income Tax authorities
+(8) Utility bills such as electricity, water, landline telephone bills, etc.
+","Local Area Banks - Know Your Customer, para 30
+30. In addition to the above, the bank shall also obtain any two of the following documents or the equivalent e-documents thereof as proof of business / activity in the name of the proprietary firm:
+(1) Registration certificate including Udyam Registration Certificate (URC) issued by the Government.
+(2) Certificate / licence issued by the municipal authorities under Shop and Establishment Act
+(3) Sales and income tax returns
+(4) CST / VAT / GST certificate
+(5) Certificate / registration document issued by Sales Tax / Service Tax / Professional Tax authorities
+(6) IEC (Importer Exporter Code) issued to the proprietary concern by the office of DGFT or Licence / certificate of practice issued in the name of the proprietary concern by any professional body incorporated under a statute
+(7) Complete Income Tax Return (not just the acknowledgement) in the name of the sole proprietor where the firm's income is reflected, duly authenticated / acknowledged by the Income Tax authorities
+(8) Utility bills such as electricity, water, landline telephone bills, etc.
+","Small Finance Banks - Know Your Customer, para 32
+32. In addition to the above, the bank shall also obtain any two of the following documents or the equivalent e-documents thereof as proof of business / activity in the name of the proprietary firm:
+(1) Registration certificate including Udyam Registration Certificate (URC) issued by the Government.
+(2) Certificate / licence issued by the municipal authorities under Shop and Establishment Act
+(3) Sales and income tax returns
+(4) CST / VAT / GST certificate
+(5) Certificate / registration document issued by Sales Tax / Service Tax / Professional Tax authorities
+(6) IEC (Importer Exporter Code) issued to the proprietary concern by the office of DGFT or Licence / certificate of practice issued in the name of the proprietary concern by any professional body incorporated under a statute
+(7) Complete Income Tax Return (not just the acknowledgement) in the name of the sole proprietor where the firm's income is reflected, duly authenticated / acknowledged by the Income Tax authorities
+(8) Utility bills such as electricity, water, landline telephone bills, etc.
+","Commercial Banks - Know Your Customer, para 26
+26. The bank may undertake V-CIP to carry out:
+(1) CDD in case of new customer onboarding for individual customers, proprietor in case of proprietorship firm, authorised signatories and Beneficial Owners (BOs) in case of Legal Entity (LE) customers.
+Provided that in case of CDD of a proprietorship firm, the bank shall also obtain the equivalent e-document of the activity proofs with respect to the proprietorship firm, as mentioned in paragraph 31 and paragraph 32, apart from undertaking CDD of the proprietor.
+(2) Conversion of existing accounts opened in non-face-to-face mode using Aadhaar OTP based e-KYC authentication as per paragraph 25.
+(3) Updation / Periodic updation of KYC for eligible customers.
+",,,
+13163-14-minimax-u,"Reserve Bank of India (Commercial Banks – Digital Banking Channels Authorisation) Directions, 2025",14,"14. Interpretations
+For the purpose of giving effect to the provisions of these Directions or in order to remove any difficulties in the application or interpretation of the provisions of these Directions, the RBI may, if it considers necessary, issue necessary clarifications in respect of any matter covered herein and the interpretation of any provision of these Directions given by the RBI shall be final and binding.
+(Manoranjan Padhy)
+Chief General Manager | 
+","Within how many working days must a commercial bank submit a request for clarification under the RBI's Digital Banking Channels Authorisation Directions, 2025?",The paragraph permits the RBI to issue necessary clarifications but does not specify a request-submission procedure or any deadline for seeking or providing clarification.,"Commercial Banks - Branch Authorisation, para 105
+105. A bank shall submit immediately, and in any case not later than one week, the information relating to opening, closure, merger, shifting and conversion of banking outlets / bank branches / Offices / ATMs / NAIO, etc. online through CISBI portal to RBI.
+B. Digital Banking Units (DBUs)
+","Commercial Banks - Digital Banking Channels Authorisation, para 10
+10. Customer Conduct and Other Instructions
+10.1 Banks shall obtain explicit consent from the customer for registering/de-registering (in case of existing customers) for digital banking services and the consent shall be duly recorded/documented. It shall also be clearly indicated that SMS/email alerts will be sent to the mobile number/email of the customer registered with the bank for operations, both financial and non-financial, in their account(s).
+10.2 Multiple channels for registration of these services may be provided to minimize the need for branch visits and application processing time.
+10.3 For registration, banks shall provide the terms and conditions in clear and simple language (preferably in English, Hindi, and the local language) which is easily comprehensible to the customer. These shall provide details of charges (if any) to be levied under specific circumstances, timeframe and process to initiate stop-payment instructions, helpdesk details, grievance redressal, and risks, responsibilities, and liabilities of customers.
+10.4 Banks shall comply with the guidelines on customer protection including limiting of liability in unauthorised electronic banking transactions as provided in Reserve Bank of India (Commercial Banks - Responsible Business Conduct) Directions, 2025 (as amended from time to time), sending of alerts (through SMS, email, etc.), and ensure that the terms and conditions provided to ","Commercial Banks - Credit Cards and Debit Cards: Issuance and Conduct, para 19
+19. Any request for closure of a credit card shall be honoured within seven working days by the credit card-issuer, subject to payment of all dues by the cardholder. Subsequent to the closure of credit card, the cardholder shall be immediately notified about the closure through email, SMS, etc. Cardholders shall be provided option to submit request for closure of credit card account through multiple channels such as helpline, dedicated email-id, Interactive Voice Response (IVR), prominently visible link on the website, internet banking, mobile-app or any other mode. The card-issuer shall not insist on sending a closure request through post or any other means which may result in the delay of receipt of the request. Failure on the part of the card-issuers to complete the process of closure within seven working days shall result in a penalty of ₹500 per calendar day of delay payable to the cardholder, till the closure of the account provided there is no outstanding in the account.
+","Commercial Banks - Responsible Business Conduct, para 276
+276. Where a nomination request is found not to be in conformity with the provisions of the Act or the Rules and is consequently rejected, a bank shall inform the customer in writing, clearly indicating the reasons for such rejection, within three working days of the receipt of the request form.
+D.4 Details of nomination and name of nominee in passbook / statement of account and Term Deposit Receipt (TDR)
+","Commercial Banks - Digital Banking Channels Authorisation, para 7
+e) A satisfactory track record of regulatory compliance including with cyber security guidelines and a sound internal control system. This shall be assessed through the following:
+1. GAICA Report with respect to the technological controls prescribed in para 8 of these Directions. The report shall be certified by (third party) CERT-In empaneled auditor(s).
+2. Absence of any major adverse observations in the Information Security (IS) Audit reports for the last two financial years.
+3. Supervisory inputs.
+7.2 Once an approval is granted under these Directions, the bank can provide all types of digital banking channels. If a bank had received approval for a particular digital banking channel (like mobile banking) before the date of applicability of these Directions, it shall ensure compliance to the eligibility criteria as detailed in para 7.1(a) to (d) above before launching any other digital banking channel. Further, the GAICA Report, certified by (third party) CERT-In empanelled auditor(s), addressing the specific requirement for the new proposed channels shall be sent to the Department of Regulation, Reserve Bank of India (through the PRAVAAH portal) with the approval of appropriate authority within thirty days from the decision to launch the facility. The process shall be subject to scrutiny as deemed fit by the supervisors.
+Chapter III – Guidelines on Technological Issues in Digital Banking
+",,,
+13155-84-minimax-u,"Reserve Bank of India (Commercial Banks – Credit Cards and Debit Cards: Issuance and Conduct) Directions, 2025 (Updated as on October 1, 2026)",84,"84. Card-issuers shall ensure that their call centre staff are trained adequately to competently handle and escalate, a complaint, if necessary. The Grievance Redressal process shall have a provision for automatic escalation of unresolved complaints from a call center / base level to higher authorities. There shall be a system of acknowledging customers' complaints for follow up, such as complaint number / docket number, even if the complaints are received over phone.
+",Within what period must a commercial bank acknowledge a card complaint received by telephone?,The paragraph requires an acknowledgement or tracking number for telephone complaints but does not specify any deadline for providing it.,"Commercial Banks - Credit Cards and Debit Cards: Issuance and Conduct, para 25
+25. Card-issuers shall ensure that wrong bills are not raised and issued to cardholders. In case, a cardholder protests any bill, the card-issuer shall provide explanation and, wherever applicable, documentary evidence shall be provided to the cardholder within a maximum period of 30 days from the date of complaint.
+","Commercial Banks - Responsible Business Conduct, para 73
+73. Further, the bank shall ensure that:
+(1) a complaint is resolved and liability of the customer, if any, established within such time, as may be specified in the bank’s policy approved by its Board or a Committee to which powers have been delegated by the Board9, but not exceeding 90 days from the date of receipt of the complaint, and the customer is compensated as per provisions of paragraphs 67 to 72 above;
+(2) where it is unable to resolve the complaint or determine the customer liability, if any, within 90 days, the compensation as prescribed in paragraphs 67 to 72 is paid to the customer; and
+(3) in case of debit card / bank account, the customer does not suffer loss of interest, and in case of credit card, the customer does not bear any additional burden of interest.
+D.3.4 Customer relations policy
+","Commercial Banks - Branch Authorisation, para 101
+101. If a complaint is rejected wholly or partly by a bank, and the complainant is not satisfied with the reply; or the complainant has not received any reply within 30 days after the bank received the complaint, the complainant will have the option to approach RBI Ombudsman for redressal of grievance/s.
+Chapter VII – Information Reporting
+A. Banking outlets / branches / offices / Customer Service Points (CSPs) etc.
+","Commercial Banks - Credit Cards and Debit Cards: Issuance and Conduct, para 85
+85. Card-issuers shall be liable to compensate the complainant for the loss of his / her time, expenses, financial loss as well as for the harassment and mental anguish suffered by him/her for the fault of the card-issuer and where the grievance has not been redressed in time. For redressal of his / her grievance, the customer must first approach the concerned card-issuer. If the card-issuer does not respond within a period of 30 days after filing of the complaint or rejects the complaint wholly / partly or if the customer is not satisfied with the response / resolution given by the card-issuer, the customer can lodge his / her a complaint with the Ombudsman, Reserve Bank through any of the following methods:
+(1) Online at https://cms.rbi.org.in.
+(2) Physical complaint (letter / post) in the form as specified in Annexure ‘A’ of the Reserve Bank - Integrated Ombudsman Scheme, 2021 to “Centralised Receipt and Processing Centre, 4th Floor, Reserve Bank of India, Sector -17, Central Vista, Chandigarh - 160017”.
+E. Confidentiality of customer information
+","Commercial Banks - Responsible Business Conduct, para 275
+275. Such acknowledgement shall be given to the customers within three working days of receiving the forms of registration, cancellation and / or variation of nomination, irrespective of whether the same is asked for by the customers.
+",,,
+12957-24-minimax-u,"Reserve Bank of India (Non-Banking Financial Companies – Credit Facilities) Directions, 2025 (updated as on July 15, 2026)",24,"24. Cap on DLG
+(1) An NBFC shall ensure that the total amount of DLG cover on any outstanding portfolio which is specified upfront shall not exceed five per cent of the total amount disbursed out of that loan portfolio at any given time. In case of implicit guarantee arrangements, the DLG Provider shall not bear performance risk of more than the equivalent amount of five per cent of the underlying loan portfolio.
+(2) The portfolio over which DLG can be offered shall consist of identifiable and measurable loan assets which have been sanctioned (the ‘DLG set’). This portfolio shall remain fixed for the purpose of DLG cover and is not meant to be dynamic.
+(3) Illustrative examples on cap on DLG: .
+Illustration 1
+Assume that as on April 1, 2024 the NBFC earmarks a portfolio of ₹40 crore (out of the total sanctioned loans) under a DLG arrangement (DLG set). This portfolio shall remain ""frozen"" for the purpose of the specific DLG arrangement - meaning that no loan assets can be added or removed from it, except through loan repayment/ write-off. The NBFC can have such multiple DLG sets.
+The ceiling for DLG cover on such portfolio shall be fixed at ₹2 crore (5 per cent of ₹40 crore), which shall get activated proportionately as and when the loans are disbursed.
+Illustration 2
+Assume that out of the above DLG set, loans amounting to ₹10 crore are disbursed immediately. Then as on April 1, 2024, the DLG cover available for the portfolio shall be ₹0.5 crore (5 per cent of disbursed).
+Subsequently, if loans of ₹10 crore are further disbursed on April 15, 2024, the DLG cover shall proportionately increase to ₹1 crore effective April 15, 2024.
+(Refer table below also for summary of each case)
+Case 1: As on June 30, 2024, loans worth ₹5 crore mature without any default. In this case, the outstanding portfolio in the books of the NBFC would be ₹15 crore and the DLG cover shall remain at ₹1 crore.
+Case 2: Subsequently, there is a default of ₹2 crore during Q2-2024 and consequently the NBFC invokes the entire DLG of ₹1 crore (assuming that till date zero principal / interest have been received towards these loans). In this case, as of Sept 30, 2024 the outstanding portfolio in the books of the NBFC shall be ₹15 crore (₹20 crore original portfolio less ₹5 crore loans matured without default) but no headroom for DLG will be available as the maximum permissible DLG cover of ₹1 crore (5 per cent of disbursed) has been exhausted
+Case 3: Going further, let’s assume that recovery worth ₹1 crore is made by the NBFC during October 2024 on the defaulted loans of ₹2 crore. In such a case, the amount of the outstanding portfolio in the books of the NBFC as on October 31, 2024 shall come down to ₹14 crore (₹20 crore original portfolio less ₹5 crore loans matured without any default less ₹1 crore loans which were in default and recovered). However, the recovery amount of ₹1 crore cannot be added to reinstate the DLG cover.
+(figures in ₹ crore)
+Period | Disbursed | Loan maturing without default | Default Amount | DLG Invoked | Recovery/ Write-off | Outstanding Portfolio | Available DLG Cover
+Initial Position | 10 | - | - | - | - | 10 | 0.5
+Further disbursement | 10 | - | - | - | - | 20 | 1
+Case 1 | 20 | 5 | - | - | - | 15 | 1
+Case 2 | 20 | 5 | 2 | 1 | - | 15 | 0
+Case 3 | 20 | 5 | 2 | 1 | 1 | 14 | 0
+",What minimum credit rating or net worth must a DLG provider meet to be eligible for a DLG arrangement with an NBFC?,"Paragraph 24 specifies the DLG cap and the composition of the DLG set, but it does not state any credit-rating, net-worth, or other eligibility condition for DLG providers.","Non-Banking Financial Companies - Credit Facilities, para 20
+20. Due diligence and other requirements with respect to DLG provider
+(1) An NBFC, including an NBFC acting as DLG provider, shall lay down, as part of its policy, the eligibility criteria for DLG provider, nature and extent of DLG cover, process of monitoring and reviewing the DLG arrangement, and the details of the fees, if any, payable to/ received by the DLG provider, as the case may be before entering into any DLG arrangement.
+(2) An NBFC shall ensure that any DLG arrangement does not act as a substitute for credit appraisal requirements and robust credit underwriting standards need to be put in place irrespective of the DLG cover.
+(3) Every time an NBFC enters into or renews a DLG arrangement, it shall obtain adequate information to satisfy itself that the entity extending DLG would be able to honour it. Such information shall, at a minimum, include a declaration from the DLG provider, certified by the statutory auditor of the DLG provider, on the aggregate DLG amount outstanding, the number of lenders and the respective number of portfolios against which DLG has been provided. The declaration shall also contain past default rates on similar portfolios.
+(4) It is clarified that the due-diligence requirements specified herein are in addition to the general requirements applicable to NBFC-LSP arrangements as set out in paragraph 6 of these Directions.
+","Non-Banking Financial Companies - Credit Facilities, para 19
+19. Eligibility as DLG provider
+An NBFC may enter into DLG arrangements only with an LSP / other lender engaged as an LSP. Further, the LSP providing DLG shall be incorporated as a company under the Companies Act, 2013.
+","Non-Banking Financial Companies - Credit Facilities, para 24
+24. Cap on DLG
+(1) An NBFC shall ensure that the total amount of DLG cover on any outstanding portfolio which is specified upfront shall not exceed five per cent of the total amount disbursed out of that loan portfolio at any given time. In case of implicit guarantee arrangements, the DLG Provider shall not bear performance risk of more than the equivalent amount of five per cent of the underlying loan portfolio.
+(2) The portfolio over which DLG can be offered shall consist of identifiable and measurable loan assets which have been sanctioned (the ‘DLG set’). This portfolio shall remain fixed for the purpose of DLG cover and is not meant to be dynamic.
+(3) Illustrative examples on cap on DLG: .
+Illustration 1
+Assume that as on April 1, 2024 the NBFC earmarks a portfolio of ₹40 crore (out of the total sanctioned loans) under a DLG arrangement (DLG set). This portfolio shall remain ""frozen"" for the purpose of the specific DLG arrangement - meaning that no loan assets can be added or removed from it, except through loan repayment/ write-off. The NBFC can have such multiple DLG sets.
+The ceiling for DLG cover on such portfolio shall be fixed at ₹2 crore (5 per cent of ₹40 crore), which shall get activated proportionately as and when the loans are disbursed.
+Illustration 2
+Assume that out of the above DLG set, loans amounting to ₹10 crore are disbursed immediately. Then as on April 1, 2024, the DLG cover available for th","Non-Banking Financial Companies - Credit Facilities, para 24
+Subsequently, if loans of ₹10 crore are further disbursed on April 15, 2024, the DLG cover shall proportionately increase to ₹1 crore effective April 15, 2024.
+(Refer table below also for summary of each case)
+Case 1: As on June 30, 2024, loans worth ₹5 crore mature without any default. In this case, the outstanding portfolio in the books of the NBFC would be ₹15 crore and the DLG cover shall remain at ₹1 crore.
+Case 2: Subsequently, there is a default of ₹2 crore during Q2-2024 and consequently the NBFC invokes the entire DLG of ₹1 crore (assuming that till date zero principal / interest have been received towards these loans). In this case, as of Sept 30, 2024 the outstanding portfolio in the books of the NBFC shall be ₹15 crore (₹20 crore original portfolio less ₹5 crore loans matured without default) but no headroom for DLG will be available as the maximum permissible DLG cover of ₹1 crore (5 per cent of disbursed) has been exhausted
+Case 3: Going further, let’s assume that recovery worth ₹1 crore is made by the NBFC during October 2024 on the defaulted loans of ₹2 crore. In such a case, the amount of the outstanding portfolio in the books of the NBFC as on October 31, 2024 shall come down to ₹14 crore (₹20 crore original portfolio less ₹5 crore loans matured without any default less ₹1 crore loans which were in default and recovered). However, the recovery amount of ₹1 crore cannot be added to reinstate the DLG","Non-Banking Financial Companies - Credit Facilities, para 26
+26. Treatment of DLG for regulatory capital
+(1) Capital computation, i.e., computation of exposure and application of Credit Risk Mitigation benefits on individual loan assets in the portfolio shall continue to be governed by the Reserve Bank of India (Non- Banking Financial Companies – Prudential Norms on Capital Adequacy) Directions, 2025.
+(2) In case, DLG provider is an NBFC, it shall deduct full amount of the DLG which is outstanding from its capital.
+",,,
+12927-16-nemotron-u,"Reserve Bank of India (Asset Reconstruction Companies – Know Your Customer) Directions, 2025 (Updated as on December 29, 2025)",16,"16. Without prejudice to the generality of the aspect that Customer Acceptance Policy may contain, the ARC shall:
+(1) not open any account in an anonymous or fictitious / benami name. Also, ARC shall ensure not to acquire financial assets / accounts where KYC (i.e. customer identification and verification of customer’s identity) is pending at the level of transferor bank / financial institution.
+(2) open no account where it is unable to apply appropriate CDD measures, either due to non-cooperation of the customer or unreliability of the documents / information furnished by the customer. The ARC shall consider filing an STR, if necessary, when it is unable to comply with the relevant CDD measures in relation to the customer.
+(3) not undertake a transaction or commence an account-based relationship without following the CDD procedure.
+(4) specify the mandatory information to be sought for KYC purposes while opening an account or taking over the financial asset / account and during the periodic updation.
+(5) obtain additional information, where its internal KYC Policy has not specified such information requirement, with the explicit consent of the customer.
+(6) apply the CDD procedure at the Unique Customer Identification Code (UCIC) level. Thus, if an existing KYC-compliant customer of an ARC desires to open another account or avail of any other product or service from the same ARC, there shall be no need for a fresh CDD exercise as far as identification of the customer is concerned.
+(7) follow the CDD Procedure for all the joint account holders, while opening a joint account.
+(8) clearly spell out the circumstances in which a customer is permitted to act on behalf of another person / entity.
+(9) put in place a suitable system to ensure that the identity of the customer does not match with any person or entity, whose name appears in the sanctions lists indicated in Chapter IX of these Directions
+(10) verify the Permanent Account Number (PAN) (if obtained) from the verification facility of the issuing authority.
+(11) verify the customer’s digital signature on the equivalent e-document (if obtained) as per the provisions of the Information Technology Act, 2000 (21 of 2000).
+(12) verify the Goods and Services Tax (GST) number from the search / verification facility of the issuing authority, where the GST details are available.
+",What is the deadline for an Asset Reconstruction Company to complete the initial KYC verification after acquiring a financial asset from a transferor bank?,"The paragraph states ARCs must not acquire financial assets where KYC is pending at the transferor level, but does not specify a deadline for completing KYC after acquisition.","Asset Reconstruction Companies - Know Your Customer, para 16
+16. Without prejudice to the generality of the aspect that Customer Acceptance Policy may contain, the ARC shall:
+(1) not open any account in an anonymous or fictitious / benami name. Also, ARC shall ensure not to acquire financial assets / accounts where KYC (i.e. customer identification and verification of customer’s identity) is pending at the level of transferor bank / financial institution.
+(2) open no account where it is unable to apply appropriate CDD measures, either due to non-cooperation of the customer or unreliability of the documents / information furnished by the customer. The ARC shall consider filing an STR, if necessary, when it is unable to comply with the relevant CDD measures in relation to the customer.
+(3) not undertake a transaction or commence an account-based relationship without following the CDD procedure.
+(4) specify the mandatory information to be sought for KYC purposes while opening an account or taking over the financial asset / account and during the periodic updation.
+(5) obtain additional information, where its internal KYC Policy has not specified such information requirement, with the explicit consent of the customer.
+","Asset Reconstruction Companies - Know Your Customer, para 27
+27. KYC verification once done by one branch / office of the ARC shall be valid for transfer of the account to any other branch / office of the same ARC, provided the ARC has already completed the full KYC verification for the concerned account and the same is not due for periodic updation.
+B. CDD Measures for Sole Proprietary firms
+","Asset Reconstruction Companies - Know Your Customer, para 41
+(ii) Change in address: In case of a change only in the address details of the customer, the ARC shall obtain a self-declaration of the new address from the customer through customer’s email-id registered with the ARC, customer’s mobile number registered with the ARC, , etc., and shall verify the declared address through positive confirmation within two months, by means such as address verification letter, contact point verification, deliverables, etc.
+(iii) Further, the ARC at its option, may obtain a copy of OVD or deemed OVD, as defined in sub-clause (xiv) of clause (1) of paragraph 4 or the equivalent e-documents thereof, as defined in sub-clause (x) of clause (1) of paragraph 4 for the purpose of proof of address, declared by the customer at the time of updation / periodic updation. However, the ARC shall clearly specify such requirement, in its internal KYC policy duly approved by the Board of Directors of the ARC or any committee of the Board to which power has been delegated.
+","Asset Reconstruction Companies - Know Your Customer, para 59
+59. CDD Procedure and sharing KYC information with Central KYC Records Registry (CKYCR)
+(1) Government of India has authorised the Central Registry of Securitisation Asset Reconstruction and Security Interest of India (CERSAI), to act as, and to perform the functions of the CKYCR vide Gazette Notification No. S.O. 3183(E) dated November 26, 2015.
+(2) In terms of provision of Rule 9(1A) of the PML Rules, the ARC shall capture customer’s KYC records and upload onto CKYCR within 10 days of commencement of an account-based relationship with the customer.
+(3) Operational Guidelines for uploading the KYC data have been released by CERSAI.
+(4) The ARC shall capture the KYC information for sharing with the CKYCR in the manner mentioned in the Rules, as per the KYC templates prepared for ‘Individuals’ and ‘Legal Entities’ (LEs), as the case may be. The templates may be revised from time to time, as may be required and released by CERSAI.
+(5) The ‘live run’ of the CKYCR started from July 15, 2016 in phased manner beginning with new ‘individual accounts’. The ARC shall upload the KYC data pertaining to all new individual accounts opened on or after April 1, 2017, with CKYCR in terms of the provisions of the Rules ibid.
+(6) The ARC shall upload KYC records pertaining to accounts of LEs opened on or after April 1, 2021, with CKYCR in terms of the provisions of the Rules ibid. The ARC shall upload KYC records as per the LE Templa","Asset Reconstruction Companies - Know Your Customer, para 43
+(3) Apart from obtaining the current address proof, the ARC shall verify the current address through positive confirmation before allowing operations in the account. The ARC may carry out the positive confirmation by means of such as address verification letter, contact point verification, deliverables, etc.
+(4) The ARC shall obtain PAN from the customer and the PAN shall be verified from the verification facility of the issuing authority.
+(5) First transaction in such accounts shall be a credit from existing KYC complied bank account of the customer.The ARC shall categorise such customers as high-risk customers and shall subject accounts opened in non-face-to-face mode to enhanced monitoring until the identity of the customer is verified in face-to-face manner or through V-CIP.
+",,,
+13157-42-minimax-u,"Reserve Bank of India (Commercial Banks – Interest Rate on Deposits) Directions, 2025 (Updated as on October 01, 2026)",42,"42. A bank shall have the freedom to determine interest on deposits of money accepted by it or renewed by it under the RFC Account Scheme, in accordance with the comprehensive policy on interest rate on deposits duly approved by the Board of Directors or any Committee of the Board to which powers have been delegated.
+Chapter VI - Prohibitions and Exemptions
+A. Prohibitions
+",What is the maximum interest rate that a commercial bank may offer on deposits under the Resident Foreign Currency (RFC) Account Scheme?,"The paragraph gives banks discretion over deposit interest but states no maximum or minimum rate, rate cap, or calculation formula.","Commercial Banks - Interest Rate on Deposits, para 27
+A bank shall have the freedom to offer differential interest rate on bulk deposits, by considering the differential run-off rate applicable to deposits or unsecured wholesale funding under the LCR framework, as specified in the ' Reserve Bank of India (Commercial Banks – Asset Liability Management) Directions, 2025'.iv
+(4) Interest rates on NRE / NRO deposits shall not be higher than those offered by the bank on comparable domestic rupee term deposits1.
+1 The said restriction with respect to interest rates offered on fresh NRE deposits mobilised by banks, including the deposits that are renewed upon maturity, for three years and above tenors, is temporarily withdrawn with effect from June 17, 2026, for the period until August 31, 2026v. Any transfer from NRO accounts to NRE accounts shall not qualify for such exemptionvi.
+(5) The benefit of additional interest rate on deposits on account of being bank’s own staff or senior citizens shall not be available to NRE and NRO deposits.
+(6) Interest on savings deposits shall be credited at quarterly or shorter intervals by a bank.
+(7) If an NRE account holder, immediately on return to India, requests for conversion of the NRE term deposit into Resident Foreign Currency (RFC) account, interest shall be paid as under:
+1. If the NRE deposit has not run for a minimum period of one year, interest shall be paid at a rate not exceeding the rate payable on savings deposits held in RFC acc","Commercial Banks - Interest Rate on Deposits, para 42
+42. A bank shall have the freedom to determine interest on deposits of money accepted by it or renewed by it under the RFC Account Scheme, in accordance with the comprehensive policy on interest rate on deposits duly approved by the Board of Directors or any Committee of the Board to which powers have been delegated.
+Chapter VI - Prohibitions and Exemptions
+A. Prohibitions
+","Commercial Banks - Interest Rate on Deposits, para 37
+37. A bank may, at its discretion, on receipt of the request from the depositor, allow FCNR(B) deposits of persons of Indian nationality / origin who return to India for permanent settlement to continue till maturity at the contracted rate of interest subject to the conditions that:
+(1) The rate of interest as applicable to FCNR(B) deposits shall continue.
+(2) Such deposits shall be treated as resident deposits from the date of return of the account holder to India.
+(3) The FCNR(B) deposits on maturity shall be converted into Resident Rupee Deposit Account or RFC Account (if eligible) at the option of the account holder.
+(4) The rate of interest on the new deposit (Rupee account or RFC Account) shall be the relevant rate applicable for such deposit account.
+F. Conversion of Foreign Currency (Non-Resident) Accounts (Banks) {FCNR(B)} Accounts of Returning Indians into Resident Foreign Currency (RFC) Accounts / Resident Rupee Accounts - Payment of Interest
+","Commercial Banks - Interest Rate on Deposits, para 38
+38. Subject to the conditions given in paragraph 7 of these Directions, a bank shall pay interest at the time of conversion of FCNR(B) Account into RFC / Resident Rupee Account even if the deposit has not completed the minimum maturity period mentioned in paragraph 32(2)(i) above.
+Provided that the rate of interest shall not exceed the rate payable on savings bank deposits held under RFC Account Scheme.
+G. Premature Withdrawal of Foreign Currency Deposits
+","Commercial Banks - Interest Rate on Deposits, para 33
+33. Interest on the deposits accepted under the Scheme shall be calculated on the basis of 360 days to a year.
+",,,
