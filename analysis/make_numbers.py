@@ -126,3 +126,13 @@ if bs:
     with open("paper/numbers.tex", "w") as fh:
         for kk, v in N.items():
             fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")
+
+# --- breakdown of the best retriever by question type and generator (results/breakdown.json) ---
+bd = json.load(open("results/breakdown.json")) if Path("results/breakdown.json").exists() else None
+if bd:
+    put("NApp", bd["type:applicability"]["n"]); put("AppRone", f'{bd["type:applicability"]["R@1"]:.2f}'); put("AppRfive", f'{bd["type:applicability"]["R@5"]:.2f}')
+    put("OblRone", f'{bd["type:obligation"]["R@1"]:.2f}'); put("OblRfive", f'{bd["type:obligation"]["R@5"]:.2f}')
+    put("GenARfive", f'{bd["gen:nemotron"]["R@5"]:.2f}'); put("GenBRfive", f'{bd["gen:minimax"]["R@5"]:.2f}')
+    with open("paper/numbers.tex", "w") as fh:
+        for kk, v in N.items():
+            fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")

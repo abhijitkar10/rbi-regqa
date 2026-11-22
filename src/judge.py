@@ -5,7 +5,7 @@ Answerable:   LLM judge -> CORRECT / PARTIAL / WRONG against the reference answe
 Unanswerable: correct iff the model said NOT FOUND (deterministic, no judge call).
 Out: results/judged/<answers-stem>__<judge>.jsonl
 """
-import json, re, sys
+import json, random, re, sys
 
 SOFT_REFUSAL = re.compile(r"\bnot found\b|(do|does) not (contain|specify|mention|provide|state|include|address)|no (information|mention|details?)|not (specified|mentioned|stated|provided|available) in the (provided )?passages|cannot be determined|unable to (find|determine)", re.I)
 from pathlib import Path
@@ -32,8 +32,11 @@ def main(qfile, judge, files, limit=None):
         out_path = Path(f"results/judged/{Path(f).stem}__{judge.replace(':', '_').replace('/', '_')}.jsonl")
         done = {json.loads(l)["qid"] for l in open(out_path)} if out_path.exists() else set()
         rows = [r for r in map(json.loads, open(f)) if r["qid"] not in done and not r["answer"].startswith("ERROR")]
+        if limit:  # agreement sample: random answers that need the LLM judge, same picks on every run (seed 0)
+            rows = sorted((r for r in rows if qs[r["qid"]]["answerable"] and not r["refused"]), key=lambda r: r["qid"])
+            random.Random(0).shuffle(rows); rows = rows[:max(0, limit - len(done))]
         with open(out_path, "a") as out:
-            for r in rows[:limit]:
+            for r in rows:
                 q = qs[r["qid"]]
                 cited = [chunks[r["ctx"][s - 1]] for s in r["cited"]]
                 soft = r["refused"] or bool(SOFT_REFUSAL.search(r["answer"][:400])) or not r["answer"].strip()
