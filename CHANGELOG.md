@@ -2,6 +2,7 @@
 
 ## 2026-11-22
 
+- Contact email under the author name: Abhijit's Gmail (his choice).
 - Grading stall fixed: the Mistral Large second judge had every answer file on its command line, so the finisher's process check thought MiniMax, gpt-oss-20b and Qwen were being graded and never restarted them (no progress since ~18:50). The check now matches the judge model and answer file exactly; Mistral Large is paused until Step-5 grading is done (it also competes for the NVIDIA quota, which is returning rate-limit errors). All 9 reader judges running again.
 - arXiv package (scripts/arxiv_package.sh) builds and compiles from a clean folder; scripts/check_refs.py verifies every reference and scans for chatbot leftovers and TODOs (arXiv's May 2026 one-year-ban rule for unchecked AI output). 5 TODOs remain, all waiting on grading, the audit or the contact email.
 - `reproduce.sh`: one command from results to PDF (`./reproduce.sh`), or from the RBI website to PDF (`./reproduce.sh full`: fetch, parse, snapshot check, chunk, embed, rank). Verified: the paper stage regenerates every number unchanged. LLM stages are not rerun (outputs committed).
