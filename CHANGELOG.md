@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-11-22
+- Grading progress snapshot (Step-5): bolt 307/318, lightning 263, qwen 253, minimax 228, ministral-8b 196, gpt-oss-20b 162, v0best lightning 152 / bolt 137, ministral-14b 104.
+- Backlog: outreach item done (kept outside the repo).
 
 - Contact email under the author name: Abhijit's Gmail (his choice).
 - Grading stall fixed: the Mistral Large second judge had every answer file on its command line, so the finisher's process check thought MiniMax, gpt-oss-20b and Qwen were being graded and never restarted them (no progress since ~18:50). The check now matches the judge model and answer file exactly; Mistral Large is paused until Step-5 grading is done (it also competes for the NVIDIA quota, which is returning rate-limit errors). All 9 reader judges running again.
