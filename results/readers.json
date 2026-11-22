@@ -1,0 +1,107 @@
+{
+ "groq:openai/gpt-oss-20b": {
+  "n_ans": 146,
+  "n_unans": 11,
+  "acc": 0.832,
+  "cite_gold": 0.75,
+  "false_ref": 0.014,
+  "unans_ref": 0.727,
+  "unans_ref_soft": 0.727,
+  "false_ref_soft": 0.048,
+  "empty": 5,
+  "by_gen": {
+   "nemotron": 0.838,
+   "minimax": 0.826
+  }
+ },
+ "groq:qwen/qwen3.8-27b": {
+  "n_ans": 225,
+  "n_unans": 6,
+  "acc": 0.878,
+  "cite_gold": 0.9,
+  "false_ref": 0.027,
+  "unans_ref": 0.167,
+  "unans_ref_soft": 0.667,
+  "false_ref_soft": 0.049,
+  "empty": 0,
+  "by_gen": {
+   "nemotron": 0.876,
+   "minimax": 0.88
+  }
+ },
+ "mistral:ministral-14b-latest": {
+  "n_ans": 59,
+  "n_unans": 73,
+  "acc": 0.881,
+  "cite_gold": 0.678,
+  "false_ref": 0.0,
+  "unans_ref": 0.904,
+  "unans_ref_soft": 0.945,
+  "false_ref_soft": 0.034,
+  "empty": 0,
+  "by_gen": {
+   "nemotron": 0.871,
+   "minimax": 0.893
+  }
+ },
+ "mistral:ministral-8b-latest": {
+  "n_ans": 160,
+  "n_unans": 73,
+  "acc": 0.866,
+  "cite_gold": 0.682,
+  "false_ref": 0.019,
+  "unans_ref": 0.863,
+  "unans_ref_soft": 0.89,
+  "false_ref_soft": 0.031,
+  "empty": 0,
+  "by_gen": {
+   "nemotron": 0.86,
+   "minimax": 0.872
+  }
+ },
+ "nvidia:minimaxai/minimax-m3.1-flash": {
+  "n_ans": 198,
+  "n_unans": 73,
+  "acc": 0.929,
+  "cite_gold": 0.933,
+  "false_ref": 0.025,
+  "unans_ref": 0.89,
+  "unans_ref_soft": 0.904,
+  "false_ref_soft": 0.025,
+  "empty": 0,
+  "by_gen": {
+   "nemotron": 0.942,
+   "minimax": 0.915
+  }
+ },
+ "nvidia:nvidia/nemotron-3.5-bolt-e4b": {
+  "n_ans": 251,
+  "n_unans": 73,
+  "acc": 0.859,
+  "cite_gold": 0.846,
+  "false_ref": 0.02,
+  "unans_ref": 0.781,
+  "unans_ref_soft": 0.863,
+  "false_ref_soft": 0.036,
+  "empty": 0,
+  "by_gen": {
+   "nemotron": 0.902,
+   "minimax": 0.811
+  }
+ },
+ "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b": {
+  "n_ans": 225,
+  "n_unans": 73,
+  "acc": 0.858,
+  "cite_gold": 0.876,
+  "false_ref": 0.036,
+  "unans_ref": 0.945,
+  "unans_ref_soft": 0.973,
+  "false_ref_soft": 0.084,
+  "empty": 12,
+  "by_gen": {
+   "nemotron": 0.887,
+   "minimax": 0.824
+  }
+ }
+}

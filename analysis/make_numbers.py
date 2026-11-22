@@ -27,7 +27,7 @@ for key, g in (("GenA", "nemotron"), ("GenB", "minimax")):
 ex = jl("data/benchmark/expert.jsonl")
 put("NExpertAnchored", f'{sum(bool(r.get("quote_ok")) for r in ex if r["answerable"])} of {sum(r["answerable"] for r in ex)}' if ex else None)
 readers = json.load(open("results/readers.json")) if Path("results/readers.json").exists() else None
-put("NReaders", sum(not k.startswith("_") for k in readers) if readers else "seven")
+put("NReaders", "zero one two three four five six seven eight nine ten".split()[sum(not k.startswith("_") for k in readers)] if readers else "seven")
 
 with open("paper/numbers.tex", "w") as f:
     for k, v in N.items():

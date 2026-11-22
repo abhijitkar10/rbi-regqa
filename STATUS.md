@@ -31,6 +31,6 @@ _Updated 2026-11-22 (Mac clock). Running: `scripts/finisher.sh` restarts answeri
 - [x] Figure 1: wrong-lender rate by chunking, for page 1.
 - [ ] After grading: reader table, refusals (strict/lenient), v0 vs v0best ablation, self-preference, abstract headline.
 - [x] Licensing (2026-11-22, Abhijit chose the fetch script): RBI text untracked (data/html/, audit CSVs); paragraph fingerprints in data/catalog/paragraph_hashes.tsv with `--check`; code MIT, annotations CC BY 4.0. Older commits still hold the text; removing it from history needs a force-push, which only Abhijit can approve.
-- [ ] `reproduce.sh`: results -> numbers -> tables -> PDF in one command.
+- [x] `reproduce.sh` (paper stage from results; `full` also fetches, parses, embeds and ranks; LLM stages are not rerun).
 - [ ] arXiv readiness: compile with pdflatex (TeX Live), check arXiv's policy on AI-written text, size limits.
 - [ ] Outreach (private vault): refresh professor list, one tailored hook line per professor.

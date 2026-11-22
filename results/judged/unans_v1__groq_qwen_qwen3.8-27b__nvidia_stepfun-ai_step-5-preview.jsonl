@@ -1,1 +1,6 @@
 {"qid": "12927-46-minimax-u", "model": "groq:qwen/qwen3.8-27b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": false, "refused_soft": true, "empty": false, "grade": "WRONG", "grade_soft": "CORRECT"}
+{"qid": "13140-372-minimax-u", "model": "groq:qwen/qwen3.8-27b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": true, "refused_soft": true, "empty": false, "grade": "CORRECT", "grade_soft": "CORRECT"}
+{"qid": "13161-49-minimax-u", "model": "groq:qwen/qwen3.8-27b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": false, "refused_soft": false, "empty": false, "grade": "WRONG", "grade_soft": "WRONG"}
+{"qid": "13157-42-minimax-u", "model": "groq:qwen/qwen3.8-27b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": false, "refused_soft": false, "empty": false, "grade": "WRONG", "grade_soft": "WRONG"}
+{"qid": "13161-75-minimax-u", "model": "groq:qwen/qwen3.8-27b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": false, "refused_soft": true, "empty": false, "grade": "WRONG", "grade_soft": "CORRECT"}
+{"qid": "12936-52-minimax-u", "model": "groq:qwen/qwen3.8-27b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": false, "refused_soft": true, "empty": false, "grade": "WRONG", "grade_soft": "CORRECT"}
