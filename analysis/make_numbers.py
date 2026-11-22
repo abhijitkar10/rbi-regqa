@@ -84,3 +84,18 @@ put("SnapshotDate", fmt(datetime.fromtimestamp(_fetched)))
 with open("paper/numbers.tex", "w") as fh:
     for k, v in N.items():
         fh.write(f"\\newcommand{{\\{k}}}{{{v if v is not None else chr(92) + 'todo{' + k + '}'}}}\n")
+
+# --- expert subset: strict vs any-copy (results/expert_any.json; config = name-prefixed paragraphs + BGE-reranker-v2-m3) ---
+ea = json.load(open("results/expert_any.json")) if Path("results/expert_any.json").exists() else None
+if ea:
+    k = next(k for k in ea if k.startswith("para_title|rerank_bge-reranker-v2-m3"))
+    e = ea[k]
+    ew = next(r for r in json.load(open("results/retrieval_expert_v1.json")) if r["chunks"] == "para_title" and r["retriever"].startswith("rerank:bge-reranker-v2-m3"))
+    put("NExpertQ", e["n"]); put("NExpertUnnamed", e["n"] - e["n_named"])
+    put("ExpertRone", f'{e["R@1"]:.2f}'); put("ExpertRfive", f'{e["R@5"]:.2f}')
+    put("ExpertAnyRone", f'{e["AnyR@1"]:.2f}'); put("ExpertAnyRfive", f'{e["AnyR@5"]:.2f}')
+    put("ExpertWL", f'{100 * ew["WrongLender@1"]:.0f}\\%')
+    put("ExpertBMAnyRfive", f'{ea["para_title|bm25"]["AnyR@5"]:.2f}')
+    with open("paper/numbers.tex", "w") as fh:
+        for kk, v in N.items():
+            fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")

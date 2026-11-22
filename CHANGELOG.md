@@ -2,6 +2,8 @@
 
 ## 2026-11-22
 
+- **Expert subset retrieval (35 hand-written questions, analysis/expert_any.py):** 29 of 35 never say which kind of lender they mean. Strict (gold = Commercial Banks rulebook): name-prefixed paragraphs + BGE-reranker-v2-m3 reach R@1 0.37, R@5 0.71, and the top result is another lender's copy for 54 %. Counting a near-identical copy (Jaccard >= 0.9) in any lender's KYC rulebook as a hit: R@1 0.51, R@5 0.77. The retriever finds the rule but cannot know whose rule the user needs.
+- Fixed "an commercial bank" left by the expert re-anchoring (src/anchor_expert.py and data/benchmark/expert.jsonl); retrieval numbers unchanged after the rerun.
 - **Customer wording, paired on the same 273 questions** (analysis/customer_gap.py): the best retriever falls from R@5 0.96 to 0.80, BM25 on the same chunks from 0.78 to 0.42. The cross-encoder adds 0.07 R@5 over its hybrid input on rulebook wording but 0.18 on customer wording. The misses are not near-copy confusions (wrong-lender 1.5 %); the top result comes from a rulebook on another topic (right rulebook at rank 1: 80 % vs 91 %).
 - Paper: near-copy table, corpus dates (59 of 96 Directions amended, 5 Dec 2025 to 19 Oct 2026; snapshot 21 Nov 2026) and the prompts appendix, all generated from files (analysis/paper_extras.py, make_numbers.py).
 - Expert subset: 35 of 44 answerable questions now tied to a verified paragraph.

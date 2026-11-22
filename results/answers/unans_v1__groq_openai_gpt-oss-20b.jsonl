@@ -8,3 +8,4 @@
 {"qid": "12936-60-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [1457, 1547, 1361, 3177, 3048], "secs": 15.9}
 {"qid": "13140-60-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [4794, 9579, 5495, 4781, 5007], "secs": 0.7}
 {"qid": "12943-48-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [1556, 4111, 5327, 3968, 4257], "secs": 136.3}
+{"qid": "13140-372-minimax-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [5128, 5464, 1407, 7278, 1646], "secs": 1.0}

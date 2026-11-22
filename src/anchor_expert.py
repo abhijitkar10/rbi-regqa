@@ -11,7 +11,7 @@ from gen_questions import quote_ok, parse_json
 DOC = 13141
 MODEL = sys.argv[1] if len(sys.argv) > 1 else "nvidia:stepfun-ai/step-5-preview"
 SRC = Path.home() / "Documents/life/kyc-rag/eval/questions.csv"
-RE_SUB = [(r"\bRegulated Entit(y|ies)\b", "commercial bank"), (r"\bREs\b", "commercial banks"), (r"\b(an|An) RE\b", r"\1 commercial bank"), (r"\bRE\b", "commercial bank")]
+RE_SUB = [(r"\bRegulated Entit(y|ies)\b", "commercial bank"), (r"\bREs\b", "commercial banks"), (r"\b(an|An) RE\b", r"\1 commercial bank"), (r"\bRE\b", "commercial bank"), (r"\b([Aa])n (commercial bank)", r"\1 \2")]
 PROMPT = """Question: {q}
 Expected answer (written for an older version of the rules): {a}
 
