@@ -29,6 +29,9 @@ _Updated 2026-11-22 (Mac clock). Running: `scripts/finisher.sh` restarts answeri
 - [~] Second judge: gpt-oss-120b and Mistral Large 4 running on 30 random answers per reader (logs/judge2_*.log); kappa via `analysis/summarize_answers.py v0,unans_v1 nvidia:stepfun-ai/step-5-preview <second judge>` once the samples finish.
 - [x] Retrieval breakdown by question type and by generator.
 - [x] Figure 1: wrong-lender rate by chunking, for page 1.
+- [ ] Error analysis: 50 best-config retrieval misses (R@5 = 0), each tagged (lender unnamed, same text in another rulebook, cross-reference, parse problem, other); small table + 2 examples in the paper.
+- [ ] Claims-vs-numbers pass on the finished sections: every number in main.tex comes from a numbers.tex macro or a table; list and fix hard-coded ones.
+- [ ] Prose pass (no-ai-slop) on Introduction, Corpus and Retrieval sections; results sections wait for grading.
 - [ ] After grading: reader table, refusals (strict/lenient), v0 vs v0best ablation, self-preference, abstract headline.
 - [x] Licensing (2026-11-22, Abhijit chose the fetch script): RBI text untracked (data/html/, audit CSVs); paragraph fingerprints in data/catalog/paragraph_hashes.tsv with `--check`; code MIT, annotations CC BY 4.0. Older commits still hold the text; removing it from history needs a force-push, which only Abhijit can approve.
 - [x] `reproduce.sh` (paper stage from results; `full` also fetches, parses, embeds and ranks; LLM stages are not rerun).
