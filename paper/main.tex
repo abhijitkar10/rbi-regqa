@@ -56,7 +56,7 @@ We make three contributions:
 
 \section{The RBI-RegQA Benchmark}
 
-\paragraph{Corpus.} We fetched every Commercial Bank and NBFC Direction listed on the RBI website, plus the KYC Directions of every other lender type, \NDocs{} documents in all, fetched on \SnapshotDate{}. The Directions were issued in November 2025; \NUpdated{} of them have since been amended, the latest updates ranging from \UpdateRange{}. The RBI's PDF host returns a script check to automated clients, so we used the HTML version of each Direction, which keeps the paragraph numbering. A parser splits each Direction into its numbered paragraphs (\NParas{} in total). The RBI website reserves its rights, so we release the questions, answers, paragraph identifiers, short evidence quotes and code, not the Direction texts: a script fetches them, and per-paragraph fingerprints of our snapshot show which paragraphs, and which questions, a later amendment affects.
+\paragraph{Corpus.} We fetched every Commercial Bank and NBFC Direction listed on the RBI website, plus the KYC Directions of every other lender type, \NDocs{} documents in all, fetched on \SnapshotDate{}. The Directions were issued in November 2025; \NUpdated{} of them have since been amended, with latest amendments dated from \UpdateRange{}. The RBI's PDF host blocks automated downloads with a script check, so we used the HTML version of each Direction, which keeps the paragraph numbering. A parser splits each Direction into its numbered paragraphs (\NParas{} in total). The RBI website reserves its rights, so we release the questions, answers, paragraph identifiers, short evidence quotes and code, not the Direction texts: a script fetches them, and per-paragraph fingerprints of our snapshot show which paragraphs, and which questions, a later amendment affects.
 
 \input{tab_nearcopy}
 
@@ -70,13 +70,13 @@ We make three contributions:
 
 \paragraph{Expert subset.} The author's 50 hand-written questions from an earlier KYC system \citep{kycrag} were re-anchored to the 2025 Commercial Banks KYC Directions; \NExpertAnchored{} could be tied to a verified paragraph.
 
-\paragraph{Customer wording.} Generated questions tend to reuse the rulebook's vocabulary. We therefore also rewrite every question the way an ordinary customer would ask it, keeping the facts, and report results on both.
+\paragraph{Customer wording.} Generated questions reuse the rulebook's vocabulary, which flatters keyword retrieval. We therefore rewrite every question the way an ordinary customer would ask it, keeping the facts, and report results on both wordings.
 
 \section{Experiments}
 
-\paragraph{Retrieval.} Three chunkings: fixed 800-character windows with 200 overlap; one chunk per numbered paragraph (long paragraphs split at 1,500 characters); and the same paragraph chunks prefixed with the rulebook name. Retrievers: BM25 \citep{robertson2009bm25}; dense retrieval with BGE-small and BGE-base \citep{xiao2023cpack}, BGE-M3 \citep{chen2024m3} and Qwen3-Embedding-0.6B \citep{zhang2025qwen3emb}; reciprocal rank fusion of BM25 and dense \citep{cormack2009rrf}; and two cross-encoder re-rankers over the fused top 30. A retrieved chunk is a hit if it comes from the gold Direction and covers the gold paragraph. We also report \emph{WrongLender@1}: the top chunk is the same topic but another lender's rulebook. Differences between configurations come with paired bootstrap 95\% confidence intervals over questions (10,000 resamples).
+\paragraph{Retrieval.} We compare three chunkings: fixed 800-character windows with 200 overlap; one chunk per numbered paragraph (long paragraphs split at 1,500 characters); and the same paragraph chunks prefixed with the rulebook name. Retrievers: BM25 \citep{robertson2009bm25}; dense retrieval with BGE-small and BGE-base \citep{xiao2023cpack}, BGE-M3 \citep{chen2024m3} and Qwen3-Embedding-0.6B \citep{zhang2025qwen3emb}; reciprocal rank fusion of BM25 and dense \citep{cormack2009rrf}; and two cross-encoder re-rankers over the fused top 30. A retrieved chunk is a hit if it comes from the gold Direction and covers the gold paragraph. We also report \emph{WrongLender@1}, the share of questions whose top chunk is on the right topic but from another lender's rulebook. Differences between configurations come with paired bootstrap 95\% confidence intervals over questions (10,000 resamples).
 
-\paragraph{Answering.} \NReaders{} open models answer from the top-5 passages of the best retriever, citing passages as [S1]--[S5] or replying NOT FOUND. An LLM judge grades answers against the reference; a second judge from another family grades a sample to measure agreement. Citations are checked deterministically against the gold paragraph.
+\paragraph{Answering.} \NReaders{} open models answer from the top-5 passages of the best retriever, citing passages as [S1]--[S5] or replying NOT FOUND. An LLM judge grades answers against the reference; a second judge from another family grades a sample to measure agreement. A script checks each cited passage against the gold paragraph.
 
 \section{Results}
 
