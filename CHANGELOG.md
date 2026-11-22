@@ -2,6 +2,7 @@
 
 ## 2026-11-22
 
+- Figure 1 (analysis/fig_wronglender.py): wrong-lender rate at rank 1 by chunking and retriever, on page 1. matplotlib added to requirements.
 - Breakdown of the best retriever (analysis/breakdown.py): applicability questions are hardest (R@1 0.56, R@5 0.83, n=41) vs obligations (0.78 / 0.95); MiniMax-drafted questions are harder to retrieve than Nemotron's (R@5 0.91 vs 0.98).
 - src/judge.py --limit now draws a seeded random sample of answers that need the LLM judge (for the second-judge agreement check).
 - Audit sheets for the hand checks (scripts/make_audit.py, seed 42): audit/questions_100.csv, audit/unanswerable_30.csv (with the five passages a reader saw), audit/expert_unanchored.csv (with five BM25 candidate paragraphs each).

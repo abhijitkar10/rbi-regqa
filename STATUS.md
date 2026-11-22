@@ -19,7 +19,7 @@ _Updated 2026-11-22 (Mac clock). Running: `scripts/finisher.sh` restarts answeri
 - [x] Audit sheets in `audit/` (see audit/README.md) for Abhijit: 100 random questions, 30 unanswerable, 9 unanchored expert questions (CSV, fill in a spreadsheet).
 - [ ] Second judge (different family from Step-5) on a stratified sample of answers; Cohen's kappa.
 - [x] Retrieval breakdown by question type and by generator.
-- [ ] Figure 1: wrong-lender rate by chunking, for page 1.
+- [x] Figure 1: wrong-lender rate by chunking, for page 1.
 - [ ] After grading: reader table, refusals (strict/lenient), v0 vs v0best ablation, self-preference, abstract headline.
 - [ ] CITATION.cff, dataset card, check RBI's terms for reusing its text.
 - [ ] `reproduce.sh`: results -> numbers -> tables -> PDF in one command.
