@@ -1,0 +1,32 @@
+{
+ "nvidia:nvidia/nemotron-3.5-bolt-e4b": {
+  "n_ans": 318,
+  "n_unans": 0,
+  "acc": 0.874,
+  "cite_gold": 0.91,
+  "false_ref": 0.025,
+  "unans_ref": 0.0,
+  "unans_ref_soft": 0.0,
+  "false_ref_soft": 0.044,
+  "empty": 0,
+  "by_gen": {
+   "nemotron": 0.889,
+   "minimax": 0.858
+  }
+ },
+ "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b": {
+  "n_ans": 318,
+  "n_unans": 0,
+  "acc": 0.885,
+  "cite_gold": 0.902,
+  "false_ref": 0.041,
+  "unans_ref": 0.0,
+  "unans_ref_soft": 0.0,
+  "false_ref_soft": 0.075,
+  "empty": 10,
+  "by_gen": {
+   "nemotron": 0.937,
+   "minimax": 0.828
+  }
+ }
+}

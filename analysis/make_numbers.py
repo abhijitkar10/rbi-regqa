@@ -149,3 +149,12 @@ if ma:
     with open("paper/numbers.tex", "w") as fh:
         for kk, v in N.items():
             fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")
+
+# --- readers (results/readers.json, results/reader_ctx.json) ---
+if Path("results/readers.json").exists() and Path("results/reader_ctx.json").exists():
+    rc, ja = json.load(open("results/reader_ctx.json")), json.load(open("results/readers.json")).get("_judge_agreement")
+    put("CtxRfive", f"{rc['v0']:.0%}".replace("%", r"\%")); put("CtxBestRfive", f"{rc['v0best']:.0%}".replace("%", r"\%"))
+    if ja: put("JudgeN", ja["n"]); put("JudgeExact", f"{ja['exact']:.2f}"); put("JudgeKappa", f"{ja['kappa']:.2f}")
+    with open("paper/numbers.tex", "w") as fh:
+        for kk, v in N.items():
+            fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")

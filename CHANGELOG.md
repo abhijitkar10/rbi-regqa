@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-11-23
+- Post-grading dry run: new `analysis/reader_table.py` (Table 5) and reader macros; `summarize_answers.py` writes v0best results to its own file; reproduce.sh runs both. Corrected the Answering paragraph: the main reader runs used name-prefixed hybrid BM25+BGE-base with BGE-reranker-base (gold in top 5 for 85%), not the best configuration (95%, two-reader ablation). Paper now 7 pages.
+- Grading at 06:27: ministral-8b and -14b done; qwen 284, gpt-oss-20b 195 (answers 287 / 197); unans_v1 qwen 58, gpt-oss 57.
 - Prose pass (no-ai-slop) on Introduction, Related Work, Benchmark and Experiments: six small edits for active voice and plain definitions; numbers and citations unchanged; still 6 pages.
 - Grading at 04:27: v0 bolt, lightning, minimax and both v0best readers done (318); ministral-8b 313, ministral-14b 284, qwen 279, gpt-oss-20b 192; unans_v1 qwen 48, gpt-oss 51, rest done.
 - Claims-vs-numbers pass: every number in the finished sections traced to numbers.tex, a generated table, or the code. Corrected "about 240 Directions" and "about a hundred Master Directions" to the RBI press release figures (244 Directions, 9,445 circulars repealed, 11 entity types) and added the citation.

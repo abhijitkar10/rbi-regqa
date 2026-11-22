@@ -54,7 +54,7 @@ if j2:
         po = sum(a == b for a, b in pairs) / n
         pe = sum((sum(a == l for a, _ in pairs) / n) * (sum(b == l for _, b in pairs) / n) for l in labels)
         out["_judge_agreement"] = {"n": n, "exact": round(po, 3), "kappa": round((po - pe) / (1 - pe), 3) if pe < 1 else None}
-json.dump(out, open("results/readers.json", "w"), indent=1)
+json.dump(out, open("results/readers.json" if "v0" in stems else f"results/readers_{stems[0]}.json", "w"), indent=1)
 print(f"{'model':48s} acc   cite  falseRef(soft) unansRef(soft) empty  by-generator")
 for m, v in out.items():
     if m.startswith("_"): print(m, v); continue
