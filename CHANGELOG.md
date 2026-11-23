@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-11-23
+- Abstract: headline results replace the \todo, all macros (WrongLender@1 14.2% → 1.3–6.3% with name prefix, R@5 0.84 → 0.95, reader accuracy 0.92 vs 0.34 by gold-in-context, expert R@1 0.37 → 0.77 with deployment lender). Recheck after grading. Grading snapshot 20:00: gpt-oss-20b v0 answers 276/318, judged 273.
 - Conclusion (Section 6): three findings (wrong-lender confusion and the name prefix; retrieval sets the reader ceiling; real questions rarely name the lender) and one recommendation (put document identity in every chunk, decide the entity before retrieval). Body ends on page 6; 8 pages with appendices. Grading snapshot 18:00: gpt-oss-20b v0 answers 265/318, judged 262.
 - Limitations, reader side: one judge (κ \JudgeKappa{} to a second), lenient refusal counts empty replies, most readers saw the weaker retriever's context, one run at default sampling. Paper 8 pages, page 8 is the failure appendix. Grading snapshot 16:00: gpt-oss-20b v0 answers 252/318, judged 247; everything else done.
 - Results: reader paragraphs written (macros \RdAccRange, \QwenUnStrict, \BoltAccBest, \FailHedgeQwen, …) replacing the reader TODO; paper 7 pages, no overfull boxes. Grading snapshot 14:00: qwen v0 317/318, gpt-oss-20b 235/318, unans gpt-oss 72/73.
