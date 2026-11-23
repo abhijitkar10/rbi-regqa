@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-11-24
+- arXiv packaging: `scripts/arxiv_pack.sh` builds paper/arxiv.tar.gz (main.tex, numbers, tables, figure, acl.sty and the generated main.bbl, 18 references) and checks it compiles from the tarball alone; warns while \todo markers remain (2: the two audits). Tarball is gitignored. Grading snapshot 00:00: gpt-oss-20b v0 answers 300/318, judged 300.
+
 ## 2026-11-23
 - Related work: new paragraph on near-duplicate documents citing HiREC (Choe et al. 2025, arXiv:2505.20368, SEC near-duplicates) and Yousuf et al. 2026 (arXiv:2601.11863, metadata prefix beats plain text on regulatory filings); our name prefix is framed as an instance of that practice. Also close, not cited: VersionRAG (2510.08109), version/scope-aware normative QA (2609.18769), Indian govt regulatory RAG factorial study (2609.31660). Grading snapshot 22:00: gpt-oss-20b v0 answers 288/318, judged 285.
 - Abstract: headline results replace the \todo, all macros (WrongLender@1 14.2% → 1.3–6.3% with name prefix, R@5 0.84 → 0.95, reader accuracy 0.92 vs 0.34 by gold-in-context, expert R@1 0.37 → 0.77 with deployment lender). Recheck after grading. Grading snapshot 20:00: gpt-oss-20b v0 answers 276/318, judged 273.

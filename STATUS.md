@@ -41,6 +41,7 @@ _Updated 2026-11-22 (Mac clock). Running: `scripts/finisher.sh` restarts answeri
 - [x] Conclusion paragraph (if none): three findings, one recommendation for RAG over versioned or per-entity rulebooks; keep within 8 pages.
 - [x] Abstract headline draft now, macros only (\TitleWLRange, \BestRfive, \RdGoldIn/\RdGoldOut, expert R@1), replacing the abstract \todo; recheck wording after grading.
 - [x] Related-work freshness: search 2025–26 papers on regulatory/legal RAG with near-duplicate or versioned documents; add at most two citations if they are close.
+- [x] arXiv source package: `scripts/arxiv_pack.sh` → paper/arxiv.tar.gz (sources + generated .bbl, rebuilt from the tarball alone; warns on \todo). Rerun after the final reproduce.sh.
 - [ ] After grading: reader table, refusals (strict/lenient), v0 vs v0best ablation, self-preference, abstract headline.
 - [x] Licensing (2026-11-22, Abhijit chose the fetch script): RBI text untracked (data/html/, audit CSVs); paragraph fingerprints in data/catalog/paragraph_hashes.tsv with `--check`; code MIT, annotations CC BY 4.0. Older commits still hold the text; removing it from history needs a force-push, which only Abhijit can approve.
 - [x] `reproduce.sh` (paper stage from results; `full` also fetches, parses, embeds and ranks; LLM stages are not rerun).
