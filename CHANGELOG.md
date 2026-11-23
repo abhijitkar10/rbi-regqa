@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-11-24
+- README: added results so far (retrieval numbers, final), a reproduce section (reproduce.sh, arxiv_pack.sh) and analysis/, results/, paper/ to the layout table. Grading snapshot 02:00: gpt-oss-20b v0 answers 311/318, judged 308.
 - arXiv packaging: `scripts/arxiv_pack.sh` builds paper/arxiv.tar.gz (main.tex, numbers, tables, figure, acl.sty and the generated main.bbl, 18 references) and checks it compiles from the tarball alone; warns while \todo markers remain (2: the two audits). Tarball is gitignored. Grading snapshot 00:00: gpt-oss-20b v0 answers 300/318, judged 300.
 
 ## 2026-11-23
