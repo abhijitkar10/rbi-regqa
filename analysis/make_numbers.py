@@ -179,3 +179,25 @@ if Path("results/reader_breakdown.json").exists():
     with open("paper/numbers.tex", "w") as fh:
         for kk, v in N.items():
             fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")
+
+# --- reader results prose (readers.json, readers_v0best.json, failures.json) ---
+if Path("results/readers.json").exists() and Path("results/readers_v0best.json").exists():
+    rd = {m: v for m, v in json.load(open("results/readers.json")).items() if not m.startswith("_")}
+    bst = {m: v for m, v in json.load(open("results/readers_v0best.json")).items() if not m.startswith("_")}
+    rng = lambda k, ms=rd: f"{min(ms[m][k] for m in ms):.2f}--{max(ms[m][k] for m in ms):.2f}"
+    put("RdAccRange", rng("acc")); put("RdCiteRange", rng("cite_gold")); put("RdFalseRefRange", rng("false_ref"))
+    top = max(rd, key=lambda m: rd[m]["acc"]); put("RdTopAcc", f"{rd[top]['acc']:.2f}")
+    Q, L, B = "groq:qwen/qwen3.8-27b", "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b", "nvidia:nvidia/nemotron-3.5-bolt-e4b"
+    put("QwenUnStrict", f"{rd[Q]['unans_ref']:.2f}"); put("QwenUnSoft", f"{rd[Q]['unans_ref_soft']:.2f}")
+    put("OtherUnStrictRange", rng("unans_ref", {m: v for m, v in rd.items() if m != Q}))
+    put("LightEmpty", rd[L]["empty"]); put("LightEmptyBest", bst[L]["empty"])
+    for tag, m in (("Bolt", B), ("Light", L)):
+        put(f"{tag}Acc", f"{rd[m]['acc']:.2f}"); put(f"{tag}AccBest", f"{bst[m]['acc']:.2f}")
+        put(f"{tag}CiteBest", f"{bst[m]['cite_gold']:.2f}")
+    if Path("results/failures.json").exists():
+        fc = json.load(open("results/failures.json"))["counts"]
+        put("FailWLMax", max(c["wrong_lender"] for c in fc.values())); put("FailHedgeQwen", fc[Q]["hedge"])
+        put("FailHedgeOtherMax", max(c["hedge"] for m, c in fc.items() if m != Q))
+    with open("paper/numbers.tex", "w") as fh:
+        for kk, v in N.items():
+            fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")
