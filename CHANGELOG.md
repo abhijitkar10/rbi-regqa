@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-11-23
+- Limitations, reader side: one judge (κ \JudgeKappa{} to a second), lenient refusal counts empty replies, most readers saw the weaker retriever's context, one run at default sampling. Paper 8 pages, page 8 is the failure appendix. Grading snapshot 16:00: gpt-oss-20b v0 answers 252/318, judged 247; everything else done.
 - Results: reader paragraphs written (macros \RdAccRange, \QwenUnStrict, \BoltAccBest, \FailHedgeQwen, …) replacing the reader TODO; paper 7 pages, no overfull boxes. Grading snapshot 14:00: qwen v0 317/318, gpt-oss-20b 235/318, unans gpt-oss 72/73.
 - Fixed citation parsing: readers' [S1, S3], [S1(2)], [S1–S3] and 【S1】 citations were dropped. New `parse_cites` in src/answer.py; `scripts/recite.py` recomputes cited / cite_gold in stored files (330 rows; added to reproduce.sh). Table 5 cite column: Ministral 0.68–0.69 → 0.86–0.87, gpt-oss-20b 0.76 → 0.87. Added Appendix B, failure counts per reader (`analysis/failures.py`). Grading snapshot 12:00: qwen v0 308/318, gpt-oss-20b 220/318, unans qwen 73 (done), gpt-oss 72.
 - Reader breakdown: `analysis/reader_breakdown.py` (by type, by set, by gold-in-context), macros and reproduce step. Partial: 0.92 with gold in context vs 0.34 without; applicability 0.75 vs obligation 0.86. Grading snapshot 10:00: qwen v0 299/318, gpt-oss-20b 206/318, unans qwen 69, gpt-oss 70.
