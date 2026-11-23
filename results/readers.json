@@ -1,32 +1,32 @@
 {
  "groq:openai/gpt-oss-20b": {
-  "n_ans": 220,
-  "n_unans": 72,
-  "acc": 0.848,
-  "cite_gold": 0.871,
-  "false_ref": 0.014,
-  "unans_ref": 0.778,
-  "unans_ref_soft": 0.806,
-  "false_ref_soft": 0.036,
+  "n_ans": 318,
+  "n_unans": 73,
+  "acc": 0.843,
+  "cite_gold": 0.844,
+  "false_ref": 0.035,
+  "unans_ref": 0.781,
+  "unans_ref_soft": 0.808,
+  "false_ref_soft": 0.05,
   "empty": 6,
   "by_gen": {
-   "nemotron": 0.863,
-   "minimax": 0.83
+   "nemotron": 0.868,
+   "minimax": 0.815
   }
  },
  "groq:qwen/qwen3.8-27b": {
-  "n_ans": 308,
+  "n_ans": 318,
   "n_unans": 73,
-  "acc": 0.854,
-  "cite_gold": 0.861,
-  "false_ref": 0.039,
+  "acc": 0.858,
+  "cite_gold": 0.863,
+  "false_ref": 0.038,
   "unans_ref": 0.37,
   "unans_ref_soft": 0.918,
-  "false_ref_soft": 0.071,
+  "false_ref_soft": 0.072,
   "empty": 0,
   "by_gen": {
-   "nemotron": 0.885,
-   "minimax": 0.82
+   "nemotron": 0.889,
+   "minimax": 0.825
   }
  },
  "mistral:ministral-14b-latest": {

@@ -1,9 +1,9 @@
 {
  "counts": {
   "groq:openai/gpt-oss-20b": {
-   "wrong_lender": 1,
+   "wrong_lender": 3,
    "hedge": 1,
-   "bad_cite": 4
+   "bad_cite": 6
   },
   "groq:qwen/qwen3.8-27b": {
    "wrong_lender": 5,
@@ -76,25 +76,32 @@
   ],
   "wrong_lender": [
    {
-    "qid": "12955-25-minimax-0",
+    "qid": "13141-39-minimax-0",
     "reader": "nvidia:nvidia/nemotron-3.5-bolt-e4b",
+    "question": "Under the RBI's KYC Directions for commercial banks, what must a bank do to keep monitoring its customers after onboarding?",
+    "gold": "Commercial Banks para 39",
+    "answer": "If there is no change in KYC information for an LE customer, the bank must obtain a self-declaration via registered email, ATMs, digital channels, a"
+   },
+   {
+    "qid": "12955-25-minimax-0",
+    "reader": "nvidia:minimaxai/minimax-m3.1-flash",
     "question": "As an NBFC compliance officer, how frequently must the Technical Working Group (TWG) meet?",
     "gold": "Non-Banking Financial Companies para 25",
-    "answer": "The Sub-Group of TWG for Non-Banking Financial Companies shall meet at least on a half yearly basis to discuss credit information reporting issues and seek"
+    "answer": "The Sub-Group of the TWG must meet at least on a half-yearly basis to discuss credit information reporting issues and seek potential resolutions [S2]. Separately,"
    },
    {
     "qid": "12942-41-minimax-0",
-    "reader": "nvidia:nvidia/nemotron-3.5-bolt-e4b",
+    "reader": "mistral:ministral-8b-latest",
     "question": "For an NBFC, from what date do the RBI requirements for releasing original property documents after repayment or settlement of a personal loan apply?",
     "gold": "Non-Banking Financial Companies para 41",
-    "answer": "The NBFC shall release all the original movable / immovable property documents and remove charges registered with any registry within a period of 30 days"
+    "answer": "The RBI requirements for an NBFC to release original movable or immovable property documents after repayment or settlement of a personal loan apply from **30"
    },
    {
-    "qid": "12955-19-minimax-0",
-    "reader": "nvidia:minimaxai/minimax-m3.1-flash",
-    "question": "When an NBFC receives a customer\u2019s request to correct inaccurate information in a credit information report, who is responsible for making the correction?",
-    "gold": "Non-Banking Financial Companies para 19",
-    "answer": ""
+    "qid": "12942-41-minimax-0",
+    "reader": "mistral:ministral-14b-latest",
+    "question": "For an NBFC, from what date do the RBI requirements for releasing original property documents after repayment or settlement of a personal loan apply?",
+    "gold": "Non-Banking Financial Companies para 41",
+    "answer": "The RBI requirements for releasing original movable/immovable property documents by an NBFC apply **from the date of full repayment or settlement of the loan**, with"
    },
    {
     "qid": "13141-39-minimax-0",
@@ -102,50 +109,43 @@
     "question": "Under the RBI's KYC Directions for commercial banks, what must a bank do to keep monitoring its customers after onboarding?",
     "gold": "Commercial Banks para 39",
     "answer": "Under the RBI\u2019s KYC Directions for commercial banks, banks must periodically update KYC information to ensure it remains accurate and compliant with current **Customer Due"
-   },
-   {
-    "qid": "12942-41-minimax-0",
-    "reader": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
-    "question": "For an NBFC, from what date do the RBI requirements for releasing original property documents after repayment or settlement of a personal loan apply?",
-    "gold": "Non-Banking Financial Companies para 41",
-    "answer": "According to [S2] para 35, the RBI requirement for NBFCs to release original movable/immovable property documents applies from the date of full repayment/settlement of the"
    }
   ],
   "bad_cite": [
    {
-    "qid": "13154-20-minimax-0",
-    "reader": "nvidia:nvidia/nemotron-3.5-bolt-e4b",
-    "question": "What should a commercial bank include in its loan policies and credit appraisal process so that lending decisions draw on available credit information?",
-    "gold": "Commercial Banks para 20",
-    "answer": "A bank shall include suitable provisions in its loan policies or credit appraisal processes for obtaining Credit Information Reports (CIRs) from one or more Credit"
-   },
-   {
-    "qid": "13161-21-minimax-0",
-    "reader": "mistral:ministral-8b-latest",
-    "question": "Can the Board Chair of a public sector bank sit on the bank's Risk Management Committee?",
-    "gold": "Commercial Banks para 21",
-    "answer": "According to **S1(2)**, the Chair of the Board of a public sector bank (PSB) **can sit on the Risk Management Committee (RMCB)** only if they"
-   },
-   {
-    "qid": "13154-9-minimax-0",
-    "reader": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
-    "question": "As a compliance officer at a commercial bank, which standardised format must we use to report credit information for the commercial segment?",
-    "gold": "Commercial Banks para 9",
-    "answer": "According to para 9 of [S2], commercial banks must use **Form 2: Uniform Credit Reporting Format (Commercial)** to report credit information for the commercial segment."
-   },
-   {
-    "qid": "13139-49-minimax-0",
+    "qid": "12988-10-nemotron-0",
     "reader": "mistral:ministral-14b-latest",
-    "question": "If a commercial bank outsources services to a third-party vendor, is it still required to preserve its customers' rights to seek redressal from the bank?",
-    "gold": "Commercial Banks para 49",
-    "answer": "Yes, a commercial bank must preserve its customers' rights to seek redressal from the bank even when services are outsourced. The responsibility for redressal of"
+    "question": "What risk management approach must a rural co-operative bank adopt under the RBI KYC directions?",
+    "gold": "Rural Co-operative Banks para 10",
+    "answer": "A rural co-operative bank must adopt a **risk-based approach (RBA)** for risk management and KYC updation, categorizing customers into **low, medium, and high-risk** based on"
    },
    {
-    "qid": "13141-78-nemotron-0",
-    "reader": "nvidia:nvidia/nemotron-3.5-bolt-e4b",
-    "question": "What must a commercial bank do to oversee the 'at par' cheque facility it provides to co-operative banks?",
-    "gold": "Commercial Banks para 78",
-    "answer": "The 'at par' cheque facility offered by commercial banks to co-operative banks shall be monitored and such arrangements must be reviewed to assess risks including"
+    "qid": "13154-18-minimax-0",
+    "reader": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+    "question": "As a compliance officer at a commercial bank, what should we do when a credit information company misses the prescribed timelines for updating, altering or correcting credit information about our customers?",
+    "gold": "Commercial Banks para 18",
+    "answer": ""
+   },
+   {
+    "qid": "13149-21-nemotron-0",
+    "reader": "groq:qwen/qwen3.8-27b",
+    "question": "Can a commercial bank apply different tenor premiums to different borrowers or loan categories for the same residual tenor?",
+    "gold": "Commercial Banks para 21",
+    "answer": "No, the change in tenor premium shall not be borrower specific or loan class specific, meaning it must be uniform for all types of loans"
+   },
+   {
+    "qid": "13149-29-minimax-0",
+    "reader": "mistral:ministral-8b-latest",
+    "question": "Under the Reserve Bank of India (Commercial Banks \u2013 Interest Rates on Advances) Directions, 2025, may a commercial bank increase the credit risk premium charged to an existing borrower because the customer's credit risk profile has deteriorated?",
+    "gold": "Commercial Banks para 29",
+    "answer": "Yes, a commercial bank **may** increase the credit risk premium charged to an existing borrower if the customer's credit risk profile has deteriorated, **provided** the"
+   },
+   {
+    "qid": "13157-25-nemotron-0",
+    "reader": "groq:qwen/qwen3.8-27b",
+    "question": "When is a commercial bank prohibited from charging a penalty for premature withdrawal of a domestic term deposit?",
+    "gold": "Commercial Banks para 25",
+    "answer": "A bank is prohibited from charging a penalty for premature withdrawal of a domestic term deposit in the event of the depositor's death [S1], when"
    }
   ]
  }

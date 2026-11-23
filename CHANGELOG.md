@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-11-24
+- Grading finished 04:30: every reader fully graded by Step-5. recite.py fixed 2 late gpt-oss-20b cite_gold rows; reproduce.sh rerun. Changes from the partial numbers: gpt-oss-20b acc 0.85 → 0.84, Qwen 0.85 → 0.86; cite range 0.84–0.89; false-refusal range 0.04–0.07; gold-in-context 0.93 (was 0.92); own-family Nemotron +0.039 [−0.005, +0.087], MiniMax −0.016 [−0.062, +0.028] (still no significant preference). No daggers left in Table 5. README gains the reader headline. Mistral Large third-judge sample resumed in the background.
 - README: added results so far (retrieval numbers, final), a reproduce section (reproduce.sh, arxiv_pack.sh) and analysis/, results/, paper/ to the layout table. Grading snapshot 02:00: gpt-oss-20b v0 answers 311/318, judged 308.
 - arXiv packaging: `scripts/arxiv_pack.sh` builds paper/arxiv.tar.gz (main.tex, numbers, tables, figure, acl.sty and the generated main.bbl, 18 references) and checks it compiles from the tarball alone; warns while \todo markers remain (2: the two audits). Tarball is gitignored. Grading snapshot 00:00: gpt-oss-20b v0 answers 300/318, judged 300.
 

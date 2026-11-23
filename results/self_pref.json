@@ -1,7 +1,7 @@
 {
  "gap": {
-  "groq_openai_gpt-oss-20b": 0.029,
-  "groq_qwen_qwen3.8-27b": 0.062,
+  "groq_openai_gpt-oss-20b": 0.054,
+  "groq_qwen_qwen3.8-27b": 0.065,
   "mistral_ministral-14b-latest": 0.048,
   "mistral_ministral-8b-latest": 0.015,
   "nvidia_minimaxai_minimax-m3.1-flash": 0.062,
@@ -9,8 +9,8 @@
   "nvidia_nvidia_nemotron-3.5-lightning-30b-a3b": 0.09
  },
  "graded": {
-  "groq_openai_gpt-oss-20b": 203,
-  "groq_qwen_qwen3.8-27b": 292,
+  "groq_openai_gpt-oss-20b": 318,
+  "groq_qwen_qwen3.8-27b": 318,
   "mistral_ministral-14b-latest": 318,
   "mistral_ministral-8b-latest": 318,
   "nvidia_minimaxai_minimax-m3.1-flash": 318,
@@ -18,13 +18,13 @@
   "nvidia_nvidia_nemotron-3.5-lightning-30b-a3b": 318
  },
  "nemotron_pref": [
-  0.046,
-  -0.004,
-  0.099
+  0.039,
+  -0.005,
+  0.087
  ],
  "minimax_pref": [
-  -0.023,
-  -0.075,
-  0.027
+  -0.016,
+  -0.062,
+  0.028
  ]
 }

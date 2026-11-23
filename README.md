@@ -21,7 +21,7 @@ On 318 answerable questions over 96 Directions (8,065 paragraphs):
 
 - With plain 800-character chunks, the best retriever's top result is the right rule from the wrong lender's rulebook for 14.2% of questions. Writing the rulebook's name into each paragraph chunk cuts this to 1.3–6.3% and raises R@5 from 0.84 to 0.95.
 - On the author's own questions, which rarely name a lender, R@1 is 0.37; defaulting to the deployment's lender raises it to 0.77.
-- Reader (answering) results are being finalised; see the paper draft in `paper/`.
+- Seven open readers answering from the top 5 passages score 0.80–0.89 (MiniMax-M3.1 best); accuracy is 0.93 when the gold paragraph is in the context and 0.34 when it is not. Qwen3.8-27B refuses only 37% of unanswerable questions with the requested NOT FOUND, but 92% if its own-words declines count.
 
 ## Reproduce the paper
 
