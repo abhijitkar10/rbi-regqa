@@ -3,7 +3,7 @@
   "n_ans": 318,
   "n_unans": 0,
   "acc": 0.874,
-  "cite_gold": 0.91,
+  "cite_gold": 0.919,
   "false_ref": 0.025,
   "unans_ref": 0.0,
   "unans_ref_soft": 0.0,

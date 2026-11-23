@@ -22,11 +22,13 @@ fi
 for s in near_copies retrieval_table customer_gap expert_any lender_aware bootstrap breakdown miss_analysis fig_wronglender paper_extras; do
   echo "== analysis/$s.py"; $PY analysis/$s.py > /dev/null
 done
+$PY scripts/recite.py > /dev/null
 $PY analysis/summarize_answers.py v0,unans_v1 nvidia:stepfun-ai/step-5-preview groq:openai/gpt-oss-120b > /dev/null
 $PY analysis/summarize_answers.py v0best nvidia:stepfun-ai/step-5-preview > /dev/null
 $PY analysis/reader_table.py > /dev/null
 $PY analysis/self_pref.py > /dev/null
 $PY analysis/reader_breakdown.py > /dev/null
+$PY analysis/failures.py > /dev/null
 $PY analysis/make_numbers.py > /dev/null
 (cd paper && tectonic -X compile main.tex 2>&1 | grep -iE "error|undefined" || true)
 echo "paper/main.pdf rebuilt; TODOs left: $(grep -o 'todo{[^}]*' paper/main.tex paper/numbers.tex | wc -l | tr -d ' ')"

@@ -1,0 +1,21 @@
+\begin{table}[h]
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrr}
+\toprule
+Reader & Wrong & Hedge & Missed \\
+ & lender & & cite \\
+\midrule
+gpt-oss-20b & 1 & 1 & 4 \\
+Qwen3.8-27B & 5 & 40 & 4 \\
+Ministral-14B & 3 & 3 & 4 \\
+Ministral-8B & 2 & 2 & 5 \\
+MiniMax-M3.1 & 3 & 1 & 1 \\
+Nemotron Bolt & 3 & 6 & 8 \\
+Nemotron Lightning & 4 & 0 & 8 \\
+\bottomrule
+\end{tabular}
+\caption{Failure counts per reader (Step-5 judge). Wrong lender: wrong answer with no gold paragraph but another
+lender's same-topic rulebook in context. Hedge: unanswerable question declined without NOT FOUND. Missed cite: correct
+answer, gold paragraph in context, not cited. The repository lists five examples of each.}
+\label{tab:failures}
+\end{table}

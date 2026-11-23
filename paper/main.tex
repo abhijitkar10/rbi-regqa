@@ -115,4 +115,8 @@ The author used Claude (Anthropic) as a coding and writing assistant throughout 
 \section{Prompts}\label{app:prompts}
 \input{app_prompts}
 
+\section{Reader failures}\label{app:failures}
+Table~\ref{tab:failures} counts three failure kinds per reader on the rulebook-wording and unanswerable questions. Citations are parsed from any bracketed form ([S1], [S1, S3], [S1(2)], [S1--S3], or full-width brackets); an earlier parser that read only [S1] undercounted Ministral's and gpt-oss-20b's citations by about 0.2.
+\input{tab_failures}
+
 \end{document}

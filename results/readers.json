@@ -1,39 +1,39 @@
 {
  "groq:openai/gpt-oss-20b": {
-  "n_ans": 195,
-  "n_unans": 57,
-  "acc": 0.833,
-  "cite_gold": 0.76,
-  "false_ref": 0.015,
-  "unans_ref": 0.807,
-  "unans_ref_soft": 0.842,
-  "false_ref_soft": 0.041,
+  "n_ans": 220,
+  "n_unans": 72,
+  "acc": 0.848,
+  "cite_gold": 0.871,
+  "false_ref": 0.014,
+  "unans_ref": 0.778,
+  "unans_ref_soft": 0.806,
+  "false_ref_soft": 0.036,
   "empty": 6,
   "by_gen": {
-   "nemotron": 0.845,
-   "minimax": 0.821
+   "nemotron": 0.863,
+   "minimax": 0.83
   }
  },
  "groq:qwen/qwen3.8-27b": {
-  "n_ans": 284,
-  "n_unans": 58,
-  "acc": 0.852,
-  "cite_gold": 0.865,
-  "false_ref": 0.032,
-  "unans_ref": 0.379,
-  "unans_ref_soft": 0.897,
-  "false_ref_soft": 0.067,
+  "n_ans": 308,
+  "n_unans": 73,
+  "acc": 0.854,
+  "cite_gold": 0.861,
+  "false_ref": 0.039,
+  "unans_ref": 0.37,
+  "unans_ref_soft": 0.918,
+  "false_ref_soft": 0.071,
   "empty": 0,
   "by_gen": {
-   "nemotron": 0.881,
-   "minimax": 0.821
+   "nemotron": 0.885,
+   "minimax": 0.82
   }
  },
  "mistral:ministral-14b-latest": {
   "n_ans": 318,
   "n_unans": 73,
   "acc": 0.803,
-  "cite_gold": 0.682,
+  "cite_gold": 0.866,
   "false_ref": 0.06,
   "unans_ref": 0.904,
   "unans_ref_soft": 0.945,
@@ -48,7 +48,7 @@
   "n_ans": 318,
   "n_unans": 73,
   "acc": 0.819,
-  "cite_gold": 0.686,
+  "cite_gold": 0.86,
   "false_ref": 0.06,
   "unans_ref": 0.863,
   "unans_ref_soft": 0.89,
@@ -78,7 +78,7 @@
   "n_ans": 318,
   "n_unans": 73,
   "acc": 0.843,
-  "cite_gold": 0.839,
+  "cite_gold": 0.849,
   "false_ref": 0.041,
   "unans_ref": 0.781,
   "unans_ref_soft": 0.863,

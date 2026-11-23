@@ -19,6 +19,16 @@ Question: {q}
 Answer in one to three sentences using only the passages. Cite the passages you use like [S2]. If the passages do not contain the answer, reply exactly: NOT FOUND"""
 
 
+
+def parse_cites(a, k=5):
+    """Passage numbers cited in an answer. Readers write [S1], [S1, S3], [S1(2)], [S1–S3], 【S1】 or **[S2]**."""
+    out = set()
+    for grp in re.findall(r"[\[【]([^\]】]*S\d[^\]】]*)[\]】]", a):
+        out |= {int(n) for n in re.findall(r"S(\d)", grp)}
+        for x, y in re.findall(r"S(\d)\s*[–—-]\s*S?(\d)", grp):
+            out |= set(range(int(x), int(y) + 1))
+    return sorted(n for n in out if 1 <= n <= k)
+
 def contexts(qfile, qs):
     cache = Path(f"results/contexts_{Path(qfile).stem}.json")
     have = json.load(open(cache)) if cache.exists() else {}
@@ -59,7 +69,7 @@ def main(qfile, models):
                     print(model, q["qid"], "ERROR", type(e).__name__, str(e)[:120], flush=True)
                     continue  # not written, so a rerun retries it
                 fails = 0
-                cited = sorted({int(n) for n in re.findall(r"\[S(\d)\]", a) if 1 <= int(n) <= K})
+                cited = parse_cites(a, K)
                 out.write(json.dumps({"qid": q["qid"], "model": model, "answer": a, "cited": cited,
                                       "refused": a.upper().startswith("NOT FOUND"), "ctx": ids,
                                       "secs": round(time.time() - t, 1)}) + "\n"); out.flush()

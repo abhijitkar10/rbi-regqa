@@ -1,0 +1,152 @@
+{
+ "counts": {
+  "groq:openai/gpt-oss-20b": {
+   "wrong_lender": 1,
+   "hedge": 1,
+   "bad_cite": 4
+  },
+  "groq:qwen/qwen3.8-27b": {
+   "wrong_lender": 5,
+   "hedge": 40,
+   "bad_cite": 4
+  },
+  "mistral:ministral-14b-latest": {
+   "wrong_lender": 3,
+   "hedge": 3,
+   "bad_cite": 4
+  },
+  "mistral:ministral-8b-latest": {
+   "wrong_lender": 2,
+   "hedge": 2,
+   "bad_cite": 5
+  },
+  "nvidia:minimaxai/minimax-m3.1-flash": {
+   "wrong_lender": 3,
+   "hedge": 1,
+   "bad_cite": 1
+  },
+  "nvidia:nvidia/nemotron-3.5-bolt-e4b": {
+   "wrong_lender": 3,
+   "hedge": 6,
+   "bad_cite": 8
+  },
+  "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b": {
+   "wrong_lender": 4,
+   "hedge": 0,
+   "bad_cite": 8
+  }
+ },
+ "examples": {
+  "hedge": [
+   {
+    "qid": "12943-48-minimax-u",
+    "reader": "groq:qwen/qwen3.8-27b",
+    "question": "By when must an NBFC register a non-profit organisation customer who is not yet registered on the DARPAN Portal?",
+    "gold": "Non-Banking Financial Companies para 48",
+    "answer": "The provided passages state that the NBFC shall register the details of non-profit organisation customers on the DARPAN Portal if they are not already registered,"
+   },
+   {
+    "qid": "13157-42-minimax-u",
+    "reader": "nvidia:nvidia/nemotron-3.5-bolt-e4b",
+    "question": "What is the maximum interest rate that a commercial bank may offer on deposits under the Resident Foreign Currency (RFC) Account Scheme?",
+    "gold": "Commercial Banks para 42",
+    "answer": "A bank shall have the freedom to determine interest on deposits of money accepted or renewed under the RFC Account Scheme according to a comprehensive"
+   },
+   {
+    "qid": "13149-29-minimax-u",
+    "reader": "groq:qwen/qwen3.8-27b",
+    "question": "What is the maximum percentage increase in the credit risk premium that a commercial bank may charge an existing borrower under the Reserve Bank of India (Commercial Banks \u2013 Interest Rates on Advances) Directions, 2025?",
+    "gold": "Commercial Banks para 29",
+    "answer": "The provided passages do not specify a maximum percentage increase in the credit risk premium; they only state that the spread charged to an existing"
+   },
+   {
+    "qid": "13161-75-minimax-u",
+    "reader": "groq:qwen/qwen3.8-27b",
+    "question": "Is there a deadline within which a commercial bank must demonstrate compliance with the RBI (Commercial Banks - Governance) Directions, 2025 alongside other applicable requirements?",
+    "gold": "Commercial Banks para 75",
+    "answer": "The provided passages do not specify a deadline within which a commercial bank must demonstrate compliance with the RBI (Commercial Banks - Governance) Directions, 2025."
+   },
+   {
+    "qid": "13154-13-nemotron-u",
+    "reader": "groq:qwen/qwen3.8-27b",
+    "question": "What is the deadline for commercial banks to implement the necessary system software changes for SHG member data collection and reporting as required by these directions?",
+    "gold": "Commercial Banks para 13",
+    "answer": "The provided passages state that a CI shall put in place necessary systems and procedures, including making necessary changes to their system software, for the"
+   }
+  ],
+  "wrong_lender": [
+   {
+    "qid": "12955-25-minimax-0",
+    "reader": "nvidia:nvidia/nemotron-3.5-bolt-e4b",
+    "question": "As an NBFC compliance officer, how frequently must the Technical Working Group (TWG) meet?",
+    "gold": "Non-Banking Financial Companies para 25",
+    "answer": "The Sub-Group of TWG for Non-Banking Financial Companies shall meet at least on a half yearly basis to discuss credit information reporting issues and seek"
+   },
+   {
+    "qid": "12942-41-minimax-0",
+    "reader": "nvidia:nvidia/nemotron-3.5-bolt-e4b",
+    "question": "For an NBFC, from what date do the RBI requirements for releasing original property documents after repayment or settlement of a personal loan apply?",
+    "gold": "Non-Banking Financial Companies para 41",
+    "answer": "The NBFC shall release all the original movable / immovable property documents and remove charges registered with any registry within a period of 30 days"
+   },
+   {
+    "qid": "12955-19-minimax-0",
+    "reader": "nvidia:minimaxai/minimax-m3.1-flash",
+    "question": "When an NBFC receives a customer\u2019s request to correct inaccurate information in a credit information report, who is responsible for making the correction?",
+    "gold": "Non-Banking Financial Companies para 19",
+    "answer": ""
+   },
+   {
+    "qid": "13141-39-minimax-0",
+    "reader": "mistral:ministral-8b-latest",
+    "question": "Under the RBI's KYC Directions for commercial banks, what must a bank do to keep monitoring its customers after onboarding?",
+    "gold": "Commercial Banks para 39",
+    "answer": "Under the RBI\u2019s KYC Directions for commercial banks, banks must periodically update KYC information to ensure it remains accurate and compliant with current **Customer Due"
+   },
+   {
+    "qid": "12942-41-minimax-0",
+    "reader": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+    "question": "For an NBFC, from what date do the RBI requirements for releasing original property documents after repayment or settlement of a personal loan apply?",
+    "gold": "Non-Banking Financial Companies para 41",
+    "answer": "According to [S2] para 35, the RBI requirement for NBFCs to release original movable/immovable property documents applies from the date of full repayment/settlement of the"
+   }
+  ],
+  "bad_cite": [
+   {
+    "qid": "13154-20-minimax-0",
+    "reader": "nvidia:nvidia/nemotron-3.5-bolt-e4b",
+    "question": "What should a commercial bank include in its loan policies and credit appraisal process so that lending decisions draw on available credit information?",
+    "gold": "Commercial Banks para 20",
+    "answer": "A bank shall include suitable provisions in its loan policies or credit appraisal processes for obtaining Credit Information Reports (CIRs) from one or more Credit"
+   },
+   {
+    "qid": "13161-21-minimax-0",
+    "reader": "mistral:ministral-8b-latest",
+    "question": "Can the Board Chair of a public sector bank sit on the bank's Risk Management Committee?",
+    "gold": "Commercial Banks para 21",
+    "answer": "According to **S1(2)**, the Chair of the Board of a public sector bank (PSB) **can sit on the Risk Management Committee (RMCB)** only if they"
+   },
+   {
+    "qid": "13154-9-minimax-0",
+    "reader": "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
+    "question": "As a compliance officer at a commercial bank, which standardised format must we use to report credit information for the commercial segment?",
+    "gold": "Commercial Banks para 9",
+    "answer": "According to para 9 of [S2], commercial banks must use **Form 2: Uniform Credit Reporting Format (Commercial)** to report credit information for the commercial segment."
+   },
+   {
+    "qid": "13139-49-minimax-0",
+    "reader": "mistral:ministral-14b-latest",
+    "question": "If a commercial bank outsources services to a third-party vendor, is it still required to preserve its customers' rights to seek redressal from the bank?",
+    "gold": "Commercial Banks para 49",
+    "answer": "Yes, a commercial bank must preserve its customers' rights to seek redressal from the bank even when services are outsourced. The responsibility for redressal of"
+   },
+   {
+    "qid": "13141-78-nemotron-0",
+    "reader": "nvidia:nvidia/nemotron-3.5-bolt-e4b",
+    "question": "What must a commercial bank do to oversee the 'at par' cheque facility it provides to co-operative banks?",
+    "gold": "Commercial Banks para 78",
+    "answer": "The 'at par' cheque facility offered by commercial banks to co-operative banks shall be monitored and such arrangements must be reviewed to assess risks including"
+   }
+  ]
+ }
+}
