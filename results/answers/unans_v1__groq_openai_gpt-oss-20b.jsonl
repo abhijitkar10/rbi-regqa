@@ -70,3 +70,4 @@
 {"qid": "13149-5-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [6429, 6449, 6409, 6437, 6407], "secs": 36.8}
 {"qid": "13154-34-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [7092, 5541, 2580, 4800, 1723], "secs": 1.1}
 {"qid": "12933-32-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "The maximum dividend payout ratio an NBFC\u2011MFI can declare is 50\u202f% of its net profit, as per the ceiling specified for \u201cOther NBFC\u201d in the RBI directions. [S1]", "cited": [1], "refused": false, "ctx": [1609, 1611, 1608, 282, 281], "secs": 6.3}
+{"qid": "12927-16-nemotron-u", "model": "groq:openai/gpt-oss-20b", "answer": "NOT FOUND", "cited": [], "refused": true, "ctx": [30, 56, 71, 99, 80], "secs": 1.1}

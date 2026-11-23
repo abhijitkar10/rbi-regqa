@@ -70,3 +70,4 @@
 {"qid": "13149-5-nemotron-u", "model": "groq:openai/gpt-oss-20b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": true, "refused_soft": true, "empty": false, "grade": "CORRECT", "grade_soft": "CORRECT"}
 {"qid": "13154-34-nemotron-u", "model": "groq:openai/gpt-oss-20b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": true, "refused_soft": true, "empty": false, "grade": "CORRECT", "grade_soft": "CORRECT"}
 {"qid": "12933-32-nemotron-u", "model": "groq:openai/gpt-oss-20b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": false, "refused_soft": false, "empty": false, "grade": "WRONG", "grade_soft": "WRONG"}
+{"qid": "12927-16-nemotron-u", "model": "groq:openai/gpt-oss-20b", "judge": "nvidia:stepfun-ai/step-5-preview", "answerable": false, "refused": true, "refused_soft": true, "empty": false, "grade": "CORRECT", "grade_soft": "CORRECT"}
