@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-11-23
+- Conclusion (Section 6): three findings (wrong-lender confusion and the name prefix; retrieval sets the reader ceiling; real questions rarely name the lender) and one recommendation (put document identity in every chunk, decide the entity before retrieval). Body ends on page 6; 8 pages with appendices. Grading snapshot 18:00: gpt-oss-20b v0 answers 265/318, judged 262.
 - Limitations, reader side: one judge (κ \JudgeKappa{} to a second), lenient refusal counts empty replies, most readers saw the weaker retriever's context, one run at default sampling. Paper 8 pages, page 8 is the failure appendix. Grading snapshot 16:00: gpt-oss-20b v0 answers 252/318, judged 247; everything else done.
 - Results: reader paragraphs written (macros \RdAccRange, \QwenUnStrict, \BoltAccBest, \FailHedgeQwen, …) replacing the reader TODO; paper 7 pages, no overfull boxes. Grading snapshot 14:00: qwen v0 317/318, gpt-oss-20b 235/318, unans gpt-oss 72/73.
 - Fixed citation parsing: readers' [S1, S3], [S1(2)], [S1–S3] and 【S1】 citations were dropped. New `parse_cites` in src/answer.py; `scripts/recite.py` recomputes cited / cite_gold in stored files (330 rows; added to reproduce.sh). Table 5 cite column: Ministral 0.68–0.69 → 0.86–0.87, gpt-oss-20b 0.76 → 0.87. Added Appendix B, failure counts per reader (`analysis/failures.py`). Grading snapshot 12:00: qwen v0 308/318, gpt-oss-20b 220/318, unans qwen 73 (done), gpt-oss 72.
