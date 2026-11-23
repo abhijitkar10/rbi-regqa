@@ -158,3 +158,13 @@ if Path("results/readers.json").exists() and Path("results/reader_ctx.json").exi
     with open("paper/numbers.tex", "w") as fh:
         for kk, v in N.items():
             fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")
+
+# --- own-family check (results/self_pref.json) ---
+if Path("results/self_pref.json").exists():
+    sp = json.load(open("results/self_pref.json"))
+    for k, name in (("nemotron_pref", "PrefNem"), ("minimax_pref", "PrefMM")):
+        v, lo, hi = sp[k]
+        put(name, f"${v:+.3f}$"); put(name + "CI", f"$[{lo:+.3f}, {hi:+.3f}]$")
+    with open("paper/numbers.tex", "w") as fh:
+        for kk, v in N.items():
+            fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")

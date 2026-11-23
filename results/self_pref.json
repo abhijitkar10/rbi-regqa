@@ -1,0 +1,30 @@
+{
+ "gap": {
+  "groq_openai_gpt-oss-20b": 0.029,
+  "groq_qwen_qwen3.8-27b": 0.062,
+  "mistral_ministral-14b-latest": 0.048,
+  "mistral_ministral-8b-latest": 0.015,
+  "nvidia_minimaxai_minimax-m3.1-flash": 0.062,
+  "nvidia_nvidia_nemotron-3.5-bolt-e4b": 0.079,
+  "nvidia_nvidia_nemotron-3.5-lightning-30b-a3b": 0.09
+ },
+ "graded": {
+  "groq_openai_gpt-oss-20b": 203,
+  "groq_qwen_qwen3.8-27b": 292,
+  "mistral_ministral-14b-latest": 318,
+  "mistral_ministral-8b-latest": 318,
+  "nvidia_minimaxai_minimax-m3.1-flash": 318,
+  "nvidia_nvidia_nemotron-3.5-bolt-e4b": 318,
+  "nvidia_nvidia_nemotron-3.5-lightning-30b-a3b": 318
+ },
+ "nemotron_pref": [
+  0.046,
+  -0.004,
+  0.099
+ ],
+ "minimax_pref": [
+  -0.023,
+  -0.075,
+  0.027
+ ]
+}

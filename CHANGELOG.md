@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-11-23
+- Own-family check: `analysis/self_pref.py` (difference-in-differences + bootstrap CI), wired into make_numbers and reproduce. Partial grades: Nemotron +0.046 [−0.004, +0.099], MiniMax −0.023 [−0.075, +0.027]. Grading snapshot 08:00: qwen v0 292/318, gpt-oss-20b 203/318, unans qwen 64, gpt-oss 62.
 - Post-grading dry run: new `analysis/reader_table.py` (Table 5) and reader macros; `summarize_answers.py` writes v0best results to its own file; reproduce.sh runs both. Corrected the Answering paragraph: the main reader runs used name-prefixed hybrid BM25+BGE-base with BGE-reranker-base (gold in top 5 for 85%), not the best configuration (95%, two-reader ablation). Paper now 7 pages.
 - Grading at 06:27: ministral-8b and -14b done; qwen 284, gpt-oss-20b 195 (answers 287 / 197); unans_v1 qwen 58, gpt-oss 57.
 - Prose pass (no-ai-slop) on Introduction, Related Work, Benchmark and Experiments: six small edits for active voice and plain definitions; numbers and citations unchanged; still 6 pages.
