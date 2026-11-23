@@ -168,3 +168,14 @@ if Path("results/self_pref.json").exists():
     with open("paper/numbers.tex", "w") as fh:
         for kk, v in N.items():
             fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")
+
+# --- reader accuracy by type / set / gold in context (results/reader_breakdown.json) ---
+if Path("results/reader_breakdown.json").exists():
+    rb = json.load(open("results/reader_breakdown.json"))
+    put("RdApp", f"{rb['type']['applicability']['acc']:.2f}"); put("RdObl", f"{rb['type']['obligation']['acc']:.2f}")
+    put("RdEntity", f"{rb['set']['entity']['acc']:.2f}"); put("RdMain", f"{rb['set']['main']['acc']:.2f}")
+    put("RdGoldIn", f"{rb['gold_in_context']['yes']['acc']:.2f}"); put("RdGoldOut", f"{rb['gold_in_context']['no']['acc']:.2f}")
+    put("NGoldOut", rb["gold_in_context"]["no"]["n"])
+    with open("paper/numbers.tex", "w") as fh:
+        for kk, v in N.items():
+            fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")
