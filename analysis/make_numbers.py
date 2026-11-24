@@ -155,6 +155,10 @@ if Path("results/readers.json").exists() and Path("results/reader_ctx.json").exi
     rc, ja = json.load(open("results/reader_ctx.json")), json.load(open("results/readers.json")).get("_judge_agreement")
     put("CtxRfive", f"{rc['v0']:.0%}".replace("%", r"\%")); put("CtxBestRfive", f"{rc['v0best']:.0%}".replace("%", r"\%"))
     if ja: put("JudgeN", ja["n"]); put("JudgeExact", f"{ja['exact']:.2f}"); put("JudgeKappa", f"{ja['kappa']:.2f}")
+    if Path("results/judge_agreement.json").exists():  # third judge (analysis/judge_agreement.py)
+        jg = json.load(open("results/judge_agreement.json"))
+        put("JudgeThreeN", jg["step5~mistral_large"]["n"]); put("JudgeThreeKappa", f'{jg["step5~mistral_large"]["kappa"]:.2f}')
+        put("JudgeOthersN", jg["gptoss120b~mistral_large"]["n"]); put("JudgeOthersKappa", f'{jg["gptoss120b~mistral_large"]["kappa"]:.2f}')
     with open("paper/numbers.tex", "w") as fh:
         for kk, v in N.items():
             fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")

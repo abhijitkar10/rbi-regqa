@@ -2,6 +2,8 @@
 
 ## 2026-11-24
 
+- Three-judge agreement (`analysis/judge_agreement.py`, results/judge_agreement.json): Mistral Large 4 vs Step-5 κ 0.64, vs gpt-oss-120b 0.49; Step-5 agrees with both others better than they agree with each other. One sentence in the judge paragraph, macros in make_numbers.
+
 - Third judge interim: Mistral Large 4 vs Step-5 κ 0.58 (n=108). Fixed `src/judge.py --limit` so resumed runs keep the same seed-0 sample (it redrew on every restart); third-judge job restarted with the fix.
 
 - Claims-vs-numbers pass on the post-grading sections. Abstract, Conclusion and README now scope the name-prefix WrongLender@1 range (1.3–6.3%) to dense, hybrid and re-ranked retrievers; prefixed BM25 stays at 8.2%. Third-judge sample at 91/210.

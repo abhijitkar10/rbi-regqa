@@ -29,6 +29,7 @@ $PY analysis/reader_table.py > /dev/null
 $PY analysis/self_pref.py > /dev/null
 $PY analysis/reader_breakdown.py > /dev/null
 $PY analysis/failures.py > /dev/null
+$PY analysis/judge_agreement.py > /dev/null
 $PY analysis/make_numbers.py > /dev/null
 (cd paper && tectonic -X compile main.tex 2>&1 | grep -iE "error|undefined" || true)
 echo "paper/main.pdf rebuilt; TODOs left: $(grep -o 'todo{[^}]*' paper/main.tex paper/numbers.tex | wc -l | tr -d ' ')"
