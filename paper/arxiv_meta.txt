@@ -1,0 +1,9 @@
+Title: Which Rulebook? Question Answering over Near-Duplicate Indian Banking Regulations
+Authors: Abhijit Kar
+Primary category: cs.CL    Cross-list: cs.IR
+Comments: 8 pages, 1 figure, 6 tables. Data and code: https://github.com/abhijitkar10/rbi-regqa
+License: CC BY 4.0
+MSC / ACM class: (leave blank)
+
+Abstract (1378 chars):
+In November 2025 the Reserve Bank of India (RBI) replaced 9,445 circulars with 244 consolidated Directions, one set per type of lender. Many of these are near-copies: the Know-Your-Customer (KYC) rules for small finance banks, payments banks and four other bank types repeat 76–87% of the commercial-bank paragraphs almost word for word. A compliance assistant must therefore find not just the right rule, but the right lender's version of it, and cite the paragraph. We release RBI-RegQA, 318 questions over 96 RBI Directions (8,065 numbered paragraphs), each tied to the paragraph that answers it, plus 73 questions the rules do not answer. Questions were drafted by two LLM families from single paragraphs, kept only when an evidence quote matched the source text, and audited by hand. With plain text chunks, the best retriever returns the right rule from the wrong lender's rulebook as its top result for 14.2% of questions; naming the rulebook in each paragraph chunk cuts this to 1.3–6.3% across dense, hybrid and re-ranked retrievers and raises R@5 from 0.84 to 0.95. Across seven open readers, accuracy is 0.93 when the gold paragraph is in the context and 0.34 when it is not. On the author's own questions, which rarely name a lender, R@1 is only 0.37; defaulting to the deployment's lender raises it to 0.77. Data and code: https://github.com/abhijitkar10/rbi-regqa.

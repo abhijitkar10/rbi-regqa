@@ -2,6 +2,8 @@
 
 ## 2026-11-24
 
+- arXiv metadata: `scripts/arxiv_meta.py` writes paper/arxiv_meta.txt (title, plain-text abstract from the paper's macros, categories, comments line) and fails on LaTeX left in the abstract or more than 1,920 characters. Runs in reproduce.sh.
+
 - Third judge closed at 209/210: Mistral Large 4 vs Step-5 κ 0.65, vs gpt-oss-120b 0.48. reproduce.sh and arXiv package rerun.
 - `scripts/check_refs.py` fixed: it skipped multi-line bib entries without saying so; now all 18 references are checked and pass.
 
