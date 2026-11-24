@@ -2,6 +2,9 @@
 
 ## 2026-11-24
 
+- Third judge closed at 209/210: Mistral Large 4 vs Step-5 κ 0.65, vs gpt-oss-120b 0.48. reproduce.sh and arXiv package rerun.
+- `scripts/check_refs.py` fixed: it skipped multi-line bib entries without saying so; now all 18 references are checked and pass.
+
 - Three-judge agreement (`analysis/judge_agreement.py`, results/judge_agreement.json): Mistral Large 4 vs Step-5 κ 0.64, vs gpt-oss-120b 0.49; Step-5 agrees with both others better than they agree with each other. One sentence in the judge paragraph, macros in make_numbers.
 
 - Third judge interim: Mistral Large 4 vs Step-5 κ 0.58 (n=108). Fixed `src/judge.py --limit` so resumed runs keep the same seed-0 sample (it redrew on every restart); third-judge job restarted with the fix.

@@ -6,7 +6,10 @@ import json, re, sys, time, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 
 bib = open("paper/references.bib").read()
-entries = re.findall(r"@\w+\{([^,]+),\s*title=\{(.+?)\},\s*author=.*?\}\s*$", bib, re.M)
+blocks = [b for b in re.split(r"\n(?=@)", "\n" + bib) if b.strip().startswith("@")]  # one block per entry, any layout
+entries = [(re.match(r"@\w+\{([^,]+),", b).group(1).strip(), re.search(r"title\s*=\s*\{(.+?)\},\s*\n?\s*author", b, re.S).group(1),
+            b) for b in blocks]
+assert len(entries) == bib.count("\n@") + bib.startswith("@"), "some bib entries were not parsed"
 norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower().replace("{", "").replace("}", ""))
 UA = {"User-Agent": "rbi-regqa-refcheck/1.0"}
 
@@ -16,8 +19,7 @@ def get(url):
 
 
 bad = []
-for key, title in entries:
-    line = next(l for l in bib.splitlines() if l.startswith(f"@") and f"{{{key}," in l)
+for key, title, line in entries:
     if m := re.search(r"arXiv:(\d{4}\.\d{4,5})", line):
         x = ET.fromstring(get(f"https://export.arxiv.org/api/query?id_list={m.group(1)}"))
         got = x.find("{http://www.w3.org/2005/Atom}entry/{http://www.w3.org/2005/Atom}title")
