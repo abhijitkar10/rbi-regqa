@@ -31,10 +31,14 @@ def main(qfile, judge, files, limit=None):
     for f in files:
         out_path = Path(f"results/judged/{Path(f).stem}__{judge.replace(':', '_').replace('/', '_')}.jsonl")
         done = {json.loads(l)["qid"] for l in open(out_path)} if out_path.exists() else set()
-        rows = [r for r in map(json.loads, open(f)) if r["qid"] not in done and not r["answer"].startswith("ERROR")]
-        if limit:  # agreement sample: random answers that need the LLM judge, same picks on every run (seed 0)
+        rows = [r for r in map(json.loads, open(f)) if not r["answer"].startswith("ERROR")]
+        if limit:  # agreement sample: first `limit` of the seed-0 shuffle of answers needing the LLM judge; shuffled
+            # before dropping done rows so resumed runs keep the same picks (before 2026-11-24 they drifted on resume)
             rows = sorted((r for r in rows if qs[r["qid"]]["answerable"] and not r["refused"]), key=lambda r: r["qid"])
-            random.Random(0).shuffle(rows); rows = rows[:max(0, limit - len(done))]
+            random.Random(0).shuffle(rows)
+            rows = [r for r in rows[:limit] if r["qid"] not in done][:max(0, limit - len(done))]
+        else:
+            rows = [r for r in rows if r["qid"] not in done]
         with open(out_path, "a") as out:
             for r in rows:
                 q = qs[r["qid"]]

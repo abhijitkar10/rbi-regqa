@@ -2,6 +2,8 @@
 
 ## 2026-11-24
 
+- Third judge interim: Mistral Large 4 vs Step-5 κ 0.58 (n=108). Fixed `src/judge.py --limit` so resumed runs keep the same seed-0 sample (it redrew on every restart); third-judge job restarted with the fix.
+
 - Claims-vs-numbers pass on the post-grading sections. Abstract, Conclusion and README now scope the name-prefix WrongLender@1 range (1.3–6.3%) to dense, hybrid and re-ranked retrievers; prefixed BM25 stays at 8.2%. Third-judge sample at 91/210.
 - Private outreach notes (vault, not in this repo) filled with final numbers; remaining placeholders are the arXiv link, the audit count and weekly hours.
 - Grading finished 04:30: every reader fully graded by Step-5. recite.py fixed 2 late gpt-oss-20b cite_gold rows; reproduce.sh rerun. Changes from the partial numbers: gpt-oss-20b acc 0.85 → 0.84, Qwen 0.85 → 0.86; cite range 0.84–0.89; false-refusal range 0.04–0.07; gold-in-context 0.93 (was 0.92); own-family Nemotron +0.039 [−0.005, +0.087], MiniMax −0.016 [−0.062, +0.028] (still no significant preference). No daggers left in Table 5. README gains the reader headline. Mistral Large third-judge sample resumed in the background.
