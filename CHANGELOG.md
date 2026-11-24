@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-25
+
+- README: numbers checked against the paper (all match); status line updated, link to the draft PDF, Cite section.
+
 ## 2026-11-24
 
 - reproduce.sh now runs from a clean clone: the snapshot date was read from raw-HTML file times (not in git, and wrong after a re-fetch); it is now the fixed 21 November 2026. Clean-clone outputs match byte for byte.

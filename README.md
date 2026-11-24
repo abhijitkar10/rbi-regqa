@@ -2,7 +2,7 @@
 
 An open benchmark for question answering over the Reserve Bank of India's banking rules: find the right paragraph among about 100 rulebooks, answer with a citation, and refuse when the rules don't say.
 
-**Status:** under construction; preprint target 2026-12-20. See [STATUS.md](STATUS.md) for what is done and running, [PLAN.md](PLAN.md) for the paper plan, [CHANGELOG.md](CHANGELOG.md) for dated changes.
+**Status:** experiments and grading finished; draft paper in [paper/main.pdf](paper/main.pdf). Waiting on the author's hand audit, then the arXiv preprint (target 2026-12-20). See [STATUS.md](STATUS.md) for what is done and running, [PLAN.md](PLAN.md) for the paper plan, [CHANGELOG.md](CHANGELOG.md) for dated changes.
 
 ## Quick start
 
@@ -15,7 +15,7 @@ uv venv .venv --python 3.12 && uv pip install --python .venv/bin/python -r requi
 
 **The RBI text is not in this repo.** The RBI website reserves its rights, so we publish the questions, answers, paragraph numbers, short evidence quotes and code, and you fetch the Directions yourself. `data/catalog/paragraph_hashes.tsv` fingerprints every paragraph of our snapshot; the check lists any paragraph the RBI has amended since and the questions that depend on it. A fresh fetch on 22 Nov 2026 matched the snapshot exactly.
 
-## Results so far
+## Results
 
 On 318 answerable questions over 96 Directions (8,065 paragraphs):
 
@@ -47,6 +47,10 @@ LLM stages (drafting, answering, grading) are not rerun; their outputs are commi
 | `paper/` | LaTeX source; every number comes from `numbers.tex` or a generated table |
 
 Builds on [kyc-rag](https://github.com/abhijitkar10/kyc-rag) (hand-written BM25, BGE dense search, RRF, BGE reranker).
+
+## Cite
+
+GitHub's "Cite this repository" button reads [CITATION.cff](CITATION.cff). Until the arXiv version is out, cite the repository.
 
 ## Licence
 
