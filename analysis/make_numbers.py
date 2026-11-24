@@ -71,16 +71,15 @@ if cg and rb:
         for k, v in N.items():
             fh.write(f"\\newcommand{{\\{k}}}{{{v if v is not None else chr(92) + 'todo{' + k + '}'}}}\n")
 
-# --- corpus dates: "Updated as on <date>" in Direction titles; snapshot = when the HTML was fetched ---
-import re, os, glob
+# --- corpus dates: "Updated as on <date>" in Direction titles; snapshot = fixed date of our fetch (paragraph_hashes.tsv) ---
+import re
 from datetime import datetime
 _d = [d for d in jl("data/processed/docs.jsonl") if d["text"].strip()]
 _up = [datetime.strptime(m.group(1), "%B %d, %Y") for d in _d if (m := re.search(r"Updated as on (\w+ \d+, \d{4})", d["title"]))]
-_fetched = max(os.path.getmtime(p) for p in glob.glob("data/html/*.md"))
 fmt = lambda t: f"{t.day} {t:%B %Y}"
 put("NUpdated", len(_up))
 put("UpdateRange", f"{fmt(min(_up))} to {fmt(max(_up))}" if _up else None)
-put("SnapshotDate", fmt(datetime.fromtimestamp(_fetched)))
+put("SnapshotDate", "21 November 2026")  # was the HTML mtime: missing in a clean clone, wrong after a re-fetch
 with open("paper/numbers.tex", "w") as fh:
     for k, v in N.items():
         fh.write(f"\\newcommand{{\\{k}}}{{{v if v is not None else chr(92) + 'todo{' + k + '}'}}}\n")

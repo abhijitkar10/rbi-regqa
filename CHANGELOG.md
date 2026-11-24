@@ -2,6 +2,8 @@
 
 ## 2026-11-24
 
+- reproduce.sh now runs from a clean clone: the snapshot date was read from raw-HTML file times (not in git, and wrong after a re-fetch); it is now the fixed 21 November 2026. Clean-clone outputs match byte for byte.
+
 - CITATION.cff: version, license, abstract and a preferred-citation for the paper, so the Zenodo DOI record is filled correctly when GitHub is linked. Validated with cffconvert.
 
 - Hand-audit wiring: `analysis/audit.py` turns the filled audit sheets into paper macros (verdicts only are committed). The two audit TODO sentences now fill themselves on `./reproduce.sh`. `arxiv_pack.sh` TODO check now covers numbers.tex.
