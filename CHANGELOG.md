@@ -2,6 +2,8 @@
 
 ## 2026-11-24
 
+- CITATION.cff: version, license, abstract and a preferred-citation for the paper, so the Zenodo DOI record is filled correctly when GitHub is linked. Validated with cffconvert.
+
 - Hand-audit wiring: `analysis/audit.py` turns the filled audit sheets into paper macros (verdicts only are committed). The two audit TODO sentences now fill themselves on `./reproduce.sh`. `arxiv_pack.sh` TODO check now covers numbers.tex.
 
 - Private outreach notes (outside the repo) updated with the three-judge result; nothing in the repo changed besides STATUS.

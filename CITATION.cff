@@ -9,3 +9,15 @@ authors:
 repository-code: "https://github.com/abhijitkar10/rbi-regqa"
 keywords: [retrieval-augmented generation, regulatory question answering, benchmark, Reserve Bank of India, near-duplicate documents]
 date-released: 2026-12-20
+version: "1.0"
+license: CC-BY-4.0  # Zenodo takes one id; code is MIT (LICENSE)
+abstract: "Paragraph-level QA benchmark over 96 Reserve Bank of India Master Directions (8,065 paragraphs): 318 answerable and 73 unanswerable questions, with retrieval and reader baselines. Code MIT, annotations CC BY 4.0; RBI text is fetched by script, not redistributed."
+preferred-citation:
+  type: article
+  title: "Which Rulebook? Question Answering over Near-Duplicate Indian Banking Regulations"
+  authors:
+    - family-names: Kar
+      given-names: Abhijit
+      affiliation: "National Institute of Technology Karnataka, Surathkal"
+  year: 2026
+  url: "https://github.com/abhijitkar10/rbi-regqa"
