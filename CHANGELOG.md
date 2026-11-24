@@ -2,6 +2,8 @@
 
 ## 2026-11-25
 
+- Layout check of the PDF (no overfull boxes or undefined references); reproduce.sh now flags Overfull warnings.
+
 - README: numbers checked against the paper (all match); status line updated, link to the draft PDF, Cite section.
 
 ## 2026-11-24
