@@ -10,5 +10,5 @@ rm -f "$t"/main.{pdf,aux,log,blg,out}
 (cd "$t" && tectonic main.tex >/dev/null 2>&1 && rm -f main.{pdf,aux,log,out})  # check it builds from the tarball's files alone
 tar -czf arxiv.tar.gz -C "$t" .
 echo "paper/arxiv.tar.gz: $(tar -tzf arxiv.tar.gz | tr '\n' ' ')"
-[ "$(grep -v newcommand main.tex | grep -c '\\todo{')" = 0 ] || echo "WARNING: $(grep -v newcommand main.tex | grep -c '\\todo{') \\todo markers remain"
+n=$(cat main.tex numbers.tex | grep -v "^\\\\newcommand{\\\\todo" | grep -o "\\\\todo{" | wc -l | tr -d " "); [ "$n" = 0 ] || echo "WARNING: $n \\todo markers remain"
 rm -rf "$t"

@@ -205,3 +205,16 @@ if Path("results/readers.json").exists() and Path("results/readers_v0best.json")
     with open("paper/numbers.tex", "w") as fh:
         for kk, v in N.items():
             fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")
+
+# --- hand audit (results/audit.json from analysis/audit.py); stays \todo until a sheet is fully filled ---
+if Path("results/audit.json").exists():
+    au = json.load(open("results/audit.json"))
+    q, u = au.get("questions"), au.get("unanswerable")
+    ok = lambda s: s and s["complete"]
+    put("AuditN", q["n"] if ok(q) else None); put("AuditFair", q["FAIR_Y_N"] if ok(q) else None)
+    put("AuditCorrect", q["ANSWER_CORRECT_Y_N"] if ok(q) else None)
+    put("AuditUnN", u["n"] if ok(u) else None); put("AuditUnTrue", u["TRULY_UNANSWERABLE_Y_N"] if ok(u) else None)
+    put("AuditUnFair", u["FAIR_Y_N"] if ok(u) else None)
+    with open("paper/numbers.tex", "w") as fh:
+        for kk, v in N.items():
+            fh.write(f"\\newcommand{{\\{kk}}}{{{v if v is not None else chr(92) + 'todo{' + kk + '}'}}}\n")

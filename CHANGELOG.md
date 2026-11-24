@@ -2,6 +2,8 @@
 
 ## 2026-11-24
 
+- Hand-audit wiring: `analysis/audit.py` turns the filled audit sheets into paper macros (verdicts only are committed). The two audit TODO sentences now fill themselves on `./reproduce.sh`. `arxiv_pack.sh` TODO check now covers numbers.tex.
+
 - Private outreach notes (outside the repo) updated with the three-judge result; nothing in the repo changed besides STATUS.
 
 - arXiv metadata: `scripts/arxiv_meta.py` writes paper/arxiv_meta.txt (title, plain-text abstract from the paper's macros, categories, comments line) and fails on LaTeX left in the abstract or more than 1,920 characters. Runs in reproduce.sh.

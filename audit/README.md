@@ -9,3 +9,5 @@ Open each CSV in Numbers, Excel or Google Sheets, fill the CAPITALISED columns, 
 | `expert_unanchored.csv` | your 9 questions that could not be matched automatically | `CORRECT_PARA`, `EVIDENCE_QUOTE` | The paragraph of the 2025 Commercial Banks KYC Directions that answers it (candidates are listed; type `none` if the rule no longer exists), and a short exact quote from it. |
 
 The sample is fixed (seed 42): `python scripts/make_audit.py` regenerates the same rows. The CSVs hold RBI text, so they stay out of git; only the filled verdicts (qid + your columns) get committed.
+
+**When you're done:** save the CSVs, then run `./reproduce.sh`. `analysis/audit.py` copies only your verdicts (qid + your columns + notes, no RBI text) to `audit/verdicts_*.csv` for git, and the counts go into the paper. A sheet counts only when every row has Y or N; until then the paper shows red TODOs.
